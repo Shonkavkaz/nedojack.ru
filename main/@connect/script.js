@@ -20765,9 +20765,9 @@ var Qae = JM((Boe, _1) => {
         },
         U4 = "LOADING",
         B4 = {
-            JOINED_COUNT: "{count} из {maxPlayers} игроков",
-            PLAYERS_NEEDED: "Для старта необходим 1 игрок | Для старта необходимо {count} игроков",
-            WAITING_FOR_VIP: "Ждём когда {name} начнёт игру",
+            JOINED_COUNT: "В игре {count} из {maxPlayers} игроков",
+            PLAYERS_NEEDED: "НУЖЕН ЕЩЁ 1 ИГРОК, ЧТОБЫ НАЧАТЬ | НУЖНО ЕЩЕ {count} ИГРОКОВ, ЧТОБЫ НАЧАТЬ",
+            WAITING_FOR_VIP: "Ждём {name} для начала игры",
             WAITING_FOR_GAMEPAD: "Ожидайте начала игры",
             GAME_STARTING: "Игра в процессе",
             BUTTON_START: "Нажмите для начала игры",
@@ -20810,7 +20810,7 @@ var Qae = JM((Boe, _1) => {
             WARNING: {
                 DELETE: "Вы уверены, что хотите удалить этот эпизод?",
                 TOS: "Предоставляя контент, вы соглашаетесь с нашими [tos]Условиями предоставления услуг[/tos]",
-                TOS_AGREE: "согласиться и поделиться "
+                TOS_AGREE: "согласиться и поделиться"
             },
             BACK_TO_EPISODES: "назад к эпизодам",
             BACK_TO_MENU: "назад в меню",

@@ -19067,129 +19067,129 @@ ${r.message}`,
         }
     }
     const Zq = {
-            BACK: "Back",
-            CANCEL: "Cancel",
-            CLOSE: "Close",
-            CONFIRM: "Confirm",
-            CREATE: "Create",
-            DELETE: "Delete",
-            DONE: "Done",
-            EDIT: "Edit",
-            OK: "OK",
-            NEXT: "Next",
-            NO: "No",
-            PLAY: "Play",
-            PUBLISH: "Publish",
-            REMOVE: "Remove",
-            RESET: "Reset",
-            SUBMIT: "Submit",
-            TRY_AGAIN: "Try Again",
-            UNDO: "Undo",
-            YES: "Yes"
+            BACK: "Назад",
+            CANCEL: "Отмена",
+            CLOSE: "Закрыть",
+            CONFIRM: "Подтвердить",
+            CREATE: "Создать",
+            DELETE: "Удалить",
+            DONE: "Готово",
+            EDIT: "Редактировать",
+            OK: "Ок",
+            NEXT: "Следующий",
+            NO: "Нет",
+            PLAY: "Играть",
+            PUBLISH: "Опубликовать",
+            REMOVE: "Удалить",
+            RESET: "Сброс",
+            SUBMIT: "Отправить",
+            TRY_AGAIN: "Попробовать снова",
+            UNDO: "Отменить",
+            YES: "Да"
         },
         Qq = {
             UGC: {
-                VISIBILITY_CONTROLLER_OFF: "prompts hidden on players’ devices",
-                VISIBILITY_CONTROLLER_ON: "prompts shown on players’ devices",
-                VISIBILITY_SCREEN_OFF: "prompts hidden on game screen",
-                VISIBILITY_SCREEN_ON: "prompts shown on game screen"
+                VISIBILITY_CONTROLLER_OFF: "подсказки, скрытые на устройствах игроков",
+                VISIBILITY_CONTROLLER_ON: "подсказки, показанные на устройствах игроков",
+                VISIBILITY_SCREEN_OFF: "подсказки, скрытые на игровом экране",
+                VISIBILITY_SCREEN_ON: "подсказки, показанные на игровом экране"
             }
         },
         ej = {
-            DISCONNECTED: "You have been disconnected.",
-            DRAWING_NOTHING: "You have to draw something!",
-            PLAYER_KICKED: "You have been kicked from the game by a moderator.",
-            ROOM_DESTROYED: "Thanks for playing!",
-            ROOM_DISCONNECTED: "Disconnected",
-            TEXT_NAUGHTY: "I’m afraid you can’t write that. Please be respectful of other players.",
-            TEXT_NOTHING: "You can’t enter nothing!",
-            TITLE: "Error"
+            DISCONNECTED: "Вы были отключены.",
+            DRAWING_NOTHING: "Вы должны что-то нарисовать!",
+            PLAYER_KICKED: "Вы были исключены из игры модератором.",
+            ROOM_DESTROYED: "Спасибо за игру!",
+            ROOM_DISCONNECTED: "Отключено",
+            TEXT_NAUGHTY: "Боюсь, что вы не можете этого написать. Пожалуйста, будьте уважительны к другим игрокам.",
+            TEXT_NOTHING: "Вы не можете ничего ввести!",
+            TITLE: "Ошибка"
         },
         tj = "LOADING",
         rj = {
-            JOINED_COUNT: "{count} of {maxPlayers} players joined",
-            PLAYERS_NEEDED: "1 player needed to start | {count} players needed to start",
-            WAITING_FOR_VIP: "Waiting for {name} to start the game",
-            WAITING_FOR_GAMEPAD: "Waiting for the game to start",
-            GAME_STARTING: "Game is starting",
-            BUTTON_START: "Press to Start",
-            BUTTON_CANCEL: "Press to Cancel"
+            JOINED_COUNT: "В игре {count} из {maxPlayers} игроков",
+            PLAYERS_NEEDED: "НУЖЕН ЕЩЁ 1 ИГРОК, ЧТОБЫ НАЧАТЬ | НУЖНО ЕЩЕ {count} ИГРОКОВ, ЧТОБЫ НАЧАТЬ",
+            WAITING_FOR_VIP: "Ждём {name} для начала игры",
+            WAITING_FOR_GAMEPAD: "Ожидайте начала игры",
+            GAME_STARTING: "Игра в процессе",
+            BUTTON_START: "Нажмите для начала игры",
+            BUTTON_CANCEL: "Нажмите чтобы отменить"
         },
         nj = {
-            GALLERY_LINK: "Visit the Gallery",
-            PLAY_AGAIN: "Play again?",
-            BUTTON_SAME_PLAYERS: "Same Players",
-            BUTTON_NEW_PLAYERS: "New Players"
+            GALLERY_LINK: "Посмотреть результаты",
+            PLAY_AGAIN: "Играть снова?",
+            BUTTON_SAME_PLAYERS: "Те же игроки",
+            BUTTON_NEW_PLAYERS: "Новые игроки"
         },
         ij = {
-            AND: "AND",
-            OR: "OR"
+            AND: "И",
+            OR: "ИЛИ"
         },
         sj = {
-            BUTTON_SKIP: "Skip",
-            BUTTON_NEXT: "Next",
-            BUTTON_DONE: "Let’s Go!"
+            BUTTON_SKIP: "Пропустить",
+            BUTTON_NEXT: "Следующее",
+            BUTTON_DONE: "Поехали!"
         },
         aj = {
-            NAME: "AUDIENCE"
+            NAME: "ЗРИТЕЛИ"
         },
         oj = {
             EPISODE_REPORT: "Report Episode",
             EPISODE_UNLOAD: "Unload Episode",
-            EPISODE_VIEW_AUTHOR: "View Author",
-            EPISODES_LOAD: "Load an episode by id:",
-            EPISODES_MENU: "Episodes Menu",
-            EPISODES_SELECT: "Or select an epsiode:",
-            EPISODES_WARNING: "Warning: user generated content is not rated",
+            EPISODE_VIEW_AUTHOR: "Показать автора",
+            EPISODES_LOAD: "Загрузка эпизода по id:",
+            EPISODES_MENU: "Меню эпизодов",
+            EPISODES_SELECT: "Или выберите эпизод:",
+            EPISODES_WARNING: "Предупреждение: пользовательский контент не оценивается",
             INSTRUCTION: {
-                CREATE_TITLE: "first things first, enter a name for the episode that will contain all your prompts and hit create.",
-                LOAD: "create or load?",
-                PUBLISH: "publish your episode",
-                TITLE: "name your episode",
-                TOGGLE_VISIBILITY: "tap to show/hide prompts",
-                WRITE: "write your prompts"
+                CREATE_TITLE: "Прежде всего, введите название эпизода, который будет содержать все ваши подсказки, и нажмите кнопку «Создать».",
+                LOAD: "создать или загрузить?",
+                PUBLISH: "опубликовать свой эпизод",
+                TITLE: "назовите свой эпизод",
+                TOGGLE_VISIBILITY: "Нажмите, чтобы показать/скрыть подсказки",
+                WRITE: "напишите свои подсказки"
             },
             WARNING: {
-                DELETE: "Are you sure you want to delete this episode?",
-                TOS: "By sharing content, you agree to our [tos]Terms of Service[/tos]",
-                TOS_AGREE: "agree and share"
+                DELETE: "Вы уверены, что хотите удалить этот эпизод?",
+                TOS: "Предоставляя контент, вы соглашаетесь с нашими [tos]Условиями предоставления услуг[/tos]",
+                TOS_AGREE: "согласиться и поделиться"
             },
-            BACK_TO_EPISODES: "back to episodes",
-            BACK_TO_MENU: "back to menu",
-            CREATE_NEW_EPISODE: "create a new episode",
-            PREVIOUS_EPISODES: "previous episodes",
-            PROMPT_ADD: "add prompt",
-            PROMPT_PLACEHOLDER: "enter a prompt",
+            BACK_TO_EPISODES: "назад к эпизодам",
+            BACK_TO_MENU: "назад в меню",
+            CREATE_NEW_EPISODE: "создать новый эпизод",
+            PREVIOUS_EPISODES: "предыдущие эпизоды",
+            PROMPT_ADD: "добавить подсказку",
+            PROMPT_PLACEHOLDER: "введите подсказку",
             PROMPTS_COUNT_HIDDEN: "({count} hidden)",
-            TITLE_PLACEHOLDER: "enter a title"
+            TITLE_PLACEHOLDER: "введите название"
         },
         lj = {
             BROADCASTER: {
-                SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
-                WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
+                SUBTEXT: "Вы успешно подключили свою учетную запись к Twitch-расширению Jackbox Audience Kit.",
+                WARNING: "В НАСТРОЙКАХ ИГРЫ ОТКЛЮЧЕНЫ ЗРИТЕЛИ"
             },
             RECONNECTED: {
-                TEXT: "RECONNECTED",
-                SUBTEXT: "Have fun!"
+                TEXT: "ПЕРЕПОДКЛЮЧИТСЯ",
+                SUBTEXT: "Веселитесь!"
             },
             RECONNECTING: {
                 CONTROLLER: {
-                    TEXT: "CONNECTION INTERRUPTED",
-                    SUBTEXT: "Attempting to reconnect ({attempt} of 5)"
+                    TEXT: "СОЕДИНЕНИЕ ПРЕРВАНО",
+                    SUBTEXT: "Попытка повторного подключения ({attempt} из 5)"
                 },
                 GAME: {
-                    TEXT: "GAME CONNECTION INTERRUPTED",
-                    SUBTEXT: "Please wait while we attempt to reconnect"
+                    TEXT: "ПРЕРВАНО СОЕДИНЕНИЕ С ИГРОЙ",
+                    SUBTEXT: "Пожалуйста, подождите, пока мы пытаемся восстановить соединение"
                 }
             },
             PAUSED: {
-                TEXT: "THE GAME IS PAUSED",
-                SUBTEXT: "Anything you submit will still be sent to the game."
+                TEXT: "ИГРА ПРИОСТАНОВЛЕНА",
+                SUBTEXT: "Все, что вы напишете, все равно будет отправлено в игру."
             }
         },
         cj = {
-            SHARE: "Share",
-            COPY_TO_CLIPBOARD: "Copy to clipboard"
+            SHARE: "Поделиться",
+            COPY_TO_CLIPBOARD: "Скопировать"
         },
         uj = {
             ACTION: Zq,
@@ -34316,77 +34316,77 @@ ${e}`
             })
         },
         gce = {
-            LOGO: "the Tee K.O. 2 logo",
-            PLAYER_DRAWING: "player-created drawing",
+            LOGO: "логотип Футбол K.O. 2",
+            PLAYER_DRAWING: "рисунок, созданный игроком",
             VS: "vs"
         },
         mce = {
             APPAREL: {
-                hoodie: "Use a hoodie",
-                tank: "Use a tank top",
-                tee: "Use a t-shirt"
+                hoodie: "Использовать худи",
+                tank: "Использовать майку",
+                tee: "Использовать футболку"
             },
             BRUSH: {
-                eraser: "eraser",
-                highlighter: "highlighter",
-                pen: "pen"
+                eraser: "ластик",
+                highlighter: "маркер",
+                pen: "ручка"
             },
             COLOR: {
-                BACKGROUND: "Background color {color}",
-                BRUSH: "Brush color {color}"
+                BACKGROUND: "Цвет фона {color}",
+                BRUSH: "Цвет кисти {color}"
             },
             FONT: {
-                bold: "Use bold font",
-                classic: "Use Tee K.O. 1 font",
-                childish: "Use childish font",
-                handwritten: "Use cursive font"
+                bold: "Используйте жирный шрифт",
+                classic: "Используйте шрифт Футбол K.O. 1",
+                childish: "Используйте детский шрифт",
+                handwritten: "Используйте прописной шрифт"
             }
         },
-        vce = "Suggestions",
+        vce = "Предложения",
         yce = {
-            TITLE: "Game Tip",
-            CONTENT: ["The “Quick Draw” setting requires only 2 drawings in Round One.", "Want to make big changes to a drawing? Use the eraser in the drawing interface.", "The highlighter makes big sections of color. The pen creates thinner lines that are always visible over the highlighter.", "Tiebreaks are often given to a specific garment. Keep switching it up with t-shirts, hoodies and tank tops!", "Take a moment to find the perfect font. A slogan that’s “meh” in bold could be a knockout in script!", "Make sure to choose the perfect canvas color to showcase your drawing! (Hint: it’s always pink.)", "Want to play as the dragon? You can’t. But wouldn’t that be cool?", "Fingers need a break during the Final Round? Press and hold your choice to keep sending a high number of votes.", "Have regrets about a drawing from Round One? Go back and change it in Round Two!", "“Drawing Text Descriptions” in Settings asks players to add descriptive text to their own drawings."]
+            TITLE: "Игровой совет",
+            CONTENT: ["Для настройки “Быстрое рисование” требуется всего 2 рисунка в первом раунде.", "Хотите внести существенные изменения в рисунок? Воспользуйтесь ластиком", "Маркер выделяет большие участки цвета. Ручка создает более тонкие линии, которые всегда видны поверх маркера.", "Ничьи зачастую присуждаются определённому типу одежды. Попробуйте использовать футболки, майки или толстовки!", "Уделите время поиску идеального шрифта. Слоган, который \"не очень\"  в жирном шрифте, может стать большой ошибкой!", "Не забудьте выбрать идеальный цвет холста, чтобы продемонстрировать свой рисунок! (Подсказка: это всегда розовый цвет).", "Хотите играть за дракона? Не получится. Но разве это не здорово?", "Пальцы нуждаются в передышке во время финального раунда? Нажмите и удерживайте свой выбор, чтобы сохранить большое количество голосов.", "Жалеете о рисунке из первого раунда? Вернитесь и измените его во втором раунде!", "Пункт \"Текстовые описания рисунков\" в настройках позволяет игрокам добавлять описание к своим рисункам."]
         },
         _ce = {
             INSTRUCTION: {
-                AVATAR: "Choose your avatar",
-                CRY: "Write your Battle Cry"
+                AVATAR: "Выбери свой аватар",
+                CRY: "НАПИШИ ПОБЕДНУЮ ЦИТАТУ"
             },
-            PLACEHOLDER: "Something I would yell when victorious!"
+            PLACEHOLDER: "Что нибудь, что можно прокричать при победе!"
         },
         bce = {
-            INSTRUCTION: "Craft your shirt!"
+            INSTRUCTION: "Создай свою футболку!"
         },
         wce = {
             COUNTER: {
-                TYPE: "Drawing",
-                COUNT: "{current} of {total}"
+                TYPE: "Рисование",
+                COUNT: "{current} от {total}"
             }
         },
         Ece = {
-            INSTRUCTION: "Tap to make it happen"
+            INSTRUCTION: "Нажмите, чтобы сделать это"
         },
         Sce = {
             DESCRIBE: {
-                GUIDANCE: "(Keep it short and literal!)",
-                INSTRUCTION: "Add A Description",
-                PLACEHOLDER: "describe your drawing"
+                GUIDANCE: "(Будьте краткими и буквальными!)",
+                INSTRUCTION: "Добавить описание",
+                PLACEHOLDER: "описать рисунок"
             }
         },
         Tce = {
             ACTION: {
-                CHANGE_DRAWING: "Change this drawing",
-                NEW_DRAWING: "New drawing"
+                CHANGE_DRAWING: "Изменить рисунок",
+                NEW_DRAWING: "Новый рисунок"
             },
-            INSTRUCTION: "Change an existing drawing, or start a new drawing"
+            INSTRUCTION: "Изменить существующий рисунок или нарисовать новый"
         },
         Oce = {
-            MASH: "Keep tapping your favorite!",
-            INSTRUCTION: "Pick your favorite!",
-            THANKS: "Your choice"
+            MASH: "Продолжайте нажимать на любимчика!",
+            INSTRUCTION: "Выберите своего любимчика!",
+            THANKS: "Ваш выбор"
         },
         Ice = {
-            INSTRUCTION: "Write something funny, or clever, or anything"
+            INSTRUCTION: "Напиши что-нибудь смешное, или умное, или еще что-нибудь"
         },
         Cce = {
             ALT: gce,

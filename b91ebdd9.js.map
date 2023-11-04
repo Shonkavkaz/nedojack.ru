@@ -7,10 +7,10 @@
         
         <title>Jackbox.TV</title>
         <meta name="description" content="Nedojackbox.ru - это ваш контроллер для всех пакетов Jackbox Party Pack и самостоятельных игр. Создайте странные воспоминания.">
-        <meta name="application-name" content="Nedojackbox.RU"/>
+        <meta name="application-name" content="Jackbox.TV"/>
 
-        <meta name="og:url" content="https://nedojackbox.ru/">
-        <meta name="og:title" content="Nedojackbox.RU">
+        <meta name="og:url" content="https://jackbox.tv/">
+        <meta name="og:title" content="Jackbox.TV">
         <meta name="og:type" content="website">
         <meta name="og:description" content="Nedojackbox.ru - это ваш контроллер для всех пакетов Jackbox Party Pack и самостоятельных игр. Создайте странные воспоминания.">
         <meta name="og:image" content="./src/images/favicon-196x196.png">
