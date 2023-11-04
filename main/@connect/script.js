@@ -14862,7 +14862,7 @@ var Qae = JM((Boe, _1) => {
             features: ["kicking", "previews"],
             categoryId: "LineupGame"
         }, {
-            name: "Tee K.O. 2",
+            name: "Футбол K.O. 2",
             tag: "awshirt2",
             wrapper: "vue",
             isPublic: !0,
@@ -14872,7 +14872,7 @@ var Qae = JM((Boe, _1) => {
             categoryId: "TeeKO2Game",
             galleryId: "teeko2"
         }, {
-            name: "Додо Ля Си",
+            name: "Додо Ре Ми",
             tag: "nopus-opus",
             wrapper: "vue",
             isPublic: !0,
@@ -14881,7 +14881,7 @@ var Qae = JM((Boe, _1) => {
             categoryId: "NopusOpusGame",
             galleryId: "dodo-re-mi"
         }, {
-            name: "ПравиТекст",
+            name: "ЧиниТекст",
             tag: "risky-text",
             wrapper: "vue",
             isPublic: !0,
@@ -14890,7 +14890,7 @@ var Qae = JM((Boe, _1) => {
             categoryId: "FixyTextGame",
             galleryId: "fixytext"
         }, {
-            name: "Timejinx",
+            name: "Хронолом",
             tag: "time-trivia",
             wrapper: "vue",
             isPublic: !0,
@@ -14899,7 +14899,7 @@ var Qae = JM((Boe, _1) => {
             categoryId: "TimeTriviaGame",
             galleryId: "timejinx"
         }, {
-            name: "Hypnotorious",
+            name: "Гипнотизиум",
             tag: "us-them",
             wrapper: "vue",
             isPublic: !0,
@@ -20725,71 +20725,71 @@ var Qae = JM((Boe, _1) => {
         }
     }
     const $4 = {
-            BACK: "Back",
-            CANCEL: "Cancel",
-            CLOSE: "Close",
-            CONFIRM: "Confirm",
-            CREATE: "Create",
-            DELETE: "Delete",
-            DONE: "Done",
-            EDIT: "Edit",
-            OK: "OK",
-            NEXT: "Next",
-            NO: "No",
-            PLAY: "Play",
-            PUBLISH: "Publish",
-            REMOVE: "Remove",
-            RESET: "Reset",
-            SUBMIT: "Submit",
-            TRY_AGAIN: "Try Again",
-            UNDO: "Undo",
-            YES: "Yes"
+            BACK: "Назад",
+            CANCEL: "Отмена",
+            CLOSE: "Закрыть",
+            CONFIRM: "Подтвердить",
+            CREATE: "Создать",
+            DELETE: "Удалить",
+            DONE: "Готово",
+            EDIT: "Редактировать",
+            OK: "ДА",
+            NEXT: "Следующий",
+            NO: "Нет",
+            PLAY: "Играть",
+            PUBLISH: "Опубликовать",
+            REMOVE: "Удалить",
+            RESET: "Сброс",
+            SUBMIT: "Отправить",
+            TRY_AGAIN: "Попробовать снова",
+            UNDO: "Отменить",
+            YES: "Да"
         },
         D4 = {
             UGC: {
-                VISIBILITY_CONTROLLER_OFF: "prompts hidden on players’ devices",
-                VISIBILITY_CONTROLLER_ON: "prompts shown on players’ devices",
-                VISIBILITY_SCREEN_OFF: "prompts hidden on game screen",
-                VISIBILITY_SCREEN_ON: "prompts shown on game screen"
+                VISIBILITY_CONTROLLER_OFF: "подсказки, скрытые на устройствах игроков",
+                VISIBILITY_CONTROLLER_ON: "подсказки, показанные на устройствах игроков",
+                VISIBILITY_SCREEN_OFF: "подсказки, скрытые на игровом экране",
+                VISIBILITY_SCREEN_ON: "подсказки, показанные на игровом экране"
             }
         },
         k4 = {
-            DISCONNECTED: "You have been disconnected.",
-            DRAWING_NOTHING: "You have to draw something!",
-            PLAYER_KICKED: "You have been kicked from the game by a moderator.",
-            ROOM_DESTROYED: "Thanks for playing!",
-            ROOM_DISCONNECTED: "Disconnected",
-            TEXT_NAUGHTY: "I’m afraid you can’t write that. Please be respectful of other players.",
-            TEXT_NOTHING: "You can’t enter nothing!",
-            TITLE: "Error"
+            DISCONNECTED: "Вы были отключены.",
+            DRAWING_NOTHING: "Вы должны что-то нарисовать!",
+            PLAYER_KICKED: "Вы были исключены из игры модератором.",
+            ROOM_DESTROYED: "Спасибо за игру!",
+            ROOM_DISCONNECTED: "Отключено",
+            TEXT_NAUGHTY: "Боюсь, что вы не можете этого написать. Пожалуйста, будьте уважительны к другим игрокам.",
+            TEXT_NOTHING: "Вы не можете ничего ввести!",
+            TITLE: "Ошибка"
         },
         U4 = "LOADING",
         B4 = {
-            JOINED_COUNT: "{count} of {maxPlayers} players joined",
-            PLAYERS_NEEDED: "1 player needed to start | {count} players needed to start",
-            WAITING_FOR_VIP: "Waiting for {name} to start the game",
-            WAITING_FOR_GAMEPAD: "Waiting for the game to start",
-            GAME_STARTING: "Game is starting",
-            BUTTON_START: "Press to Start",
-            BUTTON_CANCEL: "Press to Cancel"
+            JOINED_COUNT: "{count} из {maxPlayers} игроков",
+            PLAYERS_NEEDED: "Для старта необходим 1 игрок | Для старта необходимо {count} игроков",
+            WAITING_FOR_VIP: "Ждём когда {name} начнёт игру",
+            WAITING_FOR_GAMEPAD: "Ожидайте начала игры",
+            GAME_STARTING: "Игра в процессе",
+            BUTTON_START: "Нажмите для начала игры",
+            BUTTON_CANCEL: "Нажмите чтобы отменить"
         },
         G4 = {
-            GALLERY_LINK: "Visit the Gallery",
-            PLAY_AGAIN: "Play again?",
-            BUTTON_SAME_PLAYERS: "Same Players",
-            BUTTON_NEW_PLAYERS: "New Players"
+            GALLERY_LINK: "Посмотреть результаты",
+            PLAY_AGAIN: "Играть снова?",
+            BUTTON_SAME_PLAYERS: "Те же игроки",
+            BUTTON_NEW_PLAYERS: "Новые игроки"
         },
         F4 = {
-            AND: "AND",
-            OR: "OR"
+            AND: "И",
+            OR: "ИЛИ"
         },
         H4 = {
-            BUTTON_SKIP: "Skip",
-            BUTTON_NEXT: "Next",
-            BUTTON_DONE: "Let’s Go!"
+            BUTTON_SKIP: "Пропустить",
+            BUTTON_NEXT: "Следующее",
+            BUTTON_DONE: "Поехали!"
         },
         W4 = {
-            NAME: "AUDIENCE"
+            NAME: "ЗРИТЕЛИ"
         },
         j4 = {
             EPISODE_REPORT: "Report Episode",
@@ -20823,31 +20823,31 @@ var Qae = JM((Boe, _1) => {
         },
         z4 = {
             BROADCASTER: {
-                SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
-                WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
+                SUBTEXT: "Вы успешно подключили свою учетную запись к Twitch-расширению Jackbox Audience Kit.",
+                WARNING: "В НАСТРОЙКАХ ИГРЫ ОТКЛЮЧЕНЫ ЗРИТЕЛИ"
             },
             RECONNECTED: {
-                TEXT: "RECONNECTED",
-                SUBTEXT: "Have fun!"
+                TEXT: "ПЕРЕПОДКЛЮЧИТСЯ",
+                SUBTEXT: "Веселитесь!"
             },
             RECONNECTING: {
                 CONTROLLER: {
-                    TEXT: "CONNECTION INTERRUPTED",
-                    SUBTEXT: "Attempting to reconnect ({attempt} of 5)"
+                    TEXT: "СОЕДИНЕНИЕ ПРЕРВАНО",
+                    SUBTEXT: "Попытка повторного подключения ({attempt} из 5)"
                 },
                 GAME: {
-                    TEXT: "GAME CONNECTION INTERRUPTED",
-                    SUBTEXT: "Please wait while we attempt to reconnect"
+                    TEXT: "ПРЕРВАНО СОЕДИНЕНИЕ С ИГРОЙ",
+                    SUBTEXT: "Пожалуйста, подождите, пока мы пытаемся восстановить соединение"
                 }
             },
             PAUSED: {
-                TEXT: "THE GAME IS PAUSED",
-                SUBTEXT: "Anything you submit will still be sent to the game."
+                TEXT: "ИГРА ПРИОСТАНОВЛЕНА",
+                SUBTEXT: "Все, что вы напишете, все равно будет отправлено в игру."
             }
         },
         q4 = {
-            SHARE: "Share",
-            COPY_TO_CLIPBOARD: "Copy to clipboard"
+            SHARE: "Поделиться",
+            COPY_TO_CLIPBOARD: "Скопировать"
         },
         V4 = {
             ACTION: $4,
