@@ -7895,10 +7895,10 @@ var Yye = OD((Mve, kN) => {
             return this.htmlEscape(r).trim()
         }
         static sanitizeName(e) {
-            return e.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026\u0410\u0411\u0412\u0413\u0414\u0415\u0401\u0416\u0417\u0418\u0419\u041a\u041b\u041c\u041d\u041e\u041f\u0420\u0421\u0422\u0423\u0424\u0425\u0426\u0427\u0428\u0429\u042a\u042b\u042c\u042d\u042e\u042f\u0430\u0431\u0432\u0433\u0434\u0435\u0451\u0436\u0437\u0438\u0439\u043a\u043b\u043c\u043d\u043e\u043f\u0440\u0441\u0442\u0443\u0444\u0445\u0446\u0447\u0448\u0449\u044a\u044b\u044c\u044d\u044e\u044f!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
+            return e.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
         }
         static sanitizeInput(e) {
-            return e = e.replace("…", "..."), e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF\u0410\u0411\u0412\u0413\u0414\u0415\u0401\u0416\u0417\u0418\u0419\u041a\u041b\u041c\u041d\u041e\u041f\u0420\u0421\u0422\u0423\u0424\u0425\u0426\u0427\u0428\u0429\u042a\u042b\u042c\u042d\u042e\u042f\u0430\u0431\u0432\u0433\u0434\u0435\u0451\u0436\u0437\u0438\u0439\u043a\u043b\u043c\u043d\u043e\u043f\u0440\u0441\u0442\u0443\u0444\u0445\u0446\u0447\u0448\u0449\u044a\u044b\u044c\u044d\u044e\u044f’]/gi, "")
+            return e = e.replace("…", "..."), e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
         }
         static sanitizeEmoji(e) {
             return e.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
@@ -28850,33 +28850,33 @@ ${e}`
                 WAITING_FACE: "black colored emoji face"
             }
         },
-        Zle = {
-            BUTTON_START: "Начать игру!",
-            SHUFFLE_FACE: "нажми что бы изменить лицо!"
+        jue = {
+            BUTTON_START: "Start game!",
+            SHUFFLE_FACE: "tap to make a face"
         },
-        Qle = {
-            CLEAR: "Очистить",
-            SUBMIT: "Есть"
+        que = {
+            CLEAR: "Clear",
+            SUBMIT: "Done"
         },
-        eue = {
-            GO: "ВПЕРЁД!",
-            TAP_ME: "ЖМИ НА МЕНЯ",
-            OUT_OF_CHARS: "Из символов",
-            SO_PROLIFIC: "ТАК ПРИЯТНО!",
-            RUN_OUT_CHARS: "У вас закончились символы.",
-            PLACE_CURSOR: "Место для твоего курсора",
-            GAME_BEGINS_IN: "Начинайте писать через..."
+        Gue = {
+            GO: "GO!",
+            TAP_ME: "Tap Me",
+            OUT_OF_CHARS: "Out of characters",
+            SO_PROLIFIC: "SO PROLIFIC!",
+            RUN_OUT_CHARS: "You've run out of characters.",
+            PLACE_CURSOR: "Place your cursor",
+            GAME_BEGINS_IN: "Game begins in..."
         },
-        tue = "ЖДЁМ'С",
-        rue = {
-            TIPS: "Подсказки",
-            WATING_WRITING: "РУКИ ВВЕРХ, ожидай других!",
-            CURSOR_1: "Курсор дело важное поэтому не забывай его использовать",
-            CURSOR_2: "Двигай свой курсор, так ты можешь запутать других!",
-            CO_AUTHOR_1: "Попробуй понять что надо делать в этой игре! (тут надо писать свой текст и главное победить!!!)",
-            CO_AUTHOR_2: "Сомневаешься что неправильно напишешь? Ничего НАУЧИСЬ ПИСАТЬ ПРАВИЛЬНО СТИРАТЬ СООБЩЕНИЯ НЕЛЬЗЯ!",
-            SUGGESTION_1: "Напиши Марату и спроси что на этом месте должно было быть!",
-            SUGGESTION_2: "Не нравится твоё лицо? Нажми на кнопку ИЗМЕНИТЬ ЛИЦО и тогда у тебя будет другое лицо!"
+        Wue = "Waiting",
+        Hue = {
+            TIPS: "Tips",
+            WATING_WRITING: "Hang on! The OTHER team is writing",
+            CURSOR_1: "You can MOVE YOUR CURSOR to any part of the message after writing starts! Any time, any place.",
+            CURSOR_2: "Try moving YOUR CURSOR while typing - interrupt your friends and change it up!",
+            CO_AUTHOR_1: "Change someone else’s word? You get a CO-AUTHOR BONUS.",
+            CO_AUTHOR_2: "Someone get in the middle of your word? No problemo! You still get a CO-AUTHOR BONUS.",
+            SUGGESTION_1: "Try the “TAP ME” button under the text field for some chaotic writing inspiration",
+            SUGGESTION_2: "Wanna make it weird? The “TAP ME” button under the text field has some…suggestions for you ;)"
         },
         Vue = {
             ALT: Fue,
