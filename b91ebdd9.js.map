@@ -6,13 +6,13 @@
         <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         
         <title>Jackbox.TV</title>
-        <meta name="description" content="Nedojackbox.ru is your controller for all of the Jackbox Party Packs and standalone games. Make some weird memories.">
+        <meta name="description" content="Nedojackbox.ru - это ваш контроллер для всех пакетов Jackbox Party Pack и самостоятельных игр. Создайте странные воспоминания.">
         <meta name="application-name" content="Nedojackbox.RU"/>
 
         <meta name="og:url" content="https://nedojackbox.ru/">
         <meta name="og:title" content="Nedojackbox.RU">
         <meta name="og:type" content="website">
-        <meta name="og:description" content="Jackbox.tv is your controller for all of the Jackbox Party Packs and standalone games. Make some weird memories.">
+        <meta name="og:description" content="Nedojackbox.ru - это ваш контроллер для всех пакетов Jackbox Party Pack и самостоятельных игр. Создайте странные воспоминания.">
         <meta name="og:image" content="./src/images/favicon-196x196.png">
 
         <meta name="mobile-web-app-capable" content="yes">
