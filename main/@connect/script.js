@@ -14625,7 +14625,7 @@ var Qae = JM((Boe, _1) => {
             directory: "pp4/survivetheinternet",
             categoryId: "STIGame"
         }, {
-            name: "Monster Seeking Monster",
+            name: "Ясо ищет Шона",
             tag: "monstermingle",
             wrapper: "marionette",
             isPublic: !0,
@@ -14668,7 +14668,7 @@ var Qae = JM((Boe, _1) => {
             directory: "pp5/rapbattle",
             categoryId: "RapBattleGame"
         }, {
-            name: "Zeeple Dome",
+            name: "Купол Хангер",
             tag: "slingshoot",
             wrapper: "marionette",
             isPublic: !0,
@@ -14862,7 +14862,7 @@ var Qae = JM((Boe, _1) => {
             features: ["kicking", "previews"],
             categoryId: "LineupGame"
         }, {
-            name: "Tee K.O. 2",
+            name: "Футбол K.O. 2",
             tag: "awshirt2",
             wrapper: "vue",
             isPublic: !0,
@@ -14872,7 +14872,7 @@ var Qae = JM((Boe, _1) => {
             categoryId: "TeeKO2Game",
             galleryId: "teeko2"
         }, {
-            name: "Dodo Re Mi",
+            name: "Додо Ре Ми",
             tag: "nopus-opus",
             wrapper: "vue",
             isPublic: !0,
@@ -14881,7 +14881,7 @@ var Qae = JM((Boe, _1) => {
             categoryId: "NopusOpusGame",
             galleryId: "dodo-re-mi"
         }, {
-            name: "FixyText",
+            name: "ЧиниТекст",
             tag: "risky-text",
             wrapper: "vue",
             isPublic: !0,
@@ -14890,7 +14890,7 @@ var Qae = JM((Boe, _1) => {
             categoryId: "FixyTextGame",
             galleryId: "fixytext"
         }, {
-            name: "Timejinx",
+            name: "Хронолом",
             tag: "time-trivia",
             wrapper: "vue",
             isPublic: !0,
@@ -14899,7 +14899,7 @@ var Qae = JM((Boe, _1) => {
             categoryId: "TimeTriviaGame",
             galleryId: "timejinx"
         }, {
-            name: "Hypnotorious",
+            name: "Гипнотизиум",
             tag: "us-them",
             wrapper: "vue",
             isPublic: !0,
@@ -15906,10 +15906,10 @@ var Qae = JM((Boe, _1) => {
             return this.htmlEscape(r).trim()
         }
         static sanitizeName(e) {
-            return e.replace(/[^A-ZА-Я0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
+            return e.replace(/[^A-ZА-Я0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026\u0401-\u0451!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
         }
         static sanitizeInput(e) {
-            return e = e.replace("…", "..."), e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
+            return e = e.replace("…", "..."), e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF\u0401-\u0451’]/gi, "")
         }
         static sanitizeEmoji(e) {
             return e.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
@@ -20624,10 +20624,10 @@ var Qae = JM((Boe, _1) => {
             return String(e).replace(r, "")
         }
         static input(e) {
-            return e.replace("…", "...").replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
+            return e.replace("…", "...").replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF\u0401-\u0451’]/gi, "")
         }
         static username(e) {
-            return e.replace(/[^A-ZА-Я0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
+            return e.replace(/[^A-ZА-Я0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026\u0401-\u0451!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
         }
         static emoji(e) {
             return e.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
