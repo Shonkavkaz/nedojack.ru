@@ -27794,11 +27794,11 @@ ${e}`
         Uge = {
             BASS: "Бас",
             MELODY: "Мелодия",
-            COUNTER: "Счетчик",
+            COUNTER: "Контр-мел.",
             DRUMS: "Ударные",
             PERCUSSION: "Перкуссия",
             HARMONY: "Гармония",
-            SIGNATURE: "Размер"
+            SIGNATURE: "Сигнатура"
         },
         Bge = {
             GET_READY: "Приготовтесь",
