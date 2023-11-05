@@ -46,7 +46,7 @@ var lIe = jL((wke, hN) => {
         Sl = [],
         Ks = () => {},
         WL = () => !1,
-        HL = /^on[^a-z]/,
+        HL = /^on[^a-z-а-я]/,
         Om = t => HL.test(t),
         Xv = t => t.startsWith("onUpdate:"),
         Pn = Object.assign,
@@ -77,7 +77,7 @@ var lIe = jL((wke, hN) => {
         },
         KL = /-(\w)/g,
         wi = Im(t => t.replace(KL, (e, n) => n ? n.toUpperCase() : "")),
-        ZL = /\B([A-Z])/g,
+        ZL = /\B([A-Z-А-Я])/g,
         xc = Im(t => t.replace(ZL, "-$1").toLowerCase()),
         km = Im(t => t.charAt(0).toUpperCase() + t.slice(1)),
         X_ = Im(t => t ? `on${km(t)}` : ""),
@@ -3260,7 +3260,7 @@ var lIe = jL((wke, hN) => {
             }, e.map(r => s => !s._stopped && r && r(s))
         } else return e
     }
-    const aS = /^on[a-z]/,
+    const aS = /^on[a-z-а-я]/,
         cB = (t, e, n, r, s = !1, i, o, a, l) => {
             e === "class" ? ZU(t, r, s) : e === "style" ? XU(t, n, r) : Om(e) ? Xv(e) || nB(t, e, n, r, o) : (e[0] === "." ? (e = e.slice(1), !0) : e[0] === "^" ? (e = e.slice(1), !1) : lB(t, e, r, s)) ? eB(t, e, r, i, o, a, l) : (e === "true-value" ? t._trueValue = r : e === "false-value" && (t._falseValue = r), JU(t, e, r, s))
         };
@@ -4497,8 +4497,8 @@ var lIe = jL((wke, hN) => {
             var e = Math.random().toString(36).substring(2, 10) + Math.random().toString(36).substring(2, 10);
             return t ? e.substring(0, t) : e
         },
-        kB = /[a-z0-9][a-z0-9-]*\.[a-z]+$/i,
-        NB = /[a-z0-9][a-z0-9-]+\.[a-z.]{2,6}$/i,
+        kB = /[a-zа-я0-9][a-zа-я0-9-]*\.[a-zа-я]+$/i,
+        NB = /[a-zа-я0-9][a-zа-я0-9-]+\.[a-zа-я.]{2,6}$/i,
         SS = function(t) {
             var e = NB,
                 n = t.split("."),
@@ -7493,10 +7493,10 @@ var lIe = jL((wke, hN) => {
             return this.htmlEscape(n).trim()
         }
         static sanitizeName(e) {
-            return e.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
+            return e.replace(/[^A-ZА-Я0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026\u0401-\u0451!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
         }
         static sanitizeInput(e) {
-            return e = e.replace("…", "..."), e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
+            return e = e.replace("…", "..."), e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF\u0401-\u0451’]/gi, "")
         }
         static sanitizeEmoji(e) {
             return e.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
@@ -7828,7 +7828,7 @@ var lIe = jL((wke, hN) => {
                     };
 
                 function p(K) {
-                    if (typeof K != "string" && (K = String(K)), /[^a-z0-9\-#$%&'*+.^_`|~!]/i.test(K) || K === "") throw new TypeError('Invalid character in header field name: "' + K + '"');
+                    if (typeof K != "string" && (K = String(K)), /[^a-zа-я0-9\-#$%&'*+.^_`|~!]/i.test(K) || K === "") throw new TypeError('Invalid character in header field name: "' + K + '"');
                     return K.toLowerCase()
                 }
 
@@ -11632,8 +11632,8 @@ ${n}`
                     stringify: d,
                     parse: p
                 },
-                v = /^[A-Za-z][A-Za-z0-9+-.]*:\/\//,
-                y = /^([a-z][a-z0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
+                v = /^[A-Za-zА-Яа-я][A-Za-zА-Яа-я0-9+-.]*:\/\//,
+                y = /^([a-zа-я][a-zа-я0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
                 g = "[\\x09\\x0A\\x0B\\x0C\\x0D\\x20\\xA0\\u1680\\u180E\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200A\\u202F\\u205F\\u3000\\u2028\\u2029\\uFEFF]",
                 b = new RegExp("^" + g + "+");
 
@@ -12857,129 +12857,129 @@ ${n.message}`,
     ye(El, "isPolyfilled", !1);
     let R0 = El;
     const $X = {
-            BACK: "Back",
-            CANCEL: "Cancel",
-            CLOSE: "Close",
-            CONFIRM: "Confirm",
-            CREATE: "Create",
-            DELETE: "Delete",
-            DONE: "Done",
-            EDIT: "Edit",
-            OK: "OK",
-            NEXT: "Next",
-            NO: "No",
-            PLAY: "Play",
-            PUBLISH: "Publish",
-            REMOVE: "Remove",
-            RESET: "Reset",
-            SUBMIT: "Submit",
-            TRY_AGAIN: "Try Again",
-            UNDO: "Undo",
-            YES: "Yes"
+            BACK: "Назад",
+            CANCEL: "Отмена",
+            CLOSE: "Закрыть",
+            CONFIRM: "Подтвердить",
+            CREATE: "Создать",
+            DELETE: "Удалить",
+            DONE: "Готово",
+            EDIT: "Редактировать",
+            OK: "Ок",
+            NEXT: "Следующий",
+            NO: "Нет",
+            PLAY: "ИГРАТЬ",
+            PUBLISH: "Опубликовать",
+            REMOVE: "Удалить",
+            RESET: "Сброс",
+            SUBMIT: "Отправить",
+            TRY_AGAIN: "Попробовать снова",
+            UNDO: "Отменить",
+            YES: "Да"
         },
         LX = {
             UGC: {
-                VISIBILITY_CONTROLLER_OFF: "prompts hidden on players’ devices",
-                VISIBILITY_CONTROLLER_ON: "prompts shown on players’ devices",
-                VISIBILITY_SCREEN_OFF: "prompts hidden on game screen",
-                VISIBILITY_SCREEN_ON: "prompts shown on game screen"
+                VISIBILITY_CONTROLLER_OFF: "подсказки, скрытые на устройствах игроков",
+                VISIBILITY_CONTROLLER_ON: "подсказки, показанные на устройствах игроков",
+                VISIBILITY_SCREEN_OFF: "подсказки, скрытые на игровом экране",
+                VISIBILITY_SCREEN_ON: "подсказки, показанные на игровом экране"
             }
         },
         FX = {
-            DISCONNECTED: "You have been disconnected.",
-            DRAWING_NOTHING: "You have to draw something!",
-            PLAYER_KICKED: "You have been kicked from the game by a moderator.",
-            ROOM_DESTROYED: "Thanks for playing!",
-            ROOM_DISCONNECTED: "Disconnected",
-            TEXT_NAUGHTY: "I’m afraid you can’t write that. Please be respectful of other players.",
-            TEXT_NOTHING: "You can’t enter nothing!",
-            TITLE: "Error"
+            DISCONNECTED: "Вы были отключены.",
+            DRAWING_NOTHING: "Вы должны что-то нарисовать!",
+            PLAYER_KICKED: "Вы были исключены из игры модератором.",
+            ROOM_DESTROYED: "Спасибо за игру!",
+            ROOM_DISCONNECTED: "Отключено",
+            TEXT_NAUGHTY: "Боюсь, что вы не можете этого написать. Пожалуйста, будьте уважительны к другим игрокам.",
+            TEXT_NOTHING: "Вы не можете ничего ввести!",
+            TITLE: "Ошибка"
         },
         UX = "LOADING",
         BX = {
-            JOINED_COUNT: "{count} of {maxPlayers} players joined",
-            PLAYERS_NEEDED: "1 player needed to start | {count} players needed to start",
-            WAITING_FOR_VIP: "Waiting for {name} to start the game",
-            WAITING_FOR_GAMEPAD: "Waiting for the game to start",
-            GAME_STARTING: "Game is starting",
-            BUTTON_START: "Press to Start",
-            BUTTON_CANCEL: "Press to Cancel"
+            JOINED_COUNT: "В игре {count} из {maxPlayers} игроков",
+            PLAYERS_NEEDED: "НУЖЕН ЕЩЁ 1 ИГРОК, ЧТОБЫ НАЧАТЬ | НУЖНО ЕЩЕ {count} ИГРОКОВ, ЧТОБЫ НАЧАТЬ",
+            WAITING_FOR_VIP: "Ждём {name} для начала игры",
+            WAITING_FOR_GAMEPAD: "Ожидайте начала игры",
+            GAME_STARTING: "Игра в процессе",
+            BUTTON_START: "Нажмите для начала игры",
+            BUTTON_CANCEL: "Нажмите чтобы отменить"
         },
         qX = {
-            GALLERY_LINK: "Visit the Gallery",
-            PLAY_AGAIN: "Play again?",
-            BUTTON_SAME_PLAYERS: "Same Players",
-            BUTTON_NEW_PLAYERS: "New Players"
+            GALLERY_LINK: "Посмотреть результаты",
+            PLAY_AGAIN: "Играть снова?",
+            BUTTON_SAME_PLAYERS: "Те же игроки",
+            BUTTON_NEW_PLAYERS: "Новые игроки"
         },
         VX = {
-            AND: "AND",
-            OR: "OR"
+            AND: "И",
+            OR: "ИЛИ"
         },
         GX = {
-            BUTTON_SKIP: "Skip",
-            BUTTON_NEXT: "Next",
-            BUTTON_DONE: "Let’s Go!"
+            BUTTON_SKIP: "Пропустить",
+            BUTTON_NEXT: "Следующее",
+            BUTTON_DONE: "Поехали!"
         },
         jX = {
-            NAME: "AUDIENCE"
+            NAME: "ЗРИТЕЛИ"
         },
         WX = {
             EPISODE_REPORT: "Report Episode",
             EPISODE_UNLOAD: "Unload Episode",
-            EPISODE_VIEW_AUTHOR: "View Author",
-            EPISODES_LOAD: "Load an episode by id:",
-            EPISODES_MENU: "Episodes Menu",
-            EPISODES_SELECT: "Or select an epsiode:",
-            EPISODES_WARNING: "Warning: user generated content is not rated",
+            EPISODE_VIEW_AUTHOR: "Показать автора",
+            EPISODES_LOAD: "Загрузка эпизода по id:",
+            EPISODES_MENU: "Меню эпизодов",
+            EPISODES_SELECT: "Или выберите эпизод:",
+            EPISODES_WARNING: "Предупреждение: пользовательский контент не оценивается",
             INSTRUCTION: {
-                CREATE_TITLE: "first things first, enter a name for the episode that will contain all your prompts and hit create.",
-                LOAD: "create or load?",
-                PUBLISH: "publish your episode",
-                TITLE: "name your episode",
-                TOGGLE_VISIBILITY: "tap to show/hide prompts",
-                WRITE: "write your prompts"
+                CREATE_TITLE: "Прежде всего, введите название эпизода, который будет содержать все ваши подсказки, и нажмите кнопку «Создать».",
+                LOAD: "создать или загрузить?",
+                PUBLISH: "опубликовать свой эпизод",
+                TITLE: "назовите свой эпизод",
+                TOGGLE_VISIBILITY: "Нажмите, чтобы показать/скрыть подсказки",
+                WRITE: "напишите свои подсказки"
             },
             WARNING: {
-                DELETE: "Are you sure you want to delete this episode?",
-                TOS: "By sharing content, you agree to our [tos]Terms of Service[/tos]",
-                TOS_AGREE: "agree and share"
+                DELETE: "Вы уверены, что хотите удалить этот эпизод?",
+                TOS: "Предоставляя контент, вы соглашаетесь с нашими [tos]Условиями предоставления услуг[/tos]",
+                TOS_AGREE: "согласиться и поделиться"
             },
-            BACK_TO_EPISODES: "back to episodes",
-            BACK_TO_MENU: "back to menu",
-            CREATE_NEW_EPISODE: "create a new episode",
-            PREVIOUS_EPISODES: "previous episodes",
-            PROMPT_ADD: "add prompt",
-            PROMPT_PLACEHOLDER: "enter a prompt",
+            BACK_TO_EPISODES: "назад к эпизодам",
+            BACK_TO_MENU: "назад в меню",
+            CREATE_NEW_EPISODE: "создать новый эпизод",
+            PREVIOUS_EPISODES: "предыдущие эпизоды",
+            PROMPT_ADD: "добавить подсказку",
+            PROMPT_PLACEHOLDER: "введите подсказку",
             PROMPTS_COUNT_HIDDEN: "({count} hidden)",
-            TITLE_PLACEHOLDER: "enter a title"
+            TITLE_PLACEHOLDER: "введите название"
         },
         HX = {
             BROADCASTER: {
-                SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
-                WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
+                SUBTEXT: "Вы успешно подключили свою учетную запись к Twitch-расширению Jackbox Audience Kit.",
+                WARNING: "В НАСТРОЙКАХ ИГРЫ ОТКЛЮЧЕНЫ ЗРИТЕЛИ"
             },
             RECONNECTED: {
-                TEXT: "RECONNECTED",
-                SUBTEXT: "Have fun!"
+                TEXT: "ПЕРЕПОДКЛЮЧИТСЯ",
+                SUBTEXT: "Веселитесь!"
             },
             RECONNECTING: {
                 CONTROLLER: {
-                    TEXT: "CONNECTION INTERRUPTED",
-                    SUBTEXT: "Attempting to reconnect ({attempt} of 5)"
+                    TEXT: "СОЕДИНЕНИЕ ПРЕРВАНО",
+                    SUBTEXT: "Попытка повторного подключения ({attempt} из 5)"
                 },
                 GAME: {
-                    TEXT: "GAME CONNECTION INTERRUPTED",
-                    SUBTEXT: "Please wait while we attempt to reconnect"
+                    TEXT: "ПРЕРВАНО СОЕДИНЕНИЕ С ИГРОЙ",
+                    SUBTEXT: "Пожалуйста, подождите, пока мы пытаемся восстановить соединение"
                 }
             },
             PAUSED: {
-                TEXT: "THE GAME IS PAUSED",
-                SUBTEXT: "Anything you submit will still be sent to the game."
+                TEXT: "ИГРА ПРИОСТАНОВЛЕНА",
+                SUBTEXT: "Все, что вы напишете, все равно будет отправлено в игру."
             }
         },
         YX = {
-            SHARE: "Share",
-            COPY_TO_CLIPBOARD: "Copy to clipboard"
+            SHARE: "Поделиться",
+            COPY_TO_CLIPBOARD: "Скопировать"
         },
         zX = {
             ACTION: $X,
@@ -13942,12 +13942,12 @@ ${n.message}`,
                 LN = "\\u20d0-\\u20ff",
                 o5 = DN + $N + LN,
                 a5 = "\\u2700-\\u27bf",
-                c5 = "a-z\\xdf-\\xf6\\xf8-\\xff",
+                c5 = "a-z-а-я\\xdf-\\xf6\\xf8-\\xff",
                 FN = "\\xac\\xb1\\xd7\\xf7",
                 UN = "\\x00-\\x2f\\x3a-\\x40\\x5b-\\x60\\x7b-\\xbf",
                 BN = "\\u2000-\\u206f",
                 qN = " \\t\\x0b\\f\\xa0\\ufeff\\n\\r\\u2028\\u2029\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u202f\\u205f\\u3000",
-                l5 = "A-Z\\xc0-\\xd6\\xd8-\\xde",
+                l5 = "A-Z-А-Я\\xc0-\\xd6\\xd8-\\xde",
                 u5 = "\\ufe0e\\ufe0f",
                 h5 = FN + UN + BN + qN,
                 qg = "['’]",
@@ -13972,8 +13972,8 @@ ${n.message}`,
                 E5 = jN + "?",
                 S5 = "[" + u5 + "]?",
                 HN = "(?:" + _5 + "(?:" + [g5, Gg, jg].join("|") + ")" + S5 + E5 + ")*",
-                YN = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z_])",
-                zN = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])",
+                YN = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z-А-Я_])",
+                zN = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z-а-я_])",
                 T5 = S5 + E5 + HN,
                 KN = "(?:" + [GN, Gg, jg].join("|") + ")" + T5,
                 ZN = "(?:" + [g5 + dd + "?", dd, Gg, jg, VN].join("|") + ")",
@@ -13982,7 +13982,7 @@ ${n.message}`,
                 Wg = RegExp(Vg + "(?=" + Vg + ")|" + ZN + T5, "g"),
                 JN = RegExp([Vc + "?" + p5 + "+" + v5 + "(?=" + [f5, Vc, "$"].join("|") + ")", WN + "+" + b5 + "(?=" + [f5, Vc + y5, "$"].join("|") + ")", Vc + "?" + y5 + "+" + v5, Vc + "+" + b5, zN, YN, d5, KN].join("|"), "g"),
                 ex = RegExp("[" + _5 + fd + o5 + u5 + "]"),
-                tx = /[a-z][A-Z]|[A-Z]{2}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/,
+                tx = /[a-z][а-я][A-Z]|[A-Z][А-Я][А-Я]{2}[a-z][а-я]|[0-9][a-zA-Z]|[a-zA-Z][А-Яа-я][А-Яа-я][0-9]|[^a-zA-ZА-Яа-я0-9 ]/,
                 nx = ["Array", "Buffer", "DataView", "Date", "Error", "Float32Array", "Float64Array", "Function", "Int8Array", "Int16Array", "Int32Array", "Map", "Math", "Object", "Promise", "RegExp", "Set", "String", "Symbol", "TypeError", "Uint8Array", "Uint8ClampedArray", "Uint16Array", "Uint32Array", "WeakMap", "_", "clearTimeout", "isFinite", "parseInt", "setTimeout"],
                 rx = -1,
                 en = {};
@@ -20205,7 +20205,7 @@ function print() { __p += __j.call(arguments, '') }
                     return new Do.Token(Do.Token.Type.startTag, n, r, e[0])
                 }
                 return new Do.Token(Do.Token.Type.endTag, e[1].substr(1, e[1].length - 1))
-            }, t.nameChars = "[a-zA-Z0-9\\.\\-_:;/]", t.valueChars = "[a-zA-Z0-9\\.\\-_:;#/\\s]", t
+            }, t.nameChars = "[a-zA-ZА-Яа-я0-9\\.\\-_:;/]", t.valueChars = "[a-zA-ZА-Яа-я0-9\\.\\-_:;#/\\s]", t
         }();
     ag.Tokenizer = Coe;
     (function(t) {
@@ -27786,107 +27786,107 @@ ${e}`
             LOGO: "the Dodo Re Mi logo"
         },
         Fge = {
-            CHANGE_AVATAR: "change avatar",
-            SONG_DOWN: "scroll to the next song {songName}",
-            SONG_UP: "scroll to the previous song {songName}",
-            SELECT_SONG: "select song {songName}"
+            CHANGE_AVATAR: "изменить аватар",
+            SONG_DOWN: "перейти к следующей песне {songName}",
+            SONG_UP: "перейти к предыдущей песне {songName}",
+            SELECT_SONG: "выбрать песню {songName}"
         },
         Uge = {
-            BASS: "Bass",
-            MELODY: "Melody",
-            COUNTER: "Counter",
-            DRUMS: "Drums",
-            PERCUSSION: "Percussion",
-            HARMONY: "Harmony",
-            SIGNATURE: "Signature"
+            BASS: "Бас",
+            MELODY: "Мелодия",
+            COUNTER: "Счетчик",
+            DRUMS: "Ударные",
+            PERCUSSION: "Перкуссия",
+            HARMONY: "Гармония",
+            SIGNATURE: "Размер"
         },
         Bge = {
-            GET_READY: "Get Ready",
-            TAP: "tap",
-            TAP_ALONG: "and then tap along",
-            TAP_HERE: "TAP[break][/break]ZONE[info](OR PRESS SPACEBAR)[/info]",
-            SYNCED: "synced",
-            SYNCING: "Syncing",
-            WAIT: "Wait for the count down"
+            GET_READY: "Приготовтесь",
+            TAP: "жми",
+            TAP_ALONG: "и затем нажимайте в ритм",
+            TAP_HERE: "ЖМИ[break][/break]СЮДА[info](ИЛИ НАЖИМАЙ НА ПРОБЕЛ)[/info]",
+            SYNCED: "синхронизировано",
+            SYNCING: "Синхронизация",
+            WAIT: "Дождитесь обратного отсчета"
         },
         qge = {
-            SHARE: "Share",
-            SILENT_PHONE: "Don't forget to put your phone back on silent!"
+            SHARE: "Поделиться",
+            SILENT_PHONE: "Не забудьте поставить телефон на беззвучный режим!"
         },
         Vge = {
-            VERY_EASY: "Super Easy",
-            EASY: "Easy",
-            MEDIUM: "Medium",
-            HARD: "Hard",
-            VERY_HARD: "Super Hard"
+            VERY_EASY: "Очень легко",
+            EASY: "Легко",
+            MEDIUM: "Средне",
+            HARD: "Сложно",
+            VERY_HARD: "Очень сложно"
         },
         Gge = {
-            DOWNLOAD: "DOWNLOAD MP3"
+            DOWNLOAD: "СКАЧАТЬ MP3"
         },
         jge = {
-            CONTINUOUS: "Tap and hold notes when they enter the zone below",
-            DISCRETE: "Tap notes when they fill the circles below",
-            PAUSED: "Game Paused",
-            IN_PROGRESS: "Song In Progress",
-            PROCESSING: "The birds are preparing to play back your performance"
+            CONTINUOUS: "Нажмите и удерживайте ноты, когда они попадают в зону ниже",
+            DISCRETE: "Нажмите на ноты, когда они заполнят круги внизу",
+            PAUSED: "Игра приостановлена",
+            IN_PROGRESS: "Песня проигрывается",
+            PROCESSING: "Птицы готовятся отыграть ваше выступление"
         },
         Wge = {
-            BACK_TO_MENU: "Back to Game Menu",
-            BEST_SCORE: "Best Score",
-            CANCEL: "Cancel",
-            CHANGE_HOST: "Change[break][/break]Host?",
-            CHOOSE_HOST: "Choose New Host",
-            CHOOSE_INSTRUMENT: "Choose an Instrument",
-            CHOOSE_SONG: "Choose a Song",
-            COMPLETED_PARTS: "Parts Survived",
-            CUSTOMIZE: "Customize?",
-            DIFFICULTY: "Difficulty",
-            END_SESSION: "End Session",
-            LANES: "Lanes",
-            LOADING: "Loading",
-            LOCKED: "Locked",
-            NEVERMIND: "Nevermind",
-            NEW_SONG: "New Song",
-            RETRY_SONG: "Retry Song",
-            RESET: "Reset",
-            SELECT_SONG: "Select Song",
+            BACK_TO_MENU: "Назад в Главное Меню",
+            BEST_SCORE: "Лучший счёт",
+            CANCEL: "Отмена",
+            CHANGE_HOST: "Изменить[break][/break]ведущего?",
+            CHOOSE_HOST: "Выберите нового ведущего",
+            CHOOSE_INSTRUMENT: "Выберите инструмент",
+            CHOOSE_SONG: "Выберите песню",
+            COMPLETED_PARTS: "Муз. инструменты",
+            CUSTOMIZE: "Настроить?",
+            DIFFICULTY: "Сложность",
+            END_SESSION: "Окончить сессию",
+            LANES: "Полосы",
+            LOADING: "Загрузка",
+            LOCKED: "Заблокировано",
+            NEVERMIND: "Неважно",
+            NEW_SONG: "Новая Песня",
+            RETRY_SONG: "Повторить Песню",
+            RESET: "Сбросить",
+            SELECT_SONG: "Выберите песню",
             SONG_PART: "Song Part",
-            SPACEBAR: "SPACE",
-            START_SONG: "Play Song",
-            TEST_IT: "Test It Out",
-            THANKS: "Thanks for playing",
-            UNLOCKED: "Unlocked Instruments",
-            VOTE_SONG: "Vote for a Song",
-            WAITING_FOR: "Waiting for {vipName}",
-            WAITING_FOR_SONG: "Waiting for {vipName} to select song",
-            WHAT_NEXT: "What's Next?"
+            SPACEBAR: "ПРОБЕЛ",
+            START_SONG: "Играть песню",
+            TEST_IT: "Протестировать",
+            THANKS: "Спасибо за игру",
+            UNLOCKED: "Разблокированные инструменты",
+            VOTE_SONG: "Проголосуйте за песню",
+            WAITING_FOR: "Ждём {vipName}",
+            WAITING_FOR_SONG: "Ждём, когда {vipName} выберет песню",
+            WHAT_NEXT: "Что дальше?"
         },
         Hge = {
-            SIT_BACK: "Sit back and enjoy",
-            LOOK_UP: "Performance on the main screen"
+            SIT_BACK: "Откиньтесь на спинку кресла и наслаждайтесь",
+            LOOK_UP: "Посмотри на экран"
         },
         Yge = {
-            PERFECT: "Perfect",
-            GREAT: "Great",
-            OKAY: "Okay",
-            MISS: "Miss"
+            PERFECT: "Идеально",
+            GREAT: "Хорошо",
+            OKAY: "Сойдёт",
+            MISS: "Мимо"
         },
         zge = {
-            AUDIENCE: "Audience",
-            SURVIVED: "Survived",
-            EATEN: "Eaten"
+            AUDIENCE: "Зрители",
+            SURVIVED: "Выжили",
+            EATEN: "Съедены"
         },
         Kge = {
-            AUDIO_CHECK: "Audio Check",
-            CHECK_SETTINGS: "Check these settings on your device",
-            CONFIRM: "Sounds good",
-            NOT_HEARING: "Not hearing anything?",
-            OFF: "OFF",
-            POWER_SAVER: "Power Saver Mode",
-            SILENT: "Silent Mode",
-            TEST: "Play test audio",
-            UP: "UP",
-            VOLUME: "Volume"
+            AUDIO_CHECK: "Проверка звука",
+            CHECK_SETTINGS: "Проверьте эти настройки на вашем устройстве",
+            CONFIRM: "Хорошо звучит",
+            NOT_HEARING: "Ничего не слышите?",
+            OFF: "Выключить",
+            POWER_SAVER: "Режим энергосбережения",
+            SILENT: "Беззвучный режим",
+            TEST: "Протестировать звук",
+            UP: "ГРОМЧЕ",
+            VOLUME: "Громкость"
         },
         Zge = {
             ALT: Lge,
@@ -46437,7 +46437,7 @@ ${e}`
         os = Array.isArray,
         Lv = /(?:-?\.?\d|\.)+/gi,
         fk = /[-+=.]*\d+[.e\-+]*\d*[e\-+]*\d*/g,
-        yl = /[-+=.]*\d+[.e-]*\d*[a-z%]*/g,
+        yl = /[-+=.]*\d+[.e-]*\d*[a-zа-я%]*/g,
         Zy = /[-+=.]*\d+\.?\d*(?:e-|e\+)?\d*/gi,
         dk = /[+-]=-?[.\d]+/,
         pk = /[^,'"\[\]\s]+/gi,
@@ -47972,7 +47972,7 @@ ${e}`
         Bl = Math.PI / 180,
         al = Math.atan2,
         o8 = 1e8,
-        Yk = /([A-Z])/g,
+        Yk = /([A-Z-А-Я])/g,
         H7e = /(?:left|right|width|margin|padding|x)/i,
         Y7e = /[\s,\(]\S/,
         Ko = {
@@ -48404,7 +48404,7 @@ ${e}`
     var u9e = /[achlmqstvz]|(-?\d*\.?\d*(?:e[\-+]?\d+)?)[0-9]/ig,
         h9e = /(?:(-)?\d*\.?\d*(?:e[\-+]?\d+)?)[0-9]/ig,
         f9e = /[\+\-]?\d*\.?\d+e[\+\-]?\d+/ig,
-        d9e = /(^[#\.][a-z]|[a-y][a-z])/i,
+        d9e = /(^[#\.][a-z-а-я]|[a-y][a-z-а-я])/i,
         p9e = Math.PI / 180,
         Np = Math.sin,
         xp = Math.cos,
@@ -48579,7 +48579,7 @@ ${e}`
         E9e = Fg * .7,
         cN = 1e20,
         Nf = /[-+=\.]*\d+[\.e\-\+]*\d*[e\-\+]*\d*/gi,
-        S9e = /(^[#\.][a-z]|[a-y][a-z])/i,
+        S9e = /(^[#\.][a-z-а-я]|[a-y][a-z-а-я])/i,
         T9e = /[achlmqstvz]/i,
         Xo = function(e) {
             return console && console.warn(e)
