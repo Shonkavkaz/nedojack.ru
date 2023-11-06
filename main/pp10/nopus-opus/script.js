@@ -27850,7 +27850,7 @@ ${e}`
             RETRY_SONG: "Повторить Песню",
             RESET: "Сбросить",
             SELECT_SONG: "Выберите песню",
-            SONG_PART: "Song Part",
+            SONG_PART: "Часть Песни",
             SPACEBAR: "ПРОБЕЛ",
             START_SONG: "Играть песню",
             TEST_IT: "Протестировать",
