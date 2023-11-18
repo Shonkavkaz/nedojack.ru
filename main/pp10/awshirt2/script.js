@@ -5304,7 +5304,7 @@ var mhe = KI((s5e, m7) => {
     }
 
     function eu(t) {
-        return t === void 0 && (t = ""), t.replace(/-[a-z-а-я]/g, e => e.toUpperCase().replace("-", ""))
+        return t === void 0 && (t = ""), t.replace(/-[a-z]/g, e => e.toUpperCase().replace("-", ""))
     }
 
     function W$(t) {
@@ -5458,7 +5458,7 @@ var mhe = KI((s5e, m7) => {
             if (this.rendered) return;
             this.calcSlideSlots();
             let e = this.cssStyles();
-            this.slideSlots > 0 && (e = e.replace(/::slotted\(([a-z-а-я-0-9.]*)\)/g, "$1")), e.length && o4(this.shadowRoot, e), this.cssLinks().forEach(n => {
+            this.slideSlots > 0 && (e = e.replace(/::slotted\(([a-z-0-9.]*)\)/g, "$1")), e.length && o4(this.shadowRoot, e), this.cssLinks().forEach(n => {
                 if (this.shadowRoot.querySelector(`link[href="${n}"]`)) return;
                 const s = document.createElement("link");
                 s.rel = "stylesheet", s.href = n, this.shadowRoot.appendChild(s)
@@ -5547,7 +5547,7 @@ var mhe = KI((s5e, m7) => {
             this.initialized && (r === "true" && n === null && (n = !1), this.updateSwiperOnPropChange(e, n))
         }
         static get observedAttributes() {
-            return Hu.filter(r => r.includes("_")).map(r => r.replace(/[A-Z-А-Я]/g, n => `-${n}`).replace("_", "").toLowerCase())
+            return Hu.filter(r => r.includes("_")).map(r => r.replace(/[A-Z]/g, n => `-${n}`).replace("_", "").toLowerCase())
         }
     }
     Hu.forEach(t => {
@@ -5598,7 +5598,7 @@ var mhe = KI((s5e, m7) => {
         Ta = [],
         Pn = () => {},
         J$ = () => !1,
-        Z$ = /^on[^a-z-а-я]/,
+        Z$ = /^on[^a-z]/,
         Vu = t => Z$.test(t),
         Th = t => t.startsWith("onUpdate:"),
         er = Object.assign,
@@ -5629,7 +5629,7 @@ var mhe = KI((s5e, m7) => {
         },
         tA = /-(\w)/g,
         Zn = Ku(t => t.replace(tA, (e, r) => r ? r.toUpperCase() : "")),
-        rA = /\B([A-Z-А-Я])/g,
+        rA = /\B([A-Z])/g,
         Vs = Ku(t => t.replace(rA, "-$1").toLowerCase()),
         Xu = Ku(t => t.charAt(0).toUpperCase() + t.slice(1)),
         op = Ku(t => t ? `on${Xu(t)}` : ""),
@@ -8818,7 +8818,7 @@ var mhe = KI((s5e, m7) => {
             }, e.map(n => i => !i._stopped && n && n(i))
         } else return e
     }
-    const k0 = /^on[a-z-а-я]/,
+    const k0 = /^on[a-z]/,
         pR = (t, e, r, n, i = !1, s, o, c, u) => {
             e === "class" ? tR(t, n, i) : e === "style" ? rR(t, r, n) : Vu(e) ? Th(e) || oR(t, e, r, n, o) : (e[0] === "." ? (e = e.slice(1), !0) : e[0] === "^" ? (e = e.slice(1), !1) : hR(t, e, n, i)) ? sR(t, e, n, s, o, c, u) : (e === "true-value" ? t._trueValue = n : e === "false-value" && (t._falseValue = n), iR(t, e, n, i))
         };
@@ -10412,8 +10412,8 @@ var mhe = KI((s5e, m7) => {
             var e = Math.random().toString(36).substring(2, 10) + Math.random().toString(36).substring(2, 10);
             return t ? e.substring(0, t) : e
         },
-        GR = /[a-zа-я0-9][a-zа-я0-9-]*\.[a-zа-я]+$/i,
-        qR = /[a-zа-я0-9][a-zа-я0-9-]+\.[a-zа-я.]{2,6}$/i,
+        GR = /[a-z0-9][a-z0-9-]*\.[a-z]+$/i,
+        qR = /[a-z0-9][a-z0-9-]+\.[a-z.]{2,6}$/i,
         X0 = function(t) {
             var e = qR,
                 r = t.split("."),
@@ -13477,10 +13477,10 @@ var mhe = KI((s5e, m7) => {
             return this.htmlEscape(r).trim()
         }
         static sanitizeName(e) {
-            return e.replace(/[^A-ZА-Я0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026\u0401-\u0451!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
+            return e.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
         }
         static sanitizeInput(e) {
-            return e = e.replace("…", "..."), e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF\u0401-\u0451’]/gi, "")
+            return e = e.replace("…", "..."), e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
         }
         static sanitizeEmoji(e) {
             return e.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
@@ -13814,7 +13814,7 @@ var mhe = KI((s5e, m7) => {
                     };
 
                 function g(N) {
-                    if (typeof N != "string" && (N = String(N)), /[^a-zа-я0-9\-#$%&'*+.^_`|~!]/i.test(N) || N === "") throw new TypeError('Invalid character in header field name: "' + N + '"');
+                    if (typeof N != "string" && (N = String(N)), /[^a-z0-9\-#$%&'*+.^_`|~!]/i.test(N) || N === "") throw new TypeError('Invalid character in header field name: "' + N + '"');
                     return N.toLowerCase()
                 }
 
@@ -17618,8 +17618,8 @@ ${r}`
                     stringify: h,
                     parse: g
                 },
-                y = /^[A-Za-zА-Яа-я][A-Za-zА-Яа-я0-9+-.]*:\/\//,
-                _ = /^([a-zа-я][a-zа-я0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
+                y = /^[A-Za-z][A-Za-z0-9+-.]*:\/\//,
+                _ = /^([a-z][a-z0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
                 E = "[\\x09\\x0A\\x0B\\x0C\\x0D\\x20\\xA0\\u1680\\u180E\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200A\\u202F\\u205F\\u3000\\u2028\\u2029\\uFEFF]",
                 b = new RegExp("^" + E + "+");
 
@@ -18858,10 +18858,10 @@ ${r.message}`,
             return String(e).replace(r, "")
         }
         static input(e) {
-            return e.replace("…", "...").replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF\u0401-\u0451’]/gi, "")
+            return e.replace("…", "...").replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
         }
         static username(e) {
-            return e.replace(/[^A-ZА-Я0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026\u0401-\u0451!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
+            return e.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
         }
         static emoji(e) {
             return e.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
@@ -19067,129 +19067,129 @@ ${r.message}`,
         }
     }
     const Zq = {
-            BACK: "Назад",
-            CANCEL: "Отмена",
-            CLOSE: "Закрыть",
-            CONFIRM: "Подтвердить",
-            CREATE: "Создать",
-            DELETE: "Удалить",
-            DONE: "Готово",
-            EDIT: "Редактировать",
-            OK: "Ок",
-            NEXT: "Следующий",
-            NO: "Нет",
-            PLAY: "Играть",
-            PUBLISH: "Опубликовать",
-            REMOVE: "Удалить",
-            RESET: "Сброс",
-            SUBMIT: "Отправить",
-            TRY_AGAIN: "Попробовать снова",
-            UNDO: "Отменить",
-            YES: "Да"
+            BACK: "Back",
+            CANCEL: "Cancel",
+            CLOSE: "Close",
+            CONFIRM: "Confirm",
+            CREATE: "Create",
+            DELETE: "Delete",
+            DONE: "Done",
+            EDIT: "Edit",
+            OK: "OK",
+            NEXT: "Next",
+            NO: "No",
+            PLAY: "Play",
+            PUBLISH: "Publish",
+            REMOVE: "Remove",
+            RESET: "Reset",
+            SUBMIT: "Submit",
+            TRY_AGAIN: "Try Again",
+            UNDO: "Undo",
+            YES: "Yes"
         },
         Qq = {
             UGC: {
-                VISIBILITY_CONTROLLER_OFF: "подсказки, скрытые на устройствах игроков",
-                VISIBILITY_CONTROLLER_ON: "подсказки, показанные на устройствах игроков",
-                VISIBILITY_SCREEN_OFF: "подсказки, скрытые на игровом экране",
-                VISIBILITY_SCREEN_ON: "подсказки, показанные на игровом экране"
+                VISIBILITY_CONTROLLER_OFF: "prompts hidden on players’ devices",
+                VISIBILITY_CONTROLLER_ON: "prompts shown on players’ devices",
+                VISIBILITY_SCREEN_OFF: "prompts hidden on game screen",
+                VISIBILITY_SCREEN_ON: "prompts shown on game screen"
             }
         },
         ej = {
-            DISCONNECTED: "Вы были отключены.",
-            DRAWING_NOTHING: "Вы должны что-то нарисовать!",
-            PLAYER_KICKED: "Вы были исключены из игры модератором.",
-            ROOM_DESTROYED: "Спасибо за игру!",
-            ROOM_DISCONNECTED: "Отключено",
-            TEXT_NAUGHTY: "Боюсь, что вы не можете этого написать. Пожалуйста, будьте уважительны к другим игрокам.",
-            TEXT_NOTHING: "Вы не можете ничего ввести!",
-            TITLE: "Ошибка"
+            DISCONNECTED: "You have been disconnected.",
+            DRAWING_NOTHING: "You have to draw something!",
+            PLAYER_KICKED: "You have been kicked from the game by a moderator.",
+            ROOM_DESTROYED: "Thanks for playing!",
+            ROOM_DISCONNECTED: "Disconnected",
+            TEXT_NAUGHTY: "I’m afraid you can’t write that. Please be respectful of other players.",
+            TEXT_NOTHING: "You can’t enter nothing!",
+            TITLE: "Error"
         },
         tj = "LOADING",
         rj = {
-            JOINED_COUNT: "В игре {count} из {maxPlayers} игроков",
-            PLAYERS_NEEDED: "НУЖЕН ЕЩЁ 1 ИГРОК, ЧТОБЫ НАЧАТЬ | НУЖНО ЕЩЕ {count} ИГРОКОВ, ЧТОБЫ НАЧАТЬ",
-            WAITING_FOR_VIP: "Ждём {name} для начала игры",
-            WAITING_FOR_GAMEPAD: "Ожидайте начала игры",
-            GAME_STARTING: "Игра в процессе",
-            BUTTON_START: "Нажмите для начала игры",
-            BUTTON_CANCEL: "Нажмите чтобы отменить"
+            JOINED_COUNT: "{count} of {maxPlayers} players joined",
+            PLAYERS_NEEDED: "1 player needed to start | {count} players needed to start",
+            WAITING_FOR_VIP: "Waiting for {name} to start the game",
+            WAITING_FOR_GAMEPAD: "Waiting for the game to start",
+            GAME_STARTING: "Game is starting",
+            BUTTON_START: "Press to Start",
+            BUTTON_CANCEL: "Press to Cancel"
         },
         nj = {
-            GALLERY_LINK: "Посмотреть результаты",
-            PLAY_AGAIN: "Играть снова?",
-            BUTTON_SAME_PLAYERS: "Те же игроки",
-            BUTTON_NEW_PLAYERS: "Новые игроки"
+            GALLERY_LINK: "Visit the Gallery",
+            PLAY_AGAIN: "Play again?",
+            BUTTON_SAME_PLAYERS: "Same Players",
+            BUTTON_NEW_PLAYERS: "New Players"
         },
         ij = {
-            AND: "И",
-            OR: "ИЛИ"
+            AND: "AND",
+            OR: "OR"
         },
         sj = {
-            BUTTON_SKIP: "Пропустить",
-            BUTTON_NEXT: "Следующее",
-            BUTTON_DONE: "Поехали!"
+            BUTTON_SKIP: "Skip",
+            BUTTON_NEXT: "Next",
+            BUTTON_DONE: "Let’s Go!"
         },
         aj = {
-            NAME: "ЗРИТЕЛИ"
+            NAME: "AUDIENCE"
         },
         oj = {
             EPISODE_REPORT: "Report Episode",
             EPISODE_UNLOAD: "Unload Episode",
-            EPISODE_VIEW_AUTHOR: "Показать автора",
-            EPISODES_LOAD: "Загрузка эпизода по id:",
-            EPISODES_MENU: "Меню эпизодов",
-            EPISODES_SELECT: "Или выберите эпизод:",
-            EPISODES_WARNING: "Предупреждение: пользовательский контент не оценивается",
+            EPISODE_VIEW_AUTHOR: "View Author",
+            EPISODES_LOAD: "Load an episode by id:",
+            EPISODES_MENU: "Episodes Menu",
+            EPISODES_SELECT: "Or select an epsiode:",
+            EPISODES_WARNING: "Warning: user generated content is not rated",
             INSTRUCTION: {
-                CREATE_TITLE: "Прежде всего, введите название эпизода, который будет содержать все ваши подсказки, и нажмите кнопку «Создать».",
-                LOAD: "создать или загрузить?",
-                PUBLISH: "опубликовать свой эпизод",
-                TITLE: "назовите свой эпизод",
-                TOGGLE_VISIBILITY: "Нажмите, чтобы показать/скрыть подсказки",
-                WRITE: "напишите свои подсказки"
+                CREATE_TITLE: "first things first, enter a name for the episode that will contain all your prompts and hit create.",
+                LOAD: "create or load?",
+                PUBLISH: "publish your episode",
+                TITLE: "name your episode",
+                TOGGLE_VISIBILITY: "tap to show/hide prompts",
+                WRITE: "write your prompts"
             },
             WARNING: {
-                DELETE: "Вы уверены, что хотите удалить этот эпизод?",
-                TOS: "Предоставляя контент, вы соглашаетесь с нашими [tos]Условиями предоставления услуг[/tos]",
-                TOS_AGREE: "согласиться и поделиться"
+                DELETE: "Are you sure you want to delete this episode?",
+                TOS: "By sharing content, you agree to our [tos]Terms of Service[/tos]",
+                TOS_AGREE: "agree and share"
             },
-            BACK_TO_EPISODES: "назад к эпизодам",
-            BACK_TO_MENU: "назад в меню",
-            CREATE_NEW_EPISODE: "создать новый эпизод",
-            PREVIOUS_EPISODES: "предыдущие эпизоды",
-            PROMPT_ADD: "добавить подсказку",
-            PROMPT_PLACEHOLDER: "введите подсказку",
+            BACK_TO_EPISODES: "back to episodes",
+            BACK_TO_MENU: "back to menu",
+            CREATE_NEW_EPISODE: "create a new episode",
+            PREVIOUS_EPISODES: "previous episodes",
+            PROMPT_ADD: "add prompt",
+            PROMPT_PLACEHOLDER: "enter a prompt",
             PROMPTS_COUNT_HIDDEN: "({count} hidden)",
-            TITLE_PLACEHOLDER: "введите название"
+            TITLE_PLACEHOLDER: "enter a title"
         },
         lj = {
             BROADCASTER: {
-                SUBTEXT: "Вы успешно подключили свою учетную запись к Twitch-расширению Jackbox Audience Kit.",
-                WARNING: "В НАСТРОЙКАХ ИГРЫ ОТКЛЮЧЕНЫ ЗРИТЕЛИ"
+                SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
+                WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
             },
             RECONNECTED: {
-                TEXT: "ПЕРЕПОДКЛЮЧИТСЯ",
-                SUBTEXT: "Веселитесь!"
+                TEXT: "RECONNECTED",
+                SUBTEXT: "Have fun!"
             },
             RECONNECTING: {
                 CONTROLLER: {
-                    TEXT: "СОЕДИНЕНИЕ ПРЕРВАНО",
-                    SUBTEXT: "Попытка повторного подключения ({attempt} из 5)"
+                    TEXT: "CONNECTION INTERRUPTED",
+                    SUBTEXT: "Attempting to reconnect ({attempt} of 5)"
                 },
                 GAME: {
-                    TEXT: "ПРЕРВАНО СОЕДИНЕНИЕ С ИГРОЙ",
-                    SUBTEXT: "Пожалуйста, подождите, пока мы пытаемся восстановить соединение"
+                    TEXT: "GAME CONNECTION INTERRUPTED",
+                    SUBTEXT: "Please wait while we attempt to reconnect"
                 }
             },
             PAUSED: {
-                TEXT: "ИГРА ПРИОСТАНОВЛЕНА",
-                SUBTEXT: "Все, что вы напишете, все равно будет отправлено в игру."
+                TEXT: "THE GAME IS PAUSED",
+                SUBTEXT: "Anything you submit will still be sent to the game."
             }
         },
         cj = {
-            SHARE: "Поделиться",
-            COPY_TO_CLIPBOARD: "Скопировать"
+            SHARE: "Share",
+            COPY_TO_CLIPBOARD: "Copy to clipboard"
         },
         uj = {
             ACTION: Zq,
@@ -20152,12 +20152,12 @@ ${r.message}`,
                 q7 = "\\u20d0-\\u20ff",
                 I2 = F7 + G7 + q7,
                 C2 = "\\u2700-\\u27bf",
-                $2 = "a-z-а-я\\xdf-\\xf6\\xf8-\\xff",
+                $2 = "a-z\\xdf-\\xf6\\xf8-\\xff",
                 j7 = "\\xac\\xb1\\xd7\\xf7",
                 z7 = "\\x00-\\x2f\\x3a-\\x40\\x5b-\\x60\\x7b-\\xbf",
                 W7 = "\\u2000-\\u206f",
                 H7 = " \\t\\x0b\\f\\xa0\\ufeff\\n\\r\\u2028\\u2029\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u202f\\u205f\\u3000",
-                A2 = "A-Z-А-Я\\xc0-\\xd6\\xd8-\\xde",
+                A2 = "A-Z\\xc0-\\xd6\\xd8-\\xde",
                 x2 = "\\ufe0e\\ufe0f",
                 R2 = j7 + z7 + W7 + H7,
                 Wf = "['’]",
@@ -20182,8 +20182,8 @@ ${r.message}`,
                 G2 = K7 + "?",
                 q2 = "[" + x2 + "]?",
                 J7 = "(?:" + D2 + "(?:" + [M2, Vf, Yf].join("|") + ")" + q2 + G2 + ")*",
-                Z7 = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z-А-Я_])",
-                Q7 = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z-а-я_])",
+                Z7 = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z_])",
+                Q7 = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])",
                 j2 = q2 + G2 + J7,
                 ew = "(?:" + [Y7, Vf, Yf].join("|") + ")" + j2,
                 tw = "(?:" + [M2 + Fl + "?", Fl, Vf, Yf, V7].join("|") + ")",
@@ -20192,7 +20192,7 @@ ${r.message}`,
                 Kf = RegExp(Hf + "(?=" + Hf + ")|" + tw + j2, "g"),
                 iw = RegExp([Js + "?" + P2 + "+" + B2 + "(?=" + [N2, Js, "$"].join("|") + ")", X7 + "+" + F2 + "(?=" + [N2, Js + U2, "$"].join("|") + ")", Js + "?" + U2 + "+" + B2, Js + "+" + F2, Q7, Z7, L2, ew].join("|"), "g"),
                 sw = RegExp("[" + D2 + Bl + I2 + x2 + "]"),
-                aw = /[a-z][A-Z]|[A-Z][А-Я][а-я]{2}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][А-Яа-я][А-Яа-я][0-9]|[^a-zA-ZА-Яа-я0-9 ]/,
+                aw = /[a-z][A-Z]|[A-Z]{2}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/,
                 ow = ["Array", "Buffer", "DataView", "Date", "Error", "Float32Array", "Float64Array", "Function", "Int8Array", "Int16Array", "Int32Array", "Map", "Math", "Object", "Promise", "RegExp", "Set", "String", "Symbol", "TypeError", "Uint8Array", "Uint8ClampedArray", "Uint16Array", "Uint32Array", "WeakMap", "_", "clearTimeout", "isFinite", "parseInt", "setTimeout"],
                 lw = -1,
                 Lt = {};
@@ -26826,7 +26826,7 @@ function print() { __p += __j.call(arguments, '') }
                     return new ki.Token(ki.Token.Type.startTag, r, n, e[0])
                 }
                 return new ki.Token(ki.Token.Type.endTag, e[1].substr(1, e[1].length - 1))
-            }, t.nameChars = "[a-zA-ZА-Яа-я0-9\\.\\-_:;/]", t.valueChars = "[a-zA-ZА-Яа-я0-9\\.\\-_:;#/\\s]", t
+            }, t.nameChars = "[a-zA-Z0-9\\.\\-_:;/]", t.valueChars = "[a-zA-Z0-9\\.\\-_:;#/\\s]", t
         }();
     Nf.Tokenizer = lZ;
     (function(t) {
@@ -34316,77 +34316,77 @@ ${e}`
             })
         },
         gce = {
-            LOGO: "логотип Футбол K.O. 2",
-            PLAYER_DRAWING: "рисунок, созданный игроком",
+            LOGO: "the Tee K.O. 2 logo",
+            PLAYER_DRAWING: "player-created drawing",
             VS: "vs"
         },
         mce = {
             APPAREL: {
-                hoodie: "Использовать худи",
-                tank: "Использовать майку",
-                tee: "Использовать футболку"
+                hoodie: "Use a hoodie",
+                tank: "Use a tank top",
+                tee: "Use a t-shirt"
             },
             BRUSH: {
-                eraser: "ластик",
-                highlighter: "маркер",
-                pen: "ручка"
+                eraser: "eraser",
+                highlighter: "highlighter",
+                pen: "pen"
             },
             COLOR: {
-                BACKGROUND: "Цвет фона {color}",
-                BRUSH: "Цвет кисти {color}"
+                BACKGROUND: "Background color {color}",
+                BRUSH: "Brush color {color}"
             },
             FONT: {
-                bold: "Используйте жирный шрифт",
-                classic: "Используйте шрифт Футбол K.O. 1",
-                childish: "Используйте детский шрифт",
-                handwritten: "Используйте прописной шрифт"
+                bold: "Use bold font",
+                classic: "Use Tee K.O. 1 font",
+                childish: "Use childish font",
+                handwritten: "Use cursive font"
             }
         },
-        vce = "Предложения",
+        vce = "Suggestions",
         yce = {
-            TITLE: "Игровой совет",
-            CONTENT: ["Для настройки “Быстрое рисование” требуется всего 2 рисунка в первом раунде.", "Хотите внести существенные изменения в рисунок? Воспользуйтесь ластиком", "Маркер выделяет большие участки цвета. Ручка создает более тонкие линии, которые всегда видны поверх маркера.", "Ничьи зачастую присуждаются определённому типу одежды. Попробуйте использовать футболки, майки или толстовки!", "Уделите время поиску идеального шрифта. Слоган, который \"не очень\"  в жирном шрифте, может стать большой ошибкой!", "Не забудьте выбрать идеальный цвет холста, чтобы продемонстрировать свой рисунок! (Подсказка: это всегда розовый цвет).", "Хотите играть за дракона? Не получится. Но разве это не здорово?", "Пальцы нуждаются в передышке во время финального раунда? Нажмите и удерживайте свой выбор, чтобы сохранить большое количество голосов.", "Жалеете о рисунке из первого раунда? Вернитесь и измените его во втором раунде!", "Пункт \"Текстовые описания рисунков\" в настройках позволяет игрокам добавлять описание к своим рисункам."]
+            TITLE: "Game Tip",
+            CONTENT: ["The “Quick Draw” setting requires only 2 drawings in Round One.", "Want to make big changes to a drawing? Use the eraser in the drawing interface.", "The highlighter makes big sections of color. The pen creates thinner lines that are always visible over the highlighter.", "Tiebreaks are often given to a specific garment. Keep switching it up with t-shirts, hoodies and tank tops!", "Take a moment to find the perfect font. A slogan that’s “meh” in bold could be a knockout in script!", "Make sure to choose the perfect canvas color to showcase your drawing! (Hint: it’s always pink.)", "Want to play as the dragon? You can’t. But wouldn’t that be cool?", "Fingers need a break during the Final Round? Press and hold your choice to keep sending a high number of votes.", "Have regrets about a drawing from Round One? Go back and change it in Round Two!", "“Drawing Text Descriptions” in Settings asks players to add descriptive text to their own drawings."]
         },
         _ce = {
             INSTRUCTION: {
-                AVATAR: "Выбери свой аватар",
-                CRY: "НАПИШИ ПОБЕДНУЮ ЦИТАТУ"
+                AVATAR: "Choose your avatar",
+                CRY: "Write your Battle Cry"
             },
-            PLACEHOLDER: "Что нибудь, что можно прокричать при победе!"
+            PLACEHOLDER: "Something I would yell when victorious!"
         },
         bce = {
-            INSTRUCTION: "Создай свою футболку!"
+            INSTRUCTION: "Craft your shirt!"
         },
         wce = {
             COUNTER: {
-                TYPE: "Рисование",
-                COUNT: "{current} от {total}"
+                TYPE: "Drawing",
+                COUNT: "{current} of {total}"
             }
         },
         Ece = {
-            INSTRUCTION: "Нажмите, чтобы сделать это"
+            INSTRUCTION: "Tap to make it happen"
         },
         Sce = {
             DESCRIBE: {
-                GUIDANCE: "(Будьте краткими и буквальными!)",
-                INSTRUCTION: "Добавить описание",
-                PLACEHOLDER: "описать рисунок"
+                GUIDANCE: "(Keep it short and literal!)",
+                INSTRUCTION: "Add A Description",
+                PLACEHOLDER: "describe your drawing"
             }
         },
         Tce = {
             ACTION: {
-                CHANGE_DRAWING: "Изменить рисунок",
-                NEW_DRAWING: "Новый рисунок"
+                CHANGE_DRAWING: "Change this drawing",
+                NEW_DRAWING: "New drawing"
             },
-            INSTRUCTION: "Изменить существующий рисунок или нарисовать новый"
+            INSTRUCTION: "Change an existing drawing, or start a new drawing"
         },
         Oce = {
-            MASH: "Продолжайте нажимать на любимчика!",
-            INSTRUCTION: "Выберите своего любимчика!",
-            THANKS: "Ваш выбор"
+            MASH: "Keep tapping your favorite!",
+            INSTRUCTION: "Pick your favorite!",
+            THANKS: "Your choice"
         },
         Ice = {
-            INSTRUCTION: "Напиши что-нибудь смешное, или умное, или еще что-нибудь"
+            INSTRUCTION: "Write something funny, or clever, or anything"
         },
         Cce = {
             ALT: gce,

@@ -46,7 +46,7 @@ var cle = fL((Xle, Pw) => {
         ao = [],
         Sn = () => {},
         dL = () => !1,
-        hL = /^on[^a-z-а-я]/,
+        hL = /^on[^a-z]/,
         fu = e => hL.test(e),
         Op = e => e.startsWith("onUpdate:"),
         zt = Object.assign,
@@ -77,7 +77,7 @@ var cle = fL((Xle, Pw) => {
         },
         _L = /-(\w)/g,
         Bn = hu(e => e.replace(_L, (t, r) => r ? r.toUpperCase() : "")),
-        mL = /\B([A-Z-А-Я])/g,
+        mL = /\B([A-Z])/g,
         As = hu(e => e.replace(mL, "-$1").toLowerCase()),
         pu = hu(e => e.charAt(0).toUpperCase() + e.slice(1)),
         md = hu(e => e ? `on${pu(e)}` : ""),
@@ -3260,7 +3260,7 @@ var cle = fL((Xle, Pw) => {
             }, t.map(n => s => !s._stopped && n && n(s))
         } else return t
     }
-    const Tv = /^on[a-z-а-я]/,
+    const Tv = /^on[a-z]/,
         Nx = (e, t, r, n, s = !1, o, c, l, f) => {
             t === "class" ? vx(e, n, s) : t === "style" ? Ex(e, r, n) : fu(t) ? Op(t) || wx(e, t, r, n, c) : (t[0] === "." ? (t = t.slice(1), !0) : t[0] === "^" ? (t = t.slice(1), !1) : Px(e, t, n, s)) ? Sx(e, t, n, o, c, l, f) : (t === "true-value" ? e._trueValue = n : t === "false-value" && (e._falseValue = n), Tx(e, t, n, s))
         };
@@ -4844,8 +4844,8 @@ var cle = fL((Xle, Pw) => {
             var t = Math.random().toString(36).substring(2, 10) + Math.random().toString(36).substring(2, 10);
             return e ? t.substring(0, e) : t
         },
-        hD = /[a-zа-я0-9][a-zа-я0-9-]*\.[a-zа-я]+$/i,
-        pD = /[a-zа-я0-9][a-zа-я0-9-]+\.[a-zа-я.]{2,6}$/i,
+        hD = /[a-z0-9][a-z0-9-]*\.[a-z]+$/i,
+        pD = /[a-z0-9][a-z0-9-]+\.[a-z.]{2,6}$/i,
         Mv = function(e) {
             var t = pD,
                 r = e.split("."),
@@ -7909,10 +7909,10 @@ var cle = fL((Xle, Pw) => {
             return this.htmlEscape(r).trim()
         }
         static sanitizeName(t) {
-            return t.replace(/[^A-ZА-Я0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026\u0401-\u0451!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
+            return t.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
         }
         static sanitizeInput(t) {
-            return t = t.replace("…", "..."), t.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF\u0401-\u0451’]/gi, "")
+            return t = t.replace("…", "..."), t.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
         }
         static sanitizeEmoji(t) {
             return t.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
@@ -8246,7 +8246,7 @@ var cle = fL((Xle, Pw) => {
                     };
 
                 function _(q) {
-                    if (typeof q != "string" && (q = String(q)), /[^a-zа-я0-9\-#$%&'*+.^_`|~!]/i.test(q) || q === "") throw new TypeError('Invalid character in header field name: "' + q + '"');
+                    if (typeof q != "string" && (q = String(q)), /[^a-z0-9\-#$%&'*+.^_`|~!]/i.test(q) || q === "") throw new TypeError('Invalid character in header field name: "' + q + '"');
                     return q.toLowerCase()
                 }
 
@@ -12050,8 +12050,8 @@ ${r}`
                     stringify: v,
                     parse: _
                 },
-                C = /^[A-Za-zА-Яа-я][A-Za-zА-Яа-я0-9+-.]*:\/\//,
-                P = /^([a-zа-я][a-zа-я0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
+                C = /^[A-Za-z][A-Za-z0-9+-.]*:\/\//,
+                P = /^([a-z][a-z0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
                 M = "[\\x09\\x0A\\x0B\\x0C\\x0D\\x20\\xA0\\u1680\\u180E\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200A\\u202F\\u205F\\u3000\\u2028\\u2029\\uFEFF]",
                 I = new RegExp("^" + M + "+");
 
@@ -13244,139 +13244,139 @@ ${r.message}`,
             return String(t).replace(r, "")
         }
         static input(t) {
-            return t.replace("…", "...").replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF\u0401-\u0451’]/gi, "")
+            return t.replace("…", "...").replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
         }
         static username(t) {
-            return t.replace(/[^A-ZА-Я0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026\u0401-\u0451!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
+            return t.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
         }
         static emoji(t) {
             return t.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
         }
     }
     const O6 = {
-            BACK: "Назад",
-            CANCEL: "Отмена",
-            CLOSE: "Закрыть",
-            CONFIRM: "Подтвердить",
-            CREATE: "Создать",
-            DELETE: "Удалить",
-            DONE: "Готово",
-            EDIT: "Редактировать",
-            OK: "Ок",
-            NEXT: "Следующий",
-            NO: "Нет",
-            PLAY: "ИГРАТЬ",
-            PUBLISH: "Опубликовать",
-            REMOVE: "Удалить",
-            RESET: "Сброс",
-            SUBMIT: "Отправить",
-            TRY_AGAIN: "Попробовать снова",
-            UNDO: "Отменить",
-            YES: "Да"
+            BACK: "Back",
+            CANCEL: "Cancel",
+            CLOSE: "Close",
+            CONFIRM: "Confirm",
+            CREATE: "Create",
+            DELETE: "Delete",
+            DONE: "Done",
+            EDIT: "Edit",
+            OK: "OK",
+            NEXT: "Next",
+            NO: "No",
+            PLAY: "Play",
+            PUBLISH: "Publish",
+            REMOVE: "Remove",
+            RESET: "Reset",
+            SUBMIT: "Submit",
+            TRY_AGAIN: "Try Again",
+            UNDO: "Undo",
+            YES: "Yes"
         },
         w6 = {
             UGC: {
-                VISIBILITY_CONTROLLER_OFF: "подсказки, скрытые на устройствах игроков",
-                VISIBILITY_CONTROLLER_ON: "подсказки, показанные на устройствах игроков",
-                VISIBILITY_SCREEN_OFF: "подсказки, скрытые на игровом экране",
-                VISIBILITY_SCREEN_ON: "подсказки, показанные на игровом экране"
+                VISIBILITY_CONTROLLER_OFF: "prompts hidden on players’ devices",
+                VISIBILITY_CONTROLLER_ON: "prompts shown on players’ devices",
+                VISIBILITY_SCREEN_OFF: "prompts hidden on game screen",
+                VISIBILITY_SCREEN_ON: "prompts shown on game screen"
             }
         },
         $6 = {
-            DISCONNECTED: "Вы были отключены.",
-            DRAWING_NOTHING: "Вы должны что-то нарисовать!",
-            PLAYER_KICKED: "Вы были исключены из игры модератором.",
-            ROOM_DESTROYED: "Спасибо за игру!",
-            ROOM_DISCONNECTED: "Отключено",
-            TEXT_NAUGHTY: "Боюсь, что вы не можете этого написать. Пожалуйста, будьте уважительны к другим игрокам.",
-            TEXT_NOTHING: "Вы не можете ничего ввести!",
-            TITLE: "Ошибка"
+            DISCONNECTED: "You have been disconnected.",
+            DRAWING_NOTHING: "You have to draw something!",
+            PLAYER_KICKED: "You have been kicked from the game by a moderator.",
+            ROOM_DESTROYED: "Thanks for playing!",
+            ROOM_DISCONNECTED: "Disconnected",
+            TEXT_NAUGHTY: "I’m afraid you can’t write that. Please be respectful of other players.",
+            TEXT_NOTHING: "You can’t enter nothing!",
+            TITLE: "Error"
         },
         I6 = "LOADING",
         C6 = {
-            JOINED_COUNT: "В игре {count} из {maxPlayers} игроков",
-            PLAYERS_NEEDED: "НУЖЕН ЕЩЁ 1 ИГРОК, ЧТОБЫ НАЧАТЬ | НУЖНО ЕЩЕ {count} ИГРОКОВ, ЧТОБЫ НАЧАТЬ",
-            WAITING_FOR_VIP: "Ждём {name} для начала игры",
-            WAITING_FOR_GAMEPAD: "Ожидайте начала игры",
-            GAME_STARTING: "Игра в процессе",
-            BUTTON_START: "Нажмите для начала игры",
-            BUTTON_CANCEL: "Нажмите чтобы отменить"
+            JOINED_COUNT: "{count} of {maxPlayers} players joined",
+            PLAYERS_NEEDED: "1 player needed to start | {count} players needed to start",
+            WAITING_FOR_VIP: "Waiting for {name} to start the game",
+            WAITING_FOR_GAMEPAD: "Waiting for the game to start",
+            GAME_STARTING: "Game is starting",
+            BUTTON_START: "Press to Start",
+            BUTTON_CANCEL: "Press to Cancel"
         },
         A6 = {
-            GALLERY_LINK: "Посмотреть результаты",
-            PLAY_AGAIN: "Играть снова?",
-            BUTTON_SAME_PLAYERS: "Те же игроки",
-            BUTTON_NEW_PLAYERS: "Новые игроки"
+            GALLERY_LINK: "Visit the Gallery",
+            PLAY_AGAIN: "Play again?",
+            BUTTON_SAME_PLAYERS: "Same Players",
+            BUTTON_NEW_PLAYERS: "New Players"
         },
         R6 = {
-            AND: "И",
-            OR: "ИЛИ"
+            AND: "AND",
+            OR: "OR"
         },
         N6 = {
-            BUTTON_SKIP: "Пропустить",
-            BUTTON_NEXT: "Следующее",
-            BUTTON_DONE: "Поехали!"
+            BUTTON_SKIP: "Skip",
+            BUTTON_NEXT: "Next",
+            BUTTON_DONE: "Let’s Go!"
         },
         P6 = {
-            NAME: "ЗРИТЕЛИ"
+            NAME: "AUDIENCE"
         },
         L6 = {
             EPISODE_REPORT: "Report Episode",
             EPISODE_UNLOAD: "Unload Episode",
-            EPISODE_VIEW_AUTHOR: "Показать автора",
-            EPISODES_LOAD: "Загрузка эпизода по id:",
-            EPISODES_MENU: "Меню эпизодов",
-            EPISODES_SELECT: "Или выберите эпизод:",
-            EPISODES_WARNING: "Предупреждение: пользовательский контент не оценивается",
+            EPISODE_VIEW_AUTHOR: "View Author",
+            EPISODES_LOAD: "Load an episode by id:",
+            EPISODES_MENU: "Episodes Menu",
+            EPISODES_SELECT: "Or select an epsiode:",
+            EPISODES_WARNING: "Warning: user generated content is not rated",
             INSTRUCTION: {
-                CREATE_TITLE: "Прежде всего, введите название эпизода, который будет содержать все ваши подсказки, и нажмите кнопку «Создать».",
-                LOAD: "создать или загрузить?",
-                PUBLISH: "опубликовать свой эпизод",
-                TITLE: "назовите свой эпизод",
-                TOGGLE_VISIBILITY: "Нажмите, чтобы показать/скрыть подсказки",
-                WRITE: "напишите свои подсказки"
+                CREATE_TITLE: "first things first, enter a name for the episode that will contain all your prompts and hit create.",
+                LOAD: "create or load?",
+                PUBLISH: "publish your episode",
+                TITLE: "name your episode",
+                TOGGLE_VISIBILITY: "tap to show/hide prompts",
+                WRITE: "write your prompts"
             },
             WARNING: {
-                DELETE: "Вы уверены, что хотите удалить этот эпизод?",
-                TOS: "Предоставляя контент, вы соглашаетесь с нашими [tos]Условиями предоставления услуг[/tos]",
-                TOS_AGREE: "согласиться и поделиться"
+                DELETE: "Are you sure you want to delete this episode?",
+                TOS: "By sharing content, you agree to our [tos]Terms of Service[/tos]",
+                TOS_AGREE: "agree and share"
             },
-            BACK_TO_EPISODES: "назад к эпизодам",
-            BACK_TO_MENU: "назад в меню",
-            CREATE_NEW_EPISODE: "создать новый эпизод",
-            PREVIOUS_EPISODES: "предыдущие эпизоды",
-            PROMPT_ADD: "добавить подсказку",
-            PROMPT_PLACEHOLDER: "введите подсказку",
+            BACK_TO_EPISODES: "back to episodes",
+            BACK_TO_MENU: "back to menu",
+            CREATE_NEW_EPISODE: "create a new episode",
+            PREVIOUS_EPISODES: "previous episodes",
+            PROMPT_ADD: "add prompt",
+            PROMPT_PLACEHOLDER: "enter a prompt",
             PROMPTS_COUNT_HIDDEN: "({count} hidden)",
-            TITLE_PLACEHOLDER: "введите название"
+            TITLE_PLACEHOLDER: "enter a title"
         },
         k6 = {
             BROADCASTER: {
-                SUBTEXT: "Вы успешно подключили свою учетную запись к Twitch-расширению Jackbox Audience Kit.",
-                WARNING: "В НАСТРОЙКАХ ИГРЫ ОТКЛЮЧЕНЫ ЗРИТЕЛИ"
+                SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
+                WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
             },
             RECONNECTED: {
-                TEXT: "ПЕРЕПОДКЛЮЧИТСЯ",
-                SUBTEXT: "Веселитесь!"
+                TEXT: "RECONNECTED",
+                SUBTEXT: "Have fun!"
             },
             RECONNECTING: {
                 CONTROLLER: {
-                    TEXT: "СОЕДИНЕНИЕ ПРЕРВАНО",
-                    SUBTEXT: "Попытка повторного подключения ({attempt} из 5)"
+                    TEXT: "CONNECTION INTERRUPTED",
+                    SUBTEXT: "Attempting to reconnect ({attempt} of 5)"
                 },
                 GAME: {
-                    TEXT: "ПРЕРВАНО СОЕДИНЕНИЕ С ИГРОЙ",
-                    SUBTEXT: "Пожалуйста, подождите, пока мы пытаемся восстановить соединение"
+                    TEXT: "GAME CONNECTION INTERRUPTED",
+                    SUBTEXT: "Please wait while we attempt to reconnect"
                 }
             },
             PAUSED: {
-                TEXT: "ИГРА ПРИОСТАНОВЛЕНА",
-                SUBTEXT: "Все, что вы напишете, все равно будет отправлено в игру."
+                TEXT: "THE GAME IS PAUSED",
+                SUBTEXT: "Anything you submit will still be sent to the game."
             }
         },
         x6 = {
-            SHARE: "Поделиться",
-            COPY_TO_CLIPBOARD: "Скопировать"
+            SHARE: "Share",
+            COPY_TO_CLIPBOARD: "Copy to clipboard"
         },
         D6 = {
             ACTION: O6,
@@ -14339,12 +14339,12 @@ ${r.message}`,
                 i$ = "\\u20d0-\\u20ff",
                 b_ = r$ + n$ + i$,
                 T_ = "\\u2700-\\u27bf",
-                S_ = "a-zа-я\\xdf-\\xf6\\xf8-\\xff",
+                S_ = "a-z\\xdf-\\xf6\\xf8-\\xff",
                 s$ = "\\xac\\xb1\\xd7\\xf7",
                 o$ = "\\x00-\\x2f\\x3a-\\x40\\x5b-\\x60\\x7b-\\xbf",
                 a$ = "\\u2000-\\u206f",
                 c$ = " \\t\\x0b\\f\\xa0\\ufeff\\n\\r\\u2028\\u2029\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u202f\\u205f\\u3000",
-                O_ = "A-ZА-Я\\xc0-\\xd6\\xd8-\\xde",
+                O_ = "A-Z\\xc0-\\xd6\\xd8-\\xde",
                 w_ = "\\ufe0e\\ufe0f",
                 $_ = s$ + o$ + a$ + c$,
                 af = "['’]",
@@ -14369,8 +14369,8 @@ ${r.message}`,
                 D_ = f$ + "?",
                 M_ = "[" + w_ + "]?",
                 h$ = "(?:" + P_ + "(?:" + [N_, lf, uf].join("|") + ")" + M_ + D_ + ")*",
-                p$ = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-ZА-Я_])",
-                g$ = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-zа-я_])",
+                p$ = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z_])",
+                g$ = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])",
                 U_ = M_ + D_ + h$,
                 _$ = "(?:" + [u$, lf, uf].join("|") + ")" + U_,
                 m$ = "(?:" + [N_ + dc + "?", dc, lf, uf, l$].join("|") + ")",
@@ -14379,7 +14379,7 @@ ${r.message}`,
                 ff = RegExp(cf + "(?=" + cf + ")|" + m$ + U_, "g"),
                 E$ = RegExp([xs + "?" + A_ + "+" + k_ + "(?=" + [I_, xs, "$"].join("|") + ")", d$ + "+" + x_ + "(?=" + [I_, xs + L_, "$"].join("|") + ")", xs + "?" + L_ + "+" + k_, xs + "+" + x_, g$, p$, C_, _$].join("|"), "g"),
                 b$ = RegExp("[" + P_ + fc + b_ + w_ + "]"),
-                T$ = /[a-z][а-я][A-Z]|[A-Z][А-Я][А-Я]{2}[a-z][а-я]|[0-9][a-zA-Z]|[a-zA-Z][А-Яа-я][А-Яа-я][0-9]|[^a-zA-ZА-Яа-я0-9 ]/,
+                T$ = /[a-z][A-Z]|[A-Z]{2}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/,
                 S$ = ["Array", "Buffer", "DataView", "Date", "Error", "Float32Array", "Float64Array", "Function", "Int8Array", "Int16Array", "Int32Array", "Map", "Math", "Object", "Promise", "RegExp", "Set", "String", "Symbol", "TypeError", "Uint8Array", "Uint8ClampedArray", "Uint16Array", "Uint32Array", "WeakMap", "_", "clearTimeout", "isFinite", "parseInt", "setTimeout"],
                 O$ = -1,
                 At = {};
@@ -21345,7 +21345,7 @@ function print() { __p += __j.call(arguments, '') }
                     return new Ti.Token(Ti.Token.Type.startTag, r, n, t[0])
                 }
                 return new Ti.Token(Ti.Token.Type.endTag, t[1].substr(1, t[1].length - 1))
-            }, e.nameChars = "[a-zA-ZА-Яа-я0-9\\.\\-_:;/]", e.valueChars = "[a-zA-ZА-Яа-я0-9\\.\\-_:;#/\\s]", e
+            }, e.nameChars = "[a-zA-Z0-9\\.\\-_:;/]", e.valueChars = "[a-zA-Z0-9\\.\\-_:;#/\\s]", e
         }();
     Vu.Tokenizer = Ez;
     (function(e) {
@@ -28812,32 +28812,32 @@ ${t}`
         Ioe = {
             LOGO: "Hypnotorious logo",
             EYES: "Creepy looking eyes",
-            BRAIN: "Мозги"
+            BRAIN: "Brain"
         },
         Coe = {
-            PAGE_TITLE: "Ваша роль:",
-            REROLL: "Изменить роль",
-            DISCLAIMER: "Изменение роли разрешено только один раз за игру!",
-            GOT_IT: "Есть!"
+            PAGE_TITLE: "Your role is:",
+            REROLL: "Re-roll",
+            DISCLAIMER: "Rerolling is only allowed once per game!",
+            GOT_IT: "Got it!"
         },
         Aoe = {
-            OR: "Или"
+            OR: "Or"
         },
         Roe = {
-            DISCUSSION: "Обсуждение",
-            GROUP_UP: "К какой группе вы относитесь?",
-            INVESTIGATE: "Нажмите, чтобы просмотреть прошлые ответы",
-            NEXT: "Готовы идти дальше?",
-            LETS_GO: "Вперед!",
-            HINT: "Подсказка"
+            DISCUSSION: "Discussion",
+            GROUP_UP: "Which group do you belong in?",
+            INVESTIGATE: "Tap to view previous answers",
+            NEXT: "Ready to move on?",
+            LETS_GO: "Let's go!",
+            HINT: "Hint"
         },
         Noe = {
-            CHARS_LEFT: "осталось символов",
-            REMEMBER: "Помните, что вы:"
+            CHARS_LEFT: "characters left",
+            REMEMBER: "Remember you are:"
         },
         Poe = {
-            APPLAUD_BONUS: "Аплодировать для начисления бонусов",
-            CLAP: "Аплодировать"
+            APPLAUD_BONUS: "Applaud to give bonus points",
+            CLAP: "Clap"
         },
         Loe = {
             ALT: Ioe,
