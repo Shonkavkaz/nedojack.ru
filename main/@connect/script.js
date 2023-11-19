@@ -14862,7 +14862,7 @@ var Qae = JM((Boe, _1) => {
             features: ["kicking", "previews"],
             categoryId: "LineupGame"
         }, {
-            name: "Tee K.O. 2",
+            name: "Футбол K.O. 2",
             tag: "awshirt2",
             wrapper: "vue",
             isPublic: !0,
@@ -14872,7 +14872,7 @@ var Qae = JM((Boe, _1) => {
             categoryId: "TeeKO2Game",
             galleryId: "teeko2"
         }, {
-            name: "Dodo Re Mi",
+            name: "Додо Ре Ми",
             tag: "nopus-opus",
             wrapper: "vue",
             isPublic: !0,
@@ -14881,7 +14881,7 @@ var Qae = JM((Boe, _1) => {
             categoryId: "NopusOpusGame",
             galleryId: "dodo-re-mi"
         }, {
-            name: "FixyText",
+            name: "ЧиниТекст",
             tag: "risky-text",
             wrapper: "vue",
             isPublic: !0,
@@ -14890,7 +14890,7 @@ var Qae = JM((Boe, _1) => {
             categoryId: "FixyTextGame",
             galleryId: "fixytext"
         }, {
-            name: "Timejinx",
+            name: "Хронолом",
             tag: "time-trivia",
             wrapper: "vue",
             isPublic: !0,
@@ -14899,7 +14899,7 @@ var Qae = JM((Boe, _1) => {
             categoryId: "TimeTriviaGame",
             galleryId: "timejinx"
         }, {
-            name: "Hypnotorious",
+            name: "Гипнотизиум",
             tag: "us-them",
             wrapper: "vue",
             isPublic: !0,
