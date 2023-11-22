@@ -14625,7 +14625,7 @@ var Qae = JM((Boe, _1) => {
             directory: "pp4/survivetheinternet",
             categoryId: "STIGame"
         }, {
-            name: "Monster Seeking Monster",
+            name: "Ясо ищет Шона",
             tag: "monstermingle",
             wrapper: "marionette",
             isPublic: !0,
@@ -14668,7 +14668,7 @@ var Qae = JM((Boe, _1) => {
             directory: "pp5/rapbattle",
             categoryId: "RapBattleGame"
         }, {
-            name: "Zeeple Dome",
+            name: "Купол Хангер",
             tag: "slingshoot",
             wrapper: "marionette",
             isPublic: !0,
