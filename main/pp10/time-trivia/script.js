@@ -27928,7 +27928,7 @@ ${t}`
             LOOP_LAST_PICK: "Последний выбор"
         },
         Ase = {
-            CONFIRMATION: "Вы отправляетесь в год",
+            CONFIRMATION: "Вы отправляетесь в год, когда",
             SETUP: "Путешествие в год...",
             SUBMIT: "ВПЕРЕД"
         },
@@ -27944,7 +27944,7 @@ ${t}`
         },
         wse = {
             CHOOSING_CONFIRMATION: "Вы выбрали",
-            GUESSING_CONFIRMATION: "Вы отправляетесь в год",
+            GUESSING_CONFIRMATION: "Вы отправляетесь в год, когда",
             SKIP: "Пропустить"
         },
         Rse = {
