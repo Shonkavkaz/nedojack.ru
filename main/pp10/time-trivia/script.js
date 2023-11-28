@@ -27922,30 +27922,30 @@ ${t}`
             YEAR_ENTRY: "year entry box"
         },
         Tse = {
-            CONFIRMATION: "You chose",
-            FIX_TEXT: "FIX IT!",
-            LOADING: "LOADING...",
-            LOOP_LAST_PICK: "Last Pick"
+            CONFIRMATION: "Ваш выбор",
+            FIX_TEXT: "ОТЛАДЬ ЭТО!",
+            LOADING: "ЗАГРУЗКА...",
+            LOOP_LAST_PICK: "Последний выбор"
         },
         Ase = {
-            CONFIRMATION: "You're traveling to the year",
-            SETUP: "Travel to the year...",
-            SUBMIT: "GO"
+            CONFIRMATION: "Вы отправляетесь в год",
+            SETUP: "Путешествие в год...",
+            SUBMIT: "ВПЕРЕД"
         },
         Ose = {
-            CHOOSE_AVATAR: "Choose your avatar"
+            CHOOSE_AVATAR: "Выбери свой аватар"
         },
         Sse = {
-            RANK: "RANK",
-            SCORE: "SCORE"
+            RANK: "РАНГ",
+            SCORE: "СЧЁТ"
         },
         Ise = {
-            IMPOSTOR_HEADER: "Spot the Impostor"
+            IMPOSTOR_HEADER: "Найдите самозванца"
         },
         wse = {
-            CHOOSING_CONFIRMATION: "You chose",
-            GUESSING_CONFIRMATION: "You're traveling to the year",
-            SKIP: "Skip Intro"
+            CHOOSING_CONFIRMATION: "Вы выбрали",
+            GUESSING_CONFIRMATION: "Вы отправляетесь в год",
+            SKIP: "Пропустить"
         },
         Rse = {
             ALT: bse,
