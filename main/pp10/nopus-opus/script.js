@@ -27838,7 +27838,7 @@ ${e}`
             CHOOSE_HOST: "Выберите нового ведущего",
             CHOOSE_INSTRUMENT: "Выбери свой инструмент",
             CHOOSE_SONG: "Выберите песню",
-            COMPLETED_PARTS: "Инструменты доведёные до совершенства",
+            COMPLETED_PARTS: "Виды инструментов",
             CUSTOMIZE: "Настроить?",
             DIFFICULTY: "Сложность",
             END_SESSION: "Закончить сессию",
