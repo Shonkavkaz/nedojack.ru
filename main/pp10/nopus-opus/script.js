@@ -27804,7 +27804,7 @@ ${e}`
             GET_READY: "Приготовьтесь",
             TAP: "жми",
             TAP_ALONG: "а затем жми на",
-            TAP_HERE: "ЖМИ[break][/break]ZONE[info](ИЛИ НАЖИМАЙ ПРОБЕЛ)[/info]",
+            TAP_HERE: "ЖМИ[break][/break]СЮДА[info](ИЛИ НАЖИМАЙ ПРОБЕЛ)[/info]",
             SYNCED: "синхронизировано",
             SYNCING: "Синхронизация",
             WAIT: "Ожидайте обратного отсчета"
@@ -27852,7 +27852,7 @@ ${e}`
             SELECT_SONG: "Выбери песню",
             SONG_PART: "Song Part",
             SPACEBAR: "ПРОБЕЛ",
-            START_SONG: "Воспроизвести песню",
+            START_SONG: "Играть песню",
             TEST_IT: "Проверка",
             THANKS: "Спасибо за игру",
             UNLOCKED: "Разблокированные инструменты",
