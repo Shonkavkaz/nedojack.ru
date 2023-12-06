@@ -27944,7 +27944,7 @@ ${t}`
         },
         wse = {
             CHOOSING_CONFIRMATION: "Вы выбрали",
-            GUESSING_CONFIRMATION: "Вы отправляетесь в год, когда",
+            GUESSING_CONFIRMATION: "Путешествие в год...",
             SKIP: "Пропустить"
         },
         Rse = {
