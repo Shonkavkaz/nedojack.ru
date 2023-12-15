@@ -27850,15 +27850,15 @@ ${e}`
             RETRY_SONG: "Повторить Песню",
             RESET: "Сброс",
             SELECT_SONG: "Выбрать песню",
-            SONG_PART: "Song Part",
+            SONG_PART: "Тип инструмента",
             SPACEBAR: "ПРОБЕЛ",
             START_SONG: "Играть песню",
             TEST_IT: "Проверка",
             THANKS: "Спасибо за игру",
             UNLOCKED: "Разблокированные инструменты",
             VOTE_SONG: "Проголосуйте за песню",
-            WAITING_FOR: "Ждём {vipName}",
-            WAITING_FOR_SONG: "Ждём {vipName} для выбора песни",
+            WAITING_FOR: "Ждём игрока {vipName}",
+            WAITING_FOR_SONG: "Ждём игрока {vipName} для выбора песни",
             WHAT_NEXT: "Что дальше?"
         },
         Hge = {
