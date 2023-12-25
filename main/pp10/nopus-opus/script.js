@@ -27797,7 +27797,7 @@ ${e}`
             COUNTER: "Тенор",
             DRUMS: "Ударные",
             PERCUSSION: "Перкуссия",
-            HARMONY: "гармония",
+            HARMONY: "Гармония",
             SIGNATURE: "Сигнатура"
         },
         Bge = {
