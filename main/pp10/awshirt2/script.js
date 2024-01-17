@@ -19109,8 +19109,8 @@ ${r.message}`,
         rj = {
             JOINED_COUNT: "В игре {count} из {maxPlayers} игроков",
             PLAYERS_NEEDED: "Нужен ещё 1 игрок | Нужно ещё {count} игрока",
-            WAITING_FOR_VIP: "Ждем, когда {имя} начнет игру",
-            WAITING_FOR_GAMEPAD: "Ждем начала игры",
+            WAITING_FOR_VIP: "Ждём, когда {имя} начнет игру",
+            WAITING_FOR_GAMEPAD: "Ждём начала игры",
             GAME_STARTING: "Игра уже началась",
             BUTTON_START: "Нажмите, чтобы начать",
             BUTTON_CANCEL: "Нажмите, чтобы отменить"
@@ -19184,7 +19184,7 @@ ${r.message}`,
             },
             PAUSED: {
                 TEXT: "ИГРА ПРИОСТАНОВЛЕНА",
-                SUBTEXT: "Все, что вы отправите, все равно будет отправлено в игру."
+                SUBTEXT: "Всё, что вы отправите, всё равно будет отправлено в игру."
             }
         },
         cj = {
