@@ -46,7 +46,7 @@ var cle = fL((Xle, Pw) => {
         ao = [],
         Sn = () => {},
         dL = () => !1,
-        hL = /^on[^a-z]/,
+        hL = /^on[^a-z-а-я]/,
         fu = e => hL.test(e),
         Op = e => e.startsWith("onUpdate:"),
         zt = Object.assign,
@@ -77,7 +77,7 @@ var cle = fL((Xle, Pw) => {
         },
         _L = /-(\w)/g,
         Bn = hu(e => e.replace(_L, (t, r) => r ? r.toUpperCase() : "")),
-        mL = /\B([A-Z])/g,
+        mL = /\B([A-Z-А-Я])/g,
         As = hu(e => e.replace(mL, "-$1").toLowerCase()),
         pu = hu(e => e.charAt(0).toUpperCase() + e.slice(1)),
         md = hu(e => e ? `on${pu(e)}` : ""),
@@ -3260,7 +3260,7 @@ var cle = fL((Xle, Pw) => {
             }, t.map(n => s => !s._stopped && n && n(s))
         } else return t
     }
-    const Tv = /^on[a-z]/,
+    const Tv = /^on[a-z-а-я]/,
         Nx = (e, t, r, n, s = !1, o, c, l, f) => {
             t === "class" ? vx(e, n, s) : t === "style" ? Ex(e, r, n) : fu(t) ? Op(t) || wx(e, t, r, n, c) : (t[0] === "." ? (t = t.slice(1), !0) : t[0] === "^" ? (t = t.slice(1), !1) : Px(e, t, n, s)) ? Sx(e, t, n, o, c, l, f) : (t === "true-value" ? e._trueValue = n : t === "false-value" && (e._falseValue = n), Tx(e, t, n, s))
         };
@@ -4844,8 +4844,8 @@ var cle = fL((Xle, Pw) => {
             var t = Math.random().toString(36).substring(2, 10) + Math.random().toString(36).substring(2, 10);
             return e ? t.substring(0, e) : t
         },
-        hD = /[a-z0-9][a-z0-9-]*\.[a-z]+$/i,
-        pD = /[a-z0-9][a-z0-9-]+\.[a-z.]{2,6}$/i,
+        hD = /[a-zа-я0-9][a-zа-я0-9-]*\.[a-zа-я]+$/i,
+        pD = /[a-zа-я0-9][a-zа-я0-9-]+\.[a-zа-я.]{2,6}$/i,
         Mv = function(e) {
             var t = pD,
                 r = e.split("."),
@@ -7909,10 +7909,10 @@ var cle = fL((Xle, Pw) => {
             return this.htmlEscape(r).trim()
         }
         static sanitizeName(t) {
-            return t.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
+            return t.replace(/[^A-ZА-Я0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026\u0401-\u0451!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
         }
         static sanitizeInput(t) {
-            return t = t.replace("…", "..."), t.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
+            return t = t.replace("…", "..."), t.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF\u0401-\u0451’]/gi, "")
         }
         static sanitizeEmoji(t) {
             return t.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
@@ -8246,7 +8246,7 @@ var cle = fL((Xle, Pw) => {
                     };
 
                 function _(q) {
-                    if (typeof q != "string" && (q = String(q)), /[^a-z0-9\-#$%&'*+.^_`|~!]/i.test(q) || q === "") throw new TypeError('Invalid character in header field name: "' + q + '"');
+                    if (typeof q != "string" && (q = String(q)), /[^a-zа-я0-9\-#$%&'*+.^_`|~!]/i.test(q) || q === "") throw new TypeError('Invalid character in header field name: "' + q + '"');
                     return q.toLowerCase()
                 }
 
@@ -12050,8 +12050,8 @@ ${r}`
                     stringify: v,
                     parse: _
                 },
-                C = /^[A-Za-z][A-Za-z0-9+-.]*:\/\//,
-                P = /^([a-z][a-z0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
+                C = /^[A-Za-zА-Яа-я][A-Za-zА-Яа-я0-9+-.]*:\/\//,
+                P = /^([a-zа-я][a-zа-я0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
                 M = "[\\x09\\x0A\\x0B\\x0C\\x0D\\x20\\xA0\\u1680\\u180E\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200A\\u202F\\u205F\\u3000\\u2028\\u2029\\uFEFF]",
                 I = new RegExp("^" + M + "+");
 
@@ -13244,10 +13244,10 @@ ${r.message}`,
             return String(t).replace(r, "")
         }
         static input(t) {
-            return t.replace("…", "...").replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
+            return t.replace("…", "...").replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF\u0401-\u0451’]/gi, "")
         }
         static username(t) {
-            return t.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
+            return t.replace(/[^A-ZА-Я0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026\u0401-\u0451!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
         }
         static emoji(t) {
             return t.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
@@ -14339,12 +14339,12 @@ ${r.message}`,
                 i$ = "\\u20d0-\\u20ff",
                 b_ = r$ + n$ + i$,
                 T_ = "\\u2700-\\u27bf",
-                S_ = "a-z\\xdf-\\xf6\\xf8-\\xff",
+                S_ = "a-z-а-я\\xdf-\\xf6\\xf8-\\xff",
                 s$ = "\\xac\\xb1\\xd7\\xf7",
                 o$ = "\\x00-\\x2f\\x3a-\\x40\\x5b-\\x60\\x7b-\\xbf",
                 a$ = "\\u2000-\\u206f",
                 c$ = " \\t\\x0b\\f\\xa0\\ufeff\\n\\r\\u2028\\u2029\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u202f\\u205f\\u3000",
-                O_ = "A-Z\\xc0-\\xd6\\xd8-\\xde",
+                O_ = "A-Z-А-Я\\xc0-\\xd6\\xd8-\\xde",
                 w_ = "\\ufe0e\\ufe0f",
                 $_ = s$ + o$ + a$ + c$,
                 af = "['’]",
@@ -14369,8 +14369,8 @@ ${r.message}`,
                 D_ = f$ + "?",
                 M_ = "[" + w_ + "]?",
                 h$ = "(?:" + P_ + "(?:" + [N_, lf, uf].join("|") + ")" + M_ + D_ + ")*",
-                p$ = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z_])",
-                g$ = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])",
+                p$ = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z-а-я_])",
+                g$ = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z-а-я_])",
                 U_ = M_ + D_ + h$,
                 _$ = "(?:" + [u$, lf, uf].join("|") + ")" + U_,
                 m$ = "(?:" + [N_ + dc + "?", dc, lf, uf, l$].join("|") + ")",
@@ -14379,7 +14379,7 @@ ${r.message}`,
                 ff = RegExp(cf + "(?=" + cf + ")|" + m$ + U_, "g"),
                 E$ = RegExp([xs + "?" + A_ + "+" + k_ + "(?=" + [I_, xs, "$"].join("|") + ")", d$ + "+" + x_ + "(?=" + [I_, xs + L_, "$"].join("|") + ")", xs + "?" + L_ + "+" + k_, xs + "+" + x_, g$, p$, C_, _$].join("|"), "g"),
                 b$ = RegExp("[" + P_ + fc + b_ + w_ + "]"),
-                T$ = /[a-z][A-Z]|[A-Z]{2}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/,
+                T$ = /[a-z][а-я][A-Z][А-Я]|[A-Z][А-Я]{2}[a-z][а-я]|[0-9][a-zA-Z][А-Яа-я]|[a-zA-Z][А-Яа-я][0-9]|[^a-zA-ZА-Яа-я0-9 ]/,
                 S$ = ["Array", "Buffer", "DataView", "Date", "Error", "Float32Array", "Float64Array", "Function", "Int8Array", "Int16Array", "Int32Array", "Map", "Math", "Object", "Promise", "RegExp", "Set", "String", "Symbol", "TypeError", "Uint8Array", "Uint8ClampedArray", "Uint16Array", "Uint32Array", "WeakMap", "_", "clearTimeout", "isFinite", "parseInt", "setTimeout"],
                 O$ = -1,
                 At = {};
@@ -21345,7 +21345,7 @@ function print() { __p += __j.call(arguments, '') }
                     return new Ti.Token(Ti.Token.Type.startTag, r, n, t[0])
                 }
                 return new Ti.Token(Ti.Token.Type.endTag, t[1].substr(1, t[1].length - 1))
-            }, e.nameChars = "[a-zA-Z0-9\\.\\-_:;/]", e.valueChars = "[a-zA-Z0-9\\.\\-_:;#/\\s]", e
+            }, e.nameChars = "[a-zA-ZА-Яа-я0-9\\.\\-_:;/]", e.valueChars = "[a-zA-ZА-Яа-я0-9\\.\\-_:;#/\\s]", e
         }();
     Vu.Tokenizer = Ez;
     (function(e) {
@@ -28815,29 +28815,29 @@ ${t}`
             BRAIN: "Brain"
         },
         Coe = {
-            PAGE_TITLE: "Your role is:",
-            REROLL: "Re-roll",
-            DISCLAIMER: "Rerolling is only allowed once per game!",
-            GOT_IT: "Got it!"
+            PAGE_TITLE: "Ваша роль:",
+            REROLL: "Сменить роль",
+            DISCLAIMER: "Смена роли разрешена только один раз за игру!",
+            GOT_IT: "Готово!"
         },
         Aoe = {
-            OR: "Or"
+            OR: "Или"
         },
         Roe = {
-            DISCUSSION: "Discussion",
-            GROUP_UP: "Which group do you belong in?",
-            INVESTIGATE: "Tap to view previous answers",
-            NEXT: "Ready to move on?",
-            LETS_GO: "Let's go!",
-            HINT: "Hint"
+            DISCUSSION: "Обсуждение",
+            GROUP_UP: "К какой группе вы относитесь?",
+            INVESTIGATE: "Нажмите, чтобы просмотреть предыдущие ответы",
+            NEXT: "Готовы двигаться дальше?",
+            LETS_GO: "Вперед!",
+            HINT: "Подсказка"
         },
         Noe = {
-            CHARS_LEFT: "characters left",
+            CHARS_LEFT: "осталось символов",
             REMEMBER: "Remember you are:"
         },
         Poe = {
-            APPLAUD_BONUS: "Applaud to give bonus points",
-            CLAP: "Clap"
+            APPLAUD_BONUS: "Аплодировать - давать бонусные баллы",
+            CLAP: "Аплодировать"
         },
         Loe = {
             ALT: Ioe,
