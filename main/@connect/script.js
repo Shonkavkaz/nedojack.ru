@@ -24537,7 +24537,7 @@ const mj = {
     vj = {
         JOINED_COUNT: "В игре {count} из {maxPlayers} игроков",
         PLAYERS_NEEDED: "Нужен ещё 1 игрок | Нужно ещё {count} игрока",
-        WAITING_FOR_VIP: "Ждём, когда {имя} начнёт игру",
+        WAITING_FOR_VIP: "Ждём, когда {name} начнёт игру",
         WAITING_FOR_GAMEPAD: "Ждём начала игры",
         WAITING_FOR_NEW_GAME: "Ждём начала новой игры",
         GAME_STARTING: "Игра уже началась",
