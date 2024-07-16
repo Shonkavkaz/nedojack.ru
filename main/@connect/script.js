@@ -74,7 +74,7 @@ const Wt = {},
     },
     GB = /-(\w)/g,
     oi = Pc(t => t.replace(GB, (e, r) => r ? r.toUpperCase() : "")),
-    VB = /\B([A-Z])/g,
+    VB = /\B([A-Z-А-Я])/g,
     ca = Pc(t => t.replace(VB, "-$1").toLowerCase()),
     Uc = Pc(t => t.charAt(0).toUpperCase() + t.slice(1)),
     kd = Pc(t => t ? `on${Uc(t)}` : ""),
@@ -3860,7 +3860,7 @@ function uE(t, e, r) {
     };
     return r != null && (n.source = r), n
 }
-const RK = /\{([0-9a-zA-Z]+)\}/g;
+const RK = /\{([0-9a-zA-Zа-яА-Я]+)\}/g;
 
 function SK(t, ...e) {
     return e.length === 1 && yK(e[0]) && (e = e[0]), (!e || !e.hasOwnProperty) && (e = {}), t.replace(RK, (r, n) => e.hasOwnProperty(n) ? e[n] : "")
@@ -12215,7 +12215,7 @@ function JG(t) {
 }
 
 function Mf(t) {
-    return t === void 0 && (t = ""), t.replace(/-[a-z]/g, e => e.toUpperCase().replace("-", ""))
+    return t === void 0 && (t = ""), t.replace(/-[a-z-а-я]/g, e => e.toUpperCase().replace("-", ""))
 }
 
 function ZG(t) {
@@ -12369,7 +12369,7 @@ class nA extends tA {
         if (this.rendered) return;
         this.calcSlideSlots();
         let e = this.cssStyles();
-        this.slideSlots > 0 && (e = e.replace(/::slotted\(([a-z-0-9.]*)\)/g, "$1")), e.length && rA(this.shadowRoot, e), this.cssLinks().forEach(n => {
+        this.slideSlots > 0 && (e = e.replace(/::slotted\(([a-z-а-я-0-9.]*)\)/g, "$1")), e.length && rA(this.shadowRoot, e), this.cssLinks().forEach(n => {
             if (this.shadowRoot.querySelector(`link[href="${n}"]`)) return;
             const s = document.createElement("link");
             s.rel = "stylesheet", s.href = n, this.shadowRoot.appendChild(s)
@@ -12458,7 +12458,7 @@ class nA extends tA {
         this.initialized && (r === "true" && n === null && (n = !1), this.updateSwiperOnPropChange(e, n))
     }
     static get observedAttributes() {
-        return Zc.filter(r => r.includes("_")).map(r => r.replace(/[A-Z]/g, n => `-${n}`).replace("_", "").toLowerCase())
+        return Zc.filter(r => r.includes("_")).map(r => r.replace(/[A-Z-А-Я]/g, n => `-${n}`).replace("_", "").toLowerCase())
     }
 }
 Zc.forEach(t => {
@@ -13350,8 +13350,8 @@ var Y0 = function(t) {
         var e = Math.random().toString(36).substring(2, 10) + Math.random().toString(36).substring(2, 10);
         return t ? e.substring(0, t) : e
     },
-    f3 = /[a-z0-9][a-z0-9-]*\.[a-z]+$/i,
-    c3 = /[a-z0-9][a-z0-9-]+\.[a-z.]{2,6}$/i,
+    f3 = /[a-zа-я0-9][a-zа-я0-9-]*\.[a-zа-я]+$/i,
+    c3 = /[a-zа-я0-9][a-zа-я0-9-]+\.[a-zа-я.]{2,6}$/i,
     Mb = function(t) {
         var e = c3,
             r = t.split("."),
@@ -15469,7 +15469,7 @@ const N3 = [{
         features: ["kicking", "previews"],
         categoryId: "LineupGame"
     }, {
-        name: "Tee K.O. 2",
+        name: "Футбол К.О. 2",
         tag: "awshirt2",
         wrapper: "vue",
         isPublic: !0,
@@ -15479,7 +15479,7 @@ const N3 = [{
         categoryId: "TeeKO2Game",
         galleryId: "teeko2"
     }, {
-        name: "Dodo Re Mi",
+        name: "Додо Ре Ми",
         tag: "nopus-opus",
         wrapper: "vue",
         isPublic: !0,
@@ -15488,7 +15488,7 @@ const N3 = [{
         categoryId: "NopusOpusGame",
         galleryId: "dodo-re-mi"
     }, {
-        name: "FixyText",
+        name: "ЧиниТекст",
         tag: "risky-text",
         wrapper: "vue",
         isPublic: !0,
@@ -15497,7 +15497,7 @@ const N3 = [{
         categoryId: "FixyTextGame",
         galleryId: "fixytext"
     }, {
-        name: "Timejinx",
+        name: "Хронолом",
         tag: "time-trivia",
         wrapper: "vue",
         isPublic: !0,
@@ -15506,7 +15506,7 @@ const N3 = [{
         categoryId: "TimeTriviaGame",
         galleryId: "timejinx"
     }, {
-        name: "Hypnotorious",
+        name: "Гипнотизиум",
         tag: "us-them",
         wrapper: "vue",
         isPublic: !0,
@@ -16526,10 +16526,10 @@ const Za = class Za {
         return this.htmlEscape(r).trim()
     }
     static sanitizeName(e) {
-        return e.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
+        return e.replace(/[^A-ZА-Я0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026\u0401-\u0451!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
     }
     static sanitizeInput(e) {
-        return e = e.replace("…", "..."), e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
+        return e = e.replace("…", "..."), e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF\u0401-\u0451’]/gi, "")
     }
     static sanitizeEmoji(e) {
         return e.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
@@ -16834,7 +16834,7 @@ var yE = {
                 };
 
             function m(N) {
-                if (typeof N != "string" && (N = String(N)), /[^a-z0-9\-#$%&'*+.^_`|~!]/i.test(N) || N === "") throw new TypeError('Invalid character in header field name: "' + N + '"');
+                if (typeof N != "string" && (N = String(N)), /[^a-zа-я0-9\-#$%&'*+.^_`|~!]/i.test(N) || N === "") throw new TypeError('Invalid character in header field name: "' + N + '"');
                 return N.toLowerCase()
             }
 
@@ -20515,9 +20515,9 @@ var Kx = {
                 parse: m
             },
             T = /[\n\r\t]/g,
-            b = /^[A-Za-z][A-Za-z0-9+-.]*:\/\//,
-            S = /^([a-z][a-z0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
-            v = /^[a-zA-Z]:/,
+            b = /^[A-Za-zА-Яа-я][A-Za-zА-Яа-я0-9+-.]*:\/\//,
+            S = /^([a-z-а-я][a-zа-я0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
+            v = /^[a-zA-Zа-яА-Я]:/,
             R = /^[\x00-\x20\u00a0\u1680\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]+/;
 
         function x(k) {
@@ -24393,10 +24393,10 @@ class UE {
         return String(e).replace(r, "")
     }
     static input(e) {
-        return e.replace("…", "...").replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF\u2019]/gi, "")
+        return e.replace("…", "...").replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF\u2019\u0401-\u0451]/gi, "")
     }
     static username(e) {
-        return e.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
+        return e.replace(/[^A-ZА-Я0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026\u0401-\u0451!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
     }
     static emoji(e) {
         return e.replace(/(\u00A9|\u00AE|[\u2000-\u2017]|[\u2020-\u3300]|\uD83C[\uD000-\uDFFF]|\uD83D[\uD000-\uDFFF]|\uD83E[\uD000-\uDFFF])/, "")
@@ -24495,143 +24495,143 @@ class Ej {
     }
 }
 const mj = {
-        BACK: "Back",
-        CANCEL: "Cancel",
-        CLOSE: "Close",
-        CONFIRM: "Confirm",
-        CREATE: "Create",
-        DELETE: "Delete",
-        DONE: "Done",
-        EDIT: "Edit",
+        BACK: "Назад",
+        CANCEL: "Отмена",
+        CLOSE: "Закрыть",
+        CONFIRM: "Подтвердить",
+        CREATE: "Создать",
+        DELETE: "Удалить",
+        DONE: "Готово",
+        EDIT: "Редактировать",
         OK: "OK",
-        NEXT: "Next",
-        NO: "No",
-        PLAY: "Play",
-        PUBLISH: "Publish",
-        REMOVE: "Remove",
-        RESET: "Reset",
-        SUBMIT: "Submit",
-        TRY_AGAIN: "Try Again",
-        UNDO: "Undo",
-        YES: "Yes"
+        NEXT: "Далее",
+        NO: "Нет",
+        PLAY: "Играть",
+        PUBLISH: "Опубликовать",
+        REMOVE: "Удалить",
+        RESET: "Сбросить",
+        SUBMIT: "Отправить",
+        TRY_AGAIN: "Повторите попытку",
+        UNDO: "Отменить",
+        YES: "Да"
     },
     gj = {
         UGC: {
-            VISIBILITY_CONTROLLER_OFF: "prompts hidden on players’ devices",
-            VISIBILITY_CONTROLLER_ON: "prompts shown on players’ devices",
-            VISIBILITY_SCREEN_OFF: "prompts hidden on game screen",
-            VISIBILITY_SCREEN_ON: "prompts shown on game screen"
+            VISIBILITY_CONTROLLER_OFF: "подсказки, скрытые на устройствах игроков",
+            VISIBILITY_CONTROLLER_ON: "подсказки, отображаемые на устройствах игроков",
+            VISIBILITY_SCREEN_OFF: "подсказки, скрытые на главном экране",
+            VISIBILITY_SCREEN_ON: "подсказки, отображаемые на главном экране"
         }
     },
     _j = {
-        DISCONNECTED: "You have been disconnected.",
-        DRAWING_NOTHING: "You have to draw something!",
-        PLAYER_KICKED: "You have been kicked from the game by a moderator.",
-        ROOM_DESTROYED: "Thanks for playing!",
-        ROOM_DISCONNECTED: "Disconnected",
-        TEXT_NAUGHTY: "I’m afraid you can’t write that. Please be respectful of other players.",
-        TEXT_NOTHING: "You can’t enter nothing!",
-        TITLE: "Error"
+        DISCONNECTED: "Вы были отключены.",
+        DRAWING_NOTHING: "Вы должны что-нибудь нарисовать!",
+        PLAYER_KICKED: "Вы были удалены из игры модератором.",
+        ROOM_DESTROYED: "Спасибо за игру!",
+        ROOM_DISCONNECTED: "Отключено",
+        TEXT_NAUGHTY: "Боюсь, что вы не можете этого написать. Пожалуйста, будьте уважительны к другим игрокам.",
+        TEXT_NOTHING: "Вы не можете ничего ввести!",
+        TITLE: "Ошибка"
     },
-    Tj = "LOADING",
+    Tj = "ЗАГРУЗКА",
     vj = {
-        JOINED_COUNT: "{count} of {maxPlayers} players joined",
-        PLAYERS_NEEDED: "1 player needed to start | {count} players needed to start",
-        WAITING_FOR_VIP: "Waiting for {name} to start the game",
-        WAITING_FOR_GAMEPAD: "Waiting for the game to start",
-        WAITING_FOR_NEW_GAME: "Waiting for a new game to start",
-        GAME_STARTING: "Game is starting",
-        BUTTON_START: "Press to Start",
-        BUTTON_CANCEL: "Press to Cancel"
+        JOINED_COUNT: "В игре {count} из {maxPlayers} игроков",
+        PLAYERS_NEEDED: "Нужен ещё 1 игрок | Нужно ещё {count} игрока",
+        WAITING_FOR_VIP: "Ждём, когда {имя} начнёт игру",
+        WAITING_FOR_GAMEPAD: "Ждём начала игры",
+        WAITING_FOR_NEW_GAME: "Ждём начала новой игры",
+        GAME_STARTING: "Игра уже началась",
+        BUTTON_START: "Нажмите, чтобы начать",
+        BUTTON_CANCEL: "Нажмите, чтобы отменить"
     },
     bj = {
-        GALLERY_LINK: "Visit the Gallery",
-        NEW_GAME_STARTED: "A new game has started",
-        PLAY_AGAIN: "Play again?",
-        THANKS_FOR_PLAYING: "Thanks for playing!",
-        BUTTON_GO_TO_GAME: "Go to game",
-        BUTTON_GO_TO_JACKBOX: "Back to jackbox.tv",
-        BUTTON_SAME_PLAYERS: "Same players",
-        BUTTON_NEW_PLAYERS: "New players"
+        GALLERY_LINK: "Посетить галерею",
+        NEW_GAME_STARTED: "Началась новая игра",
+        PLAY_AGAIN: "Сыграть снова?",
+        THANKS_FOR_PLAYING: "Спасибо за игру!",
+        BUTTON_GO_TO_GAME: "Присоединиться к игре",
+        BUTTON_GO_TO_JACKBOX: "Назад на nedojack.ru",
+        BUTTON_SAME_PLAYERS: "Те же игроки",
+        BUTTON_NEW_PLAYERS: "Новые игроки"
     },
     xj = {
-        AND: "AND",
-        OR: "OR"
+        AND: "И",
+        OR: "ИЛИ"
     },
     Rj = {
-        BUTTON_SKIP: "Skip",
-        BUTTON_NEXT: "Next",
-        BUTTON_DONE: "Let’s Go!"
+        BUTTON_SKIP: "Пропустить",
+        BUTTON_NEXT: "Далее",
+        BUTTON_DONE: "Принять!"
     },
     Sj = {
-        NAME: "AUDIENCE"
+        NAME: "ЗРИТЕЛИ"
     },
     yj = {
         CART: {
-            CHECK_OUT: "Check out",
-            EMPTY: "Your cart is empty",
-            TITLE: "Shopping Cart",
-            TOTAL: "Total"
+            CHECK_OUT: "Проверить",
+            EMPTY: "Корзина пуста",
+            TITLE: "Корзина",
+            TOTAL: "Итого"
         }
     },
     Aj = {
-        EPISODE_REPORT: "Report Episode",
-        EPISODE_UNLOAD: "Unload Episode",
-        EPISODE_VIEW_AUTHOR: "View Author",
-        EPISODES_LOAD: "Load an episode by id:",
-        EPISODES_MENU: "Episodes Menu",
-        EPISODES_SELECT: "Or select an epsiode:",
-        EPISODES_WARNING: "Warning: user generated content is not rated",
+        EPISODE_REPORT: "Пожаловаться на эпизод",
+        EPISODE_UNLOAD: "Загрузить эпизод",
+        EPISODE_VIEW_AUTHOR: "Посмотреть автора",
+        EPISODES_LOAD: "Загрузить эпизод по id:",
+        EPISODES_MENU: "Меню эпизодов",
+        EPISODES_SELECT: "Или выбрать эпизод:",
+        EPISODES_WARNING: "Предупреждение: пользовательский контент не оценивается",
         INSTRUCTION: {
-            CREATE_TITLE: "first things first, enter a name for the episode that will contain all your prompts and hit create.",
-            LOAD: "create or load?",
-            PUBLISH: "publish your episode",
-            TITLE: "name your episode",
-            TOGGLE_VISIBILITY: "tap to show/hide prompts",
-            WRITE: "write your prompts"
+            CREATE_TITLE: "Прежде всего, введите название эпизода, который будет содержать все ваши подсказки, и нажмите кнопку СОЗДАТЬ.",
+            LOAD: "создать или загрузить?",
+            PUBLISH: "опубликовать эпизод",
+            TITLE: "назовите эпизод",
+            TOGGLE_VISIBILITY: "Нажмите, чтобы показать/скрыть подсказки",
+            WRITE: "написать подсказки"
         },
         WARNING: {
-            DELETE: "Are you sure you want to delete this episode?",
-            TOS: "By sharing content, you agree to our [tos]Terms of Service[/tos]",
-            TOS_AGREE: "agree and share"
+            DELETE: "Вы уверены, что хотите удалить этот эпизод?",
+            TOS: "Публикуя контент, вы соглашаетесь с нашими [tos]Условиями пользования[/tos]",
+            TOS_AGREE: "согласиться и поделиться"
         },
-        BACK_TO_EPISODES: "back to episodes",
-        BACK_TO_MENU: "back to menu",
-        CREATE_NEW_EPISODE: "create a new episode",
-        PREVIOUS_EPISODES: "previous episodes",
-        PROMPT_ADD: "add prompt",
-        PROMPT_PLACEHOLDER: "enter a prompt",
+        BACK_TO_EPISODES: "назад к эпизодам",
+        BACK_TO_MENU: "вернуться в меню",
+        CREATE_NEW_EPISODE: "создать новый эпизод",
+        PREVIOUS_EPISODES: "предыдущие эпизоды",
+        PROMPT_ADD: "добавить подсказку",
+        PROMPT_PLACEHOLDER: "введите подсказку",
         PROMPTS_COUNT_HIDDEN: "({count} hidden)",
-        TITLE_PLACEHOLDER: "enter a title"
+        TITLE_PLACEHOLDER: "введите название"
     },
     Lj = {
         BROADCASTER: {
-            SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
-            WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
+                SUBTEXT: "Вы успешно подключили свою учетную запись к Twitch.",
+                WARNING: "В ЭТОЙ КОМНАТЕ НЕ ВКЛЮЧЕНА НАСТРОЙКА ЗРИТЕЛИ"
         },
         RECONNECTED: {
-            TEXT: "RECONNECTED",
-            SUBTEXT: "Have fun!"
+            TEXT: "ПЕРЕПОДКЛЮЧЕНИЕ",
+            SUBTEXT: "Веселитесь!"
         },
         RECONNECTING: {
             CONTROLLER: {
-                TEXT: "CONNECTION INTERRUPTED",
-                SUBTEXT: "Attempting to reconnect ({attempt} of 5)"
+                TEXT: "СОЕДИНЕНИЕ ПРЕРВАНО",
+                SUBTEXT: "Попытка повторного подключения ({attempt} из 5)"
             },
             GAME: {
-                TEXT: "GAME CONNECTION INTERRUPTED",
-                SUBTEXT: "Please wait while we attempt to reconnect"
+                TEXT: "ПРЕРВАНО СОЕДИНЕНИЕ С ИГРОЙ",
+                SUBTEXT: "Пожалуйста, подождите, пока мы попытаемся восстановить соединение"
             }
         },
         PAUSED: {
-            TEXT: "THE GAME IS PAUSED",
-            SUBTEXT: "Anything you submit will still be sent to the game."
+            TEXT: "ИГРА ПРИОСТАНОВЛЕНА",
+            SUBTEXT: "Всё, что вы отправите, всё равно будет отправлено в игру."
         }
     },
     Cj = {
-        SHARE: "Share",
-        COPY_TO_CLIPBOARD: "Copy to clipboard",
-        COPIED: "Copied"
+        SHARE: "Поделиться",
+        COPY_TO_CLIPBOARD: "Скопировать в буфер обмена",
+        COPIED: "Скопировано"
     },
     wj = {
         ACTION: mj,
@@ -25720,12 +25720,12 @@ Tc.exports;
             Iw = "\\u20d0-\\u20ff",
             Ng = ww + Ow + Iw,
             Pg = "\\u2700-\\u27bf",
-            Ug = "a-z\\xdf-\\xf6\\xf8-\\xff",
+            Ug = "a-zа-я\\xdf-\\xf6\\xf8-\\xff",
             Nw = "\\xac\\xb1\\xd7\\xf7",
             Pw = "\\x00-\\x2f\\x3a-\\x40\\x5b-\\x60\\x7b-\\xbf",
             Uw = "\\u2000-\\u206f",
             Dw = " \\t\\x0b\\f\\xa0\\ufeff\\n\\r\\u2028\\u2029\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u202f\\u205f\\u3000",
-            Dg = "A-Z\\xc0-\\xd6\\xd8-\\xde",
+            Dg = "A-ZА-Я\\xc0-\\xd6\\xd8-\\xde",
             Bg = "\\ufe0e\\ufe0f",
             Mg = Nw + Pw + Uw + Dw,
             Op = "['’]",
@@ -25750,8 +25750,8 @@ Tc.exports;
             jg = $w + "?",
             zg = "[" + Bg + "]?",
             kw = "(?:" + Fg + "(?:" + [Vg, Np, Pp].join("|") + ")" + zg + jg + ")*",
-            Gw = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z_])",
-            Vw = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])",
+            Gw = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-ZА-Я_])",
+            Vw = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-zА-Я_])",
             qg = zg + jg + kw,
             Fw = "(?:" + [Mw, Np, Pp].join("|") + ")" + qg,
             Hw = "(?:" + [Vg + pu + "?", pu, Np, Pp, Bw].join("|") + ")",
@@ -25760,7 +25760,7 @@ Tc.exports;
             Up = RegExp(Ip + "(?=" + Ip + ")|" + Hw + qg, "g"),
             jw = RegExp([Ra + "?" + kg + "+" + Wg + "(?=" + [$g, Ra, "$"].join("|") + ")", Kw + "+" + Xg + "(?=" + [$g, Ra + Hg, "$"].join("|") + ")", Ra + "?" + Hg + "+" + Wg, Ra + "+" + Xg, Vw, Gw, Kg, Fw].join("|"), "g"),
             zw = RegExp("[" + Fg + cu + Ng + Bg + "]"),
-            qw = /[a-z][A-Z]|[A-Z]{2}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/,
+            qw = /[a-z][а-я][A-Z][А-Я]|[A-Z][А-Я]{2}[a-z][а-я]|[0-9][a-zA-Z][а-яА-Я]|[a-zA-Z][а-яА-Я][0-9]|[^a-zA-Zа-яА-Я0-9 ]/,
             Yw = ["Array", "Buffer", "DataView", "Date", "Error", "Float32Array", "Float64Array", "Function", "Int8Array", "Int16Array", "Int32Array", "Map", "Math", "Object", "Promise", "RegExp", "Set", "String", "Symbol", "TypeError", "Uint8Array", "Uint8ClampedArray", "Uint16Array", "Uint32Array", "WeakMap", "_", "clearTimeout", "isFinite", "parseInt", "setTimeout"],
             Jw = -1,
             Ft = {};
@@ -31222,7 +31222,7 @@ var Yi = rg,
                 return new Yi.Token(Yi.Token.Type.startTag, r, n, e[0])
             }
             return new Yi.Token(Yi.Token.Type.endTag, e[1].substr(1, e[1].length - 1))
-        }, t.nameChars = "[a-zA-Z0-9\\.\\-_:;/]", t.valueChars = "[a-zA-Z0-9\\.\\-_:;#/\\s]", t
+        }, t.nameChars = "[a-zA-Zа-яА-Я0-9\\.\\-_:;/]", t.valueChars = "[a-zA-Zа-яА-Я0-9\\.\\-_:;#/\\s]", t
     }();
 bp.Tokenizer = ete;
 (function(t) {
