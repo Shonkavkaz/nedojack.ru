@@ -35956,7 +35956,7 @@ const wae = {
         WAITING: "Waiting for Room"
     },
     Oae = {
-        ACCEPT_ALL: "Получилось!",
+        ACCEPT_ALL: "Согласиться",
         CONSENT_MODAL: {
             ARIA: "Форма согласия на использование cookie"
         },
