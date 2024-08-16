@@ -28247,7 +28247,7 @@ const s_e = {
     a_e = {
         BASS: "Бас",
         MELODY: "Мелодия",
-        COUNTER: "Тенор",
+        COUNTER: "Контрмелодия",
         DRUMS: "Ударные",
         PERCUSSION: "Перкуссия",
         HARMONY: "Гармония",
