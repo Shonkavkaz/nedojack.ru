@@ -28245,101 +28245,101 @@ const s_e = {
         SELECT_SONG: "select song {songName}"
     },
     a_e = {
-        BASS: "Bass",
-        MELODY: "Melody",
-        COUNTER: "Counter",
-        DRUMS: "Drums",
-        PERCUSSION: "Percussion",
-        HARMONY: "Harmony",
-        SIGNATURE: "Signature"
+        BASS: "Бас",
+        MELODY: "Мелодия",
+        COUNTER: "Тенор",
+        DRUMS: "Ударные",
+        PERCUSSION: "Перкуссия",
+        HARMONY: "Гармония",
+        SIGNATURE: "Сигнатура"
     },
     c_e = {
-        GET_READY: "Get Ready",
-        TAP: "tap",
-        TAP_ALONG: "and then tap along",
-        TAP_HERE: "TAP[break][/break]ZONE[info](OR PRESS SPACEBAR)[/info]",
-        SYNCED: "synced",
-        SYNCING: "Syncing",
-        WAIT: "Wait for the count down"
+        GET_READY: "Приготовьтесь",
+        TAP: "жми",
+        TAP_ALONG: "и затем жми на",
+        TAP_HERE: "ЖМИ[break][/break]СЮДА[info](ИЛИ НАЖИМАЙ ПРОБЕЛ)[/info]",
+        SYNCED: "синхронизировано",
+        SYNCING: "Синхронизация",
+        WAIT: "Ожидайте обратного отсчета"
     },
     l_e = {
-        SHARE: "Share",
-        SILENT_PHONE: "Don't forget to put your phone back on silent!"
+        SHARE: "Поделиться",
+        SILENT_PHONE: "Не забудьте поставить телефон на беззвучный режим!"
     },
     u_e = {
-        VERY_EASY: "Super Easy",
-        EASY: "Easy",
-        MEDIUM: "Medium",
-        HARD: "Hard",
-        VERY_HARD: "Super Hard"
+        VERY_EASY: "Очень легко",
+        EASY: "Легко",
+        MEDIUM: "Средне",
+        HARD: "Сложно",
+        VERY_HARD: "Очень сложно"
     },
     h_e = {
-        DOWNLOAD: "DOWNLOAD MP3"
+        DOWNLOAD: "СКАЧАТЬ MP3"
     },
     f_e = {
-        CONTINUOUS: "Tap and hold notes when they enter the zone below",
-        DISCRETE: "Tap notes when they fill the circles below",
-        PAUSED: "Game Paused",
-        IN_PROGRESS: "Song In Progress",
-        PROCESSING: "The birds are preparing to play back your performance"
+        CONTINUOUS: "Нажимай и удерживай ноты, когда они попадают в зону ниже",
+        DISCRETE: "Нажимай на ноты, когда они заполнят зону ниже",
+        PAUSED: "Игра приостановлена",
+        IN_PROGRESS: "Песня в процессе исполнения",
+        PROCESSING: "Птицы готовятся отыграть ваше выступление"
     },
     d_e = {
-        BACK_TO_MENU: "Back to Game Menu",
-        BEST_SCORE: "Best Score",
-        CANCEL: "Cancel",
-        CHANGE_HOST: "Change[break][/break]Host?",
-        CHOOSE_HOST: "Choose New Host",
-        CHOOSE_INSTRUMENT: "Choose an Instrument",
-        CHOOSE_SONG: "Choose a Song",
-        COMPLETED_PARTS: "Parts Survived",
-        CUSTOMIZE: "Customize?",
-        DIFFICULTY: "Difficulty",
-        END_SESSION: "End Session",
-        LANES: "Lanes",
-        LOADING: "Loading",
-        LOCKED: "Locked",
-        NEVERMIND: "Nevermind",
-        NEW_SONG: "New Song",
-        RETRY_SONG: "Retry Song",
-        RESET: "Reset",
-        SELECT_SONG: "Select Song",
-        SONG_PART: "Song Part",
-        SPACEBAR: "SPACE",
-        START_SONG: "Play Song",
-        TEST_IT: "Test It Out",
-        THANKS: "Thanks for playing",
-        UNLOCKED: "Unlocked Instruments",
-        VOTE_SONG: "Vote for a Song",
-        WAITING_FOR: "Waiting for {vipName}",
-        WAITING_FOR_SONG: "Waiting for {vipName} to select song",
-        WHAT_NEXT: "What's Next?"
+        BACK_TO_MENU: "Вернуться в меню игры",
+        BEST_SCORE: "Лучший счёт",
+        CANCEL: "Отмена",
+        CHANGE_HOST: "Изменить[break][/break]ведущего?",
+        CHOOSE_HOST: "Выбрать нового ведущего",
+        CHOOSE_INSTRUMENT: "Выбери инструмент",
+        CHOOSE_SONG: "Выбери песню",
+        COMPLETED_PARTS: "Виды инструментов",
+        CUSTOMIZE: "Настроить?",
+        DIFFICULTY: "Сложность",
+        END_SESSION: "Завершить сессию",
+        LANES: "Полосы",
+        LOADING: "Загрузка",
+        LOCKED: "Заблокировано",
+        NEVERMIND: "Не обращай внимания",
+        NEW_SONG: "Новая песня",
+        RETRY_SONG: "Повторить песню",
+        RESET: "Сброс",
+        SELECT_SONG: "Выбрать песню",
+        SONG_PART: "Тип инструмента",
+        SPACEBAR: "ПРОБЕЛ",
+        START_SONG: "Играть песню",
+        TEST_IT: "Протестировать",
+        THANKS: "Спасибо за игру",
+        UNLOCKED: "Разблокированные инструменты",
+        VOTE_SONG: "Проголосуй за песню",
+        WAITING_FOR: "Ждём игрока {vipName}",
+        WAITING_FOR_SONG: "Ждём игрока {vipName} для выбора песни",
+        WHAT_NEXT: "Что дальше?"
     },
     p_e = {
-        SIT_BACK: "Sit back and enjoy",
-        LOOK_UP: "Performance on the main screen"
+        SIT_BACK: "Усаживайся поудобнее и наслаждайся",
+        LOOK_UP: "Посмотри на главный экран"
     },
     m_e = {
-        PERFECT: "Perfect",
-        GREAT: "Great",
-        OKAY: "Okay",
-        MISS: "Miss"
+        PERFECT: "Идеально",
+        GREAT: "Отлично",
+        OKAY: "Хорошо",
+        MISS: "Пропущено"
     },
     g_e = {
-        AUDIENCE: "Audience",
-        SURVIVED: "Survived",
-        EATEN: "Eaten"
+        AUDIENCE: "Зрители",
+        SURVIVED: "Выжил",
+        EATEN: "Съеден"
     },
     __e = {
-        AUDIO_CHECK: "Audio Check",
-        CHECK_SETTINGS: "Check these settings on your device",
-        CONFIRM: "Sounds good",
-        NOT_HEARING: "Not hearing anything?",
-        OFF: "OFF",
-        POWER_SAVER: "Power Saver Mode",
-        SILENT: "Silent Mode",
-        TEST: "Play test audio",
-        UP: "UP",
-        VOLUME: "Volume"
+        AUDIO_CHECK: "Проверка звука",
+        CHECK_SETTINGS: "Проверь эти настройки на устройстве",
+        CONFIRM: "Хороший звук",
+        NOT_HEARING: "Ничего не слышно?",
+        OFF: "ВЫКЛ",
+        POWER_SAVER: "Энергосберегающий режим",
+        SILENT: "Беззвучный режим",
+        TEST: "Тестовое аудио",
+        UP: "ВЫШЕ",
+        VOLUME: "Громкость"
     },
     y_e = {
         ALT: i_e,
