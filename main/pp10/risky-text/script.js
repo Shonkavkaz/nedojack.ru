@@ -29531,24 +29531,24 @@ ${t}`
         },
         lfe = {
             GO: "ВПЕРЕД!",
-            TAP_ME: "Нажми на меня",
-            OUT_OF_CHARS: "Out of characters",
-            SO_PROLIFIC: "SO PROLIFIC!",
-            RUN_OUT_CHARS: "You've run out of characters.",
+            TAP_ME: "Предложение",
+            OUT_OF_CHARS: "Символы закончились",
+            SO_PROLIFIC: "ТАК ОБЩИТЕЛЬНО!",
+            RUN_OUT_CHARS: "У тебя закончились символы.",
             PLACE_CURSOR: "Размести свой курсор",
-            GAME_BEGINS_IN: "Game begins in..."
+            GAME_BEGINS_IN: "Игра начнётся через..."
         },
         cfe = "Ожидаем",
-        ufe = "What are we even talking about in #FixyText! Check out the other texts in this #PartyPack10 game",
+        ufe = "О чем мы вообще говорим в #FixyText! Посмотрите другие тексты в этой игре #PartyPack10",
         ffe = {
-            TIPS: "Предложение",
-            WATING_WRITING: "Hang on! The OTHER team is writing",
-            CURSOR_1: "You can MOVE YOUR CURSOR to any part of the message after writing starts! Any time, any place.",
-            CURSOR_2: "Try moving YOUR CURSOR while typing - interrupt your friends and change it up!",
-            CO_AUTHOR_1: "Change someone else’s word? You get a CO-AUTHOR BONUS.",
-            CO_AUTHOR_2: "Someone get in the middle of your word? No problemo! You still get a CO-AUTHOR BONUS.",
-            SUGGESTION_1: "Try the “TAP ME” button under the text field for some chaotic writing inspiration",
-            SUGGESTION_2: "Wanna make it weird? The “TAP ME” button under the text field has some…suggestions for you ;)"
+            TIPS: "Советы",
+            WATING_WRITING: "Подожди! ДРУГАЯ команда пишет",
+            CURSOR_1: "Ты можешь ПЕРЕМЕСТИТЬ КУРСОР в любую часть сообщения после начала написания! В любое время, в любом месте.",
+            CURSOR_2: "Попробуй перемещать КУРСОР во время набора текста - исправь своих друзей и измени ситуацию!",
+            CO_AUTHOR_1: "Изменил чужое слово? Получи БОНУС СОАВТОРА.",
+            CO_AUTHOR_2: "Кто-то изменил твоё слово? Не беда! Ты все равно получишь БОНУС СОАВТОРА.",
+            SUGGESTION_1: "Воспользуйся кнопкой “ПРЕДЛОЖЕНИЯ” под текстом, чтобы вдохновиться на невероятную починку",
+            SUGGESTION_2: "Хочешь сделать текст странным? Кнопка “ПРЕДЛОЖЕНИЯ” под текстом даст тебе несколько подсказок ;)"
         },
         hfe = {
             ALT: sfe,
