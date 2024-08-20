@@ -13421,83 +13421,83 @@ ${r.message}`,
         }
     }
     const NH = {
-            BACK: "Back",
-            CANCEL: "Cancel",
-            CLOSE: "Close",
-            CONFIRM: "Confirm",
-            CREATE: "Create",
-            DELETE: "Delete",
-            DONE: "Done",
-            EDIT: "Edit",
+            BACK: "Назад",
+            CANCEL: "Отмена",
+            CLOSE: "Закрыть",
+            CONFIRM: "Подтвердить",
+            CREATE: "Создать",
+            DELETE: "Удалить",
+            DONE: "Готово",
+            EDIT: "Редактировать",
             OK: "OK",
-            NEXT: "Next",
-            NO: "No",
-            PLAY: "Play",
-            PUBLISH: "Publish",
-            REMOVE: "Remove",
-            RESET: "Reset",
-            SUBMIT: "Submit",
-            TRY_AGAIN: "Try Again",
-            UNDO: "Undo",
-            YES: "Yes"
+            NEXT: "Далее",
+            NO: "Нет",
+            PLAY: "Играть",
+            PUBLISH: "Опубликовать",
+            REMOVE: "Удалить",
+            RESET: "Сбросить",
+            SUBMIT: "Отправить",
+            TRY_AGAIN: "Повторить попытку",
+            UNDO: "Отменить",
+            YES: "Да"
         },
         PH = {
             UGC: {
-                VISIBILITY_CONTROLLER_OFF: "prompts hidden on players’ devices",
-                VISIBILITY_CONTROLLER_ON: "prompts shown on players’ devices",
-                VISIBILITY_SCREEN_OFF: "prompts hidden on game screen",
-                VISIBILITY_SCREEN_ON: "prompts shown on game screen"
+                VISIBILITY_CONTROLLER_OFF: "подсказки, скрытые на устройствах игроков",
+                VISIBILITY_CONTROLLER_ON: "подсказки, отображаемые на устройствах игроков",
+                VISIBILITY_SCREEN_OFF: "подсказки, скрытые на главном экране",
+                VISIBILITY_SCREEN_ON: "подсказки, отображаемые на главном экране"
             }
         },
         xH = {
-            DISCONNECTED: "You have been disconnected.",
-            DRAWING_NOTHING: "You have to draw something!",
-            PLAYER_KICKED: "You have been kicked from the game by a moderator.",
-            ROOM_DESTROYED: "Thanks for playing!",
-            ROOM_DISCONNECTED: "Disconnected",
-            TEXT_NAUGHTY: "I’m afraid you can’t write that. Please be respectful of other players.",
-            TEXT_NOTHING: "You can’t enter nothing!",
-            TITLE: "Error"
+            DISCONNECTED: "Вы были отключены.",
+            DRAWING_NOTHING: "Вы должны что-нибудь нарисовать!",
+            PLAYER_KICKED: "Вы были удалены из игры модератором.",
+            ROOM_DESTROYED: "Спасибо за игру!",
+            ROOM_DISCONNECTED: "Отключено",
+            TEXT_NAUGHTY: "Боюсь, что вы не можете этого написать. Пожалуйста, будьте уважительны к другим игрокам.",
+            TEXT_NOTHING: "Вы не можете ничего ввести!",
+            TITLE: "Ошибка"
         },
         MH = "LOADING",
         DH = {
-            JOINED_COUNT: "{count} of {maxPlayers} players joined",
-            PLAYERS_NEEDED: "1 player needed to start | {count} players needed to start",
-            WAITING_FOR_VIP: "Waiting for {name} to start the game",
-            WAITING_FOR_GAMEPAD: "Waiting for the game to start",
-            WAITING_FOR_NEW_GAME: "Waiting for a new game to start",
-            GAME_STARTING: "Game is starting",
-            BUTTON_START: "Press to Start",
-            BUTTON_CANCEL: "Press to Cancel"
+            JOINED_COUNT: "В игре {count} из {maxPlayers} игроков",
+            PLAYERS_NEEDED: "Нужен ещё 1 игрок | Нужно ещё {count} игрока",
+            WAITING_FOR_VIP: "Ждём, когда {name} начнёт игру",
+            WAITING_FOR_GAMEPAD: "Ждём начала игры",
+            WAITING_FOR_NEW_GAME: "Ждём начала новой игры",
+            GAME_STARTING: "Игра уже началась",
+            BUTTON_START: "Нажмите, чтобы начать",
+            BUTTON_CANCEL: "Нажмите, чтобы отменить"
         },
         UH = {
-            GALLERY_LINK: "Visit the Gallery",
-            NEW_GAME_STARTED: "A new game has started",
-            PLAY_AGAIN: "Play again?",
-            THANKS_FOR_PLAYING: "Thanks for playing!",
-            BUTTON_GO_TO_GAME: "Go to game",
-            BUTTON_GO_TO_JACKBOX: "Back to jackbox.tv",
-            BUTTON_SAME_PLAYERS: "Same players",
-            BUTTON_NEW_PLAYERS: "New players"
+            GALLERY_LINK: "Посетить галерею",
+            NEW_GAME_STARTED: "Началась новая игра",
+            PLAY_AGAIN: "Сыграть снова?",
+            THANKS_FOR_PLAYING: "Спасибо за игру!",
+            BUTTON_GO_TO_GAME: "Присоединиться к игре",
+            BUTTON_GO_TO_JACKBOX: "Назад на nedojack.ru",
+            BUTTON_SAME_PLAYERS: "Те же игроки",
+            BUTTON_NEW_PLAYERS: "Новые игроки"
         },
         BH = {
-            AND: "AND",
-            OR: "OR"
+            AND: "И",
+            OR: "ИЛИ"
         },
         FH = {
-            BUTTON_SKIP: "Skip",
-            BUTTON_NEXT: "Next",
-            BUTTON_DONE: "Let’s Go!"
+            BUTTON_SKIP: "Пропустить",
+            BUTTON_NEXT: "Далее",
+            BUTTON_DONE: "Принять!"
         },
         $H = {
-            NAME: "AUDIENCE"
+            NAME: "ЗРИТЕЛИ"
         },
         jH = {
             CART: {
-                CHECK_OUT: "Check out",
-                EMPTY: "Your cart is empty",
-                TITLE: "Shopping Cart",
-                TOTAL: "Total"
+                CHECK_OUT: "Проверить",
+                EMPTY: "Корзина пуста",
+                TITLE: "Корзина",
+                TOTAL: "Итого"
             }
         },
         GH = {
@@ -13532,32 +13532,32 @@ ${r.message}`,
         },
         qH = {
             BROADCASTER: {
-                SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
-                WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
+                SUBTEXT: "Вы успешно подключили свою учетную запись к Twitch.",
+                WARNING: "В ЭТОЙ КОМНАТЕ НЕ ВКЛЮЧЕНА НАСТРОЙКА ЗРИТЕЛИ"
             },
             RECONNECTED: {
-                TEXT: "RECONNECTED",
-                SUBTEXT: "Have fun!"
+                TEXT: "ПЕРЕПОДКЛЮЧЕНИЕ",
+                SUBTEXT: "Веселитесь!"
             },
             RECONNECTING: {
                 CONTROLLER: {
-                    TEXT: "CONNECTION INTERRUPTED",
-                    SUBTEXT: "Attempting to reconnect ({attempt} of 5)"
+                    TEXT: "СОЕДИНЕНИЕ ПРЕРВАНО",
+                    SUBTEXT: "Попытка повторного подключения ({attempt} из 5)"
                 },
                 GAME: {
-                    TEXT: "GAME CONNECTION INTERRUPTED",
-                    SUBTEXT: "Please wait while we attempt to reconnect"
+                    TEXT: "ПРЕРВАНО СОЕДИНЕНИЕ С ИГРОЙ",
+                    SUBTEXT: "Пожалуйста, подождите, пока мы попытаемся восстановить соединение"
                 }
             },
             PAUSED: {
-                TEXT: "THE GAME IS PAUSED",
-                SUBTEXT: "Anything you submit will still be sent to the game."
+                TEXT: "ИГРА ПРИОСТАНОВЛЕНА",
+                SUBTEXT: "Всё, что вы отправите, всё равно будет отправлено в игру."
             }
         },
         HH = {
-            SHARE: "Share",
-            COPY_TO_CLIPBOARD: "Copy to clipboard",
-            COPIED: "Copied"
+            SHARE: "Поделиться",
+            COPY_TO_CLIPBOARD: "Скопировать в буфер обмена",
+            COPIED: "Скопировано"
         },
         VH = {
             ACTION: NH,
@@ -29522,26 +29522,26 @@ ${t}`
             }
         },
         ofe = {
-            BUTTON_START: "Start game!",
-            SHUFFLE_FACE: "tap to make a face"
+            BUTTON_START: "Начать игру!",
+            SHUFFLE_FACE: "нажми, чтобы изменить лицо"
         },
         afe = {
-            CLEAR: "Clear",
-            SUBMIT: "Done"
+            CLEAR: "Очистить",
+            SUBMIT: "Готово"
         },
         lfe = {
-            GO: "GO!",
-            TAP_ME: "Tap Me",
+            GO: "ВПЕРЕД!",
+            TAP_ME: "Нажми на меня",
             OUT_OF_CHARS: "Out of characters",
             SO_PROLIFIC: "SO PROLIFIC!",
             RUN_OUT_CHARS: "You've run out of characters.",
-            PLACE_CURSOR: "Place your cursor",
+            PLACE_CURSOR: "Размести свой курсор",
             GAME_BEGINS_IN: "Game begins in..."
         },
-        cfe = "Waiting",
+        cfe = "Ожидаем",
         ufe = "What are we even talking about in #FixyText! Check out the other texts in this #PartyPack10 game",
         ffe = {
-            TIPS: "Tips",
+            TIPS: "Предложение",
             WATING_WRITING: "Hang on! The OTHER team is writing",
             CURSOR_1: "You can MOVE YOUR CURSOR to any part of the message after writing starts! Any time, any place.",
             CURSOR_2: "Try moving YOUR CURSOR while typing - interrupt your friends and change it up!",
