@@ -13459,7 +13459,7 @@ ${r.message}`,
             TEXT_NOTHING: "Вы не можете ничего ввести!",
             TITLE: "Ошибка"
         },
-        MH = "LOADING",
+        MH = "ЗАГРУЗКА",
         DH = {
             JOINED_COUNT: "В игре {count} из {maxPlayers} игроков",
             PLAYERS_NEEDED: "Нужен ещё 1 игрок | Нужно ещё {count} игрока",
