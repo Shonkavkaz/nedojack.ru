@@ -2490,7 +2490,7 @@ class Zn {
     static pageView(e) {
         this.ga("page_view", {
             page_title: e,
-            page_location: `https://jackbox.tv/${e}`
+            page_location: `https://nedojack.ru/${e}`
         })
     }
     static gameStarted(e, r) {
@@ -3037,7 +3037,7 @@ const Fu = [{
         name: "Dirty Drawful",
         tag: "drawful3",
         wrapper: "vue",
-        isPublic: !1,
+        isPublic: !0,
         directory: "ppad/drawful3",
         categoryId: "Drawful3Game",
         features: ["moderation", "kicking"]
@@ -3993,10 +3993,10 @@ const bt = class bt {
         return !e || e === "live" ? "ecast.jackboxgames.com" : e === "local" ? "https://localhost" : e.includes("localhost") ? e : `${e}.jackboxgames.com`
     }
     static isDevelopment() {
-        return window.location.hostname === "dev.jackbox.tv" || window.location.hostname === "localhost"
+        return window.location.hostname === "dev.nedojack.ru" || window.location.hostname === "localhost"
     }
     static isProduction() {
-        return window.location.hostname === "jackbox.tv"
+        return window.location.hostname === "nedojack.ru"
     }
     static get isCanvasSupported() {
         const e = document.createElement("canvas");
@@ -14194,6 +14194,12 @@ const _g = "production",
                     css: ["assets/style-0.css"],
                     base: "main/pp10/us-them",
                     version: "5.385.151"
+                },
+                "drawful3": {
+                    file: "script.js",
+                    css: ["assets/style-0.css"],
+                    base: "main/ppad/drawful3",
+                    version: "5.638.297"
                 }
             }
         }

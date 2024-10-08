@@ -7849,7 +7849,7 @@ class Aa {
     static pageView(e) {
         this.ga("page_view", {
             page_title: e,
-            page_location: `https://jackbox.tv/${e}`
+            page_location: `https://nedojack.ru/${e}`
         })
     }
     static gameStarted(e, r) {
@@ -9388,10 +9388,10 @@ const ca = class ca {
         return !e || e === "live" ? "ecast.jackboxgames.com" : e === "local" ? "https://localhost" : e.includes("localhost") ? e : `${e}.jackboxgames.com`
     }
     static isDevelopment() {
-        return window.location.hostname === "dev.jackbox.tv" || window.location.hostname === "localhost"
+        return window.location.hostname === "dev.nedojack.ru" || window.location.hostname === "localhost"
     }
     static isProduction() {
-        return window.location.hostname === "jackbox.tv"
+        return window.location.hostname === "nedojack.ru"
     }
     static get isCanvasSupported() {
         const e = document.createElement("canvas");
@@ -9634,7 +9634,7 @@ class Ao {
         return this.artifacts.some(e=>!e.isViewed)
     }
     getUrl(e, r) {
-        return r.galleryId ? `/gallery/${r.galleryId}/${e.artifactId}` : e.isTest ? `http://games-test.jackbox.tv/artifact/${e.categoryId}/${e.artifactId}/` : `https://games.jackbox.tv/artifact/${e.categoryId}/${e.artifactId}/`
+        return r.galleryId ? `/gallery/${r.galleryId}/${e.artifactId}` : e.isTest ? `http://games-test.nedojack.ru/artifact/${e.categoryId}/${e.artifactId}/` : `https://games.nedojack.ru/artifact/${e.categoryId}/${e.artifactId}/`
     }
     getLocalArtifact(e) {
         const r = new Intl.DateTimeFormat(Ss.locale,{
@@ -14141,7 +14141,7 @@ class CG {
               , u = s[s.length - 2];
             return {
                 json: n.body.url,
-                dev: `https://dev.jackbox.tv/debug/cloud/${u}/${a}/`,
+                dev: `https://dev.nedojack.ru/debug/cloud/${u}/${a}/`,
                 local: `http://localhost:9090/debug/cloud/${u}/${a}/`
             }
         } catch (r) {
@@ -14208,7 +14208,7 @@ ${r}`
                         url: e.dev,
                         text: {
                             type: "plain_text",
-                            text: "dev.jackbox.tv",
+                            text: "dev.nedojack.ru",
                             emoji: !0
                         }
                     }]
@@ -20544,7 +20544,7 @@ class kG {
     }
     static html(e) {
         if (String(e).match(/<fart>/g)) {
-            const n = new Audio(new URL("https://bundles.jackbox.tv/main/ppad-drawful3/assets/BhWysX6c.wav",import.meta.url).href);
+            const n = new Audio(new URL("https://bundles.nedojack.ru/main/ppad-drawful3/assets/BhWysX6c.wav",import.meta.url).href);
             n.volume = .1,
             n.play()
         }
@@ -20669,7 +20669,7 @@ const MG = {
     WHICH_PLAYERS: "Which players?",
     THANKS_FOR_PLAYING: "Thanks for playing!",
     BUTTON_GO_TO_GAME: "Go to game",
-    BUTTON_GO_TO_JACKBOX: "Back to jackbox.tv",
+    BUTTON_GO_TO_JACKBOX: "Back to nedojack.ru",
     BUTTON_PLAY_AGAIN: "Play again",
     BUTTON_SAME_PLAYERS: "Same players",
     BUTTON_NEW_PLAYERS: "New players",
@@ -20828,7 +20828,7 @@ const MG = {
     WHICH_PLAYERS: "Avec quels joueurs ?",
     THANKS_FOR_PLAYING: "Merci d'avoir joué !",
     BUTTON_GO_TO_GAME: "Aller au jeu",
-    BUTTON_GO_TO_JACKBOX: "Retour à jackbox.tv",
+    BUTTON_GO_TO_JACKBOX: "Retour à nedojack.ru",
     BUTTON_PLAY_AGAIN: "Rejouer",
     BUTTON_SAME_PLAYERS: "Mêmes joueurs",
     BUTTON_NEW_PLAYERS: "Nouveaux joueurs",
@@ -20987,7 +20987,7 @@ const MG = {
     WHICH_PLAYERS: "Quali giocatori?",
     THANKS_FOR_PLAYING: "Grazie per aver scelto di giocare con noi!",
     BUTTON_GO_TO_GAME: "Vai al gioco",
-    BUTTON_GO_TO_JACKBOX: "Torna a jackbox.tv",
+    BUTTON_GO_TO_JACKBOX: "Torna a nedojack.ru",
     BUTTON_PLAY_AGAIN: "Gioca di nuovo",
     BUTTON_SAME_PLAYERS: "Stessi giocatori",
     BUTTON_NEW_PLAYERS: "Nuovi giocatori",
@@ -21146,7 +21146,7 @@ const MG = {
     WHICH_PLAYERS: "Welche Spieler?",
     THANKS_FOR_PLAYING: "Danke fürs Spielen!",
     BUTTON_GO_TO_GAME: "Zum Spiel",
-    BUTTON_GO_TO_JACKBOX: "Zurück zu jackbox.tv",
+    BUTTON_GO_TO_JACKBOX: "Zurück zu nedojack.ru",
     BUTTON_PLAY_AGAIN: "Erneut spielen",
     BUTTON_SAME_PLAYERS: "Selbe Spieler",
     BUTTON_NEW_PLAYERS: "Neue Spieler",
@@ -21305,7 +21305,7 @@ const MG = {
     WHICH_PLAYERS: "¿Qué jugadores?",
     THANKS_FOR_PLAYING: "¡Gracias por jugar!",
     BUTTON_GO_TO_GAME: "Ir a al juego",
-    BUTTON_GO_TO_JACKBOX: "Volver a jackbox.tv",
+    BUTTON_GO_TO_JACKBOX: "Volver a nedojack.ru",
     BUTTON_PLAY_AGAIN: "Jugar de nuevo",
     BUTTON_SAME_PLAYERS: "Los mismos jugadores",
     BUTTON_NEW_PLAYERS: "Nuevos jugadores",
@@ -21464,7 +21464,7 @@ const MG = {
     WHICH_PLAYERS: "¿Cuáles jugadores?",
     THANKS_FOR_PLAYING: "¡Gracias por jugar!",
     BUTTON_GO_TO_GAME: "Ir a la partida",
-    BUTTON_GO_TO_JACKBOX: "Volver a jackbox.tv",
+    BUTTON_GO_TO_JACKBOX: "Volver a nedojack.ru",
     BUTTON_PLAY_AGAIN: "Jugar de nuevo",
     BUTTON_SAME_PLAYERS: "Los mismos jugadores",
     BUTTON_NEW_PLAYERS: "Nuevos jugadores",
@@ -21623,7 +21623,7 @@ const MG = {
     WHICH_PLAYERS: "Quais jogadores?",
     THANKS_FOR_PLAYING: "Obrigado por jogar!",
     BUTTON_GO_TO_GAME: "Ir para o jogo",
-    BUTTON_GO_TO_JACKBOX: "Voltar para jackbox.tv",
+    BUTTON_GO_TO_JACKBOX: "Voltar para nedojack.ru",
     BUTTON_PLAY_AGAIN: "Jogar de novo",
     BUTTON_SAME_PLAYERS: "Mesmos jogadores",
     BUTTON_NEW_PLAYERS: "Outros jogadores",
@@ -29178,8 +29178,8 @@ const Vq = ft(Pq, [["render", Mq], ["__scopeId", "data-v-16eba653"]])
         this.fetchCart();
         const t = La(this.categoryId ?? "");
         t && this.$setMeta({
-            title: `Jackbox.TV | ${t.name} Past Game`,
-            "og:title": `Jackbox.TV | ${t.name} Past Game`,
+            title: `Nedojack.RU | ${t.name} Past Game`,
+            "og:title": `Nedojack.RU | ${t.name} Past Game`,
             description: `See what happened in this crazy game of ${t.name}. Jackbox Games are available on a wide variety of digital platforms. We make irreverent party games including Quiplash, Fibbage, and Drawful.`,
             "og:description": `See what happened in this crazy game of ${t.name}. Jackbox Games are available on a wide variety of digital platforms. We make irreverent party games including Quiplash, Fibbage, and Drawful.`
         })
@@ -30238,11 +30238,11 @@ const $1 = Wi(eQ)
         }
     }
 })
-  , K1 = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/DLGomgNm.png"
-  , k1 = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/B8C13_5i.png"
-  , rQ = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/DaAsZ-1o.png"
-  , nQ = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/C0nA0hrp.png"
-  , iQ = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/_LZDgMYc.png"
+  , K1 = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/DLGomgNm.png"
+  , k1 = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/B8C13_5i.png"
+  , rQ = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/DaAsZ-1o.png"
+  , nQ = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/C0nA0hrp.png"
+  , iQ = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/_LZDgMYc.png"
   , cn = t=>(Ba("data-v-2c53389f"),
 t = t(),
 Pa(),
@@ -31867,9 +31867,9 @@ const vre = {
         dismissText: String
     }
 })
-  , yre = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/Bwlnl62i.png"
-  , Sre = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/DN8YV_ih.png"
-  , Are = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/Dv-2T4fF.png"
+  , yre = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/Bwlnl62i.png"
+  , Sre = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/DN8YV_ih.png"
+  , Are = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/Dv-2T4fF.png"
   , Lre = {
     key: 0,
     class: "image",
@@ -36224,7 +36224,7 @@ const Ese = t=>{
 }
   , vse = {
     PORTRAIT: {
-        INSTRUCTION: "Draw a portrait of yourself",
+        INSTRUCTION: "gfnygvd",
         WARNING: "Start before everyone's avatars are in?"
     }
 }
@@ -36772,27 +36772,27 @@ const Ese = t=>{
     "es-XL": Xae,
     "pt-BR": ioe
 }
-  , aoe = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/U8HCI30M.png"
-  , ooe = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/DKTQEj61.png"
-  , loe = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/SB9FfSpa.png"
-  , uoe = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/B4Gz0wBn.png"
-  , foe = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/Dq-VJc-Y.png"
-  , coe = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/CkvJjtAL.png"
-  , hoe = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/B3qGoktZ.png"
-  , poe = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/CG4dDNY2.png"
-  , Eoe = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/BNYUe1VZ.png"
-  , _oe = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/BsDh24uF.png"
-  , doe = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/BTKHEd5n.png"
-  , goe = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/wZTCkbyL.png"
-  , moe = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/BL2HlIqC.png"
-  , Toe = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/DG01MLKy.png"
-  , Roe = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/Cyh3YEse.png"
-  , xoe = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/BgspNlgv.png"
-  , voe = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/D0FcWONS.png"
-  , boe = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/DktWB89G.png"
-  , yoe = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/CfWTx56v.png"
-  , Soe = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/B_YHaA9b.png"
-  , Aoe = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/BuNjR9ok.png"
+  , aoe = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/U8HCI30M.png"
+  , ooe = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/DKTQEj61.png"
+  , loe = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/SB9FfSpa.png"
+  , uoe = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/B4Gz0wBn.png"
+  , foe = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/Dq-VJc-Y.png"
+  , coe = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/CkvJjtAL.png"
+  , hoe = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/B3qGoktZ.png"
+  , poe = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/CG4dDNY2.png"
+  , Eoe = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/BNYUe1VZ.png"
+  , _oe = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/BsDh24uF.png"
+  , doe = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/BTKHEd5n.png"
+  , goe = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/wZTCkbyL.png"
+  , moe = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/BL2HlIqC.png"
+  , Toe = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/DG01MLKy.png"
+  , Roe = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/Cyh3YEse.png"
+  , xoe = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/BgspNlgv.png"
+  , voe = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/D0FcWONS.png"
+  , boe = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/DktWB89G.png"
+  , yoe = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/CfWTx56v.png"
+  , Soe = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/B_YHaA9b.png"
+  , Aoe = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/BuNjR9ok.png"
   , Loe = Et({
     props: {
         artifactId: {
@@ -36866,7 +36866,7 @@ const Ese = t=>{
             try {
                 await wh.share(t.file, {
                     title: this.$t("SHAREABLE.TITLE"),
-                    url: `https://jackbox.tv/gallery/dirty-drawful/${this.artifactId}/0`
+                    url: `https://nedojack.ru/gallery/dirty-drawful/${this.artifactId}/0`
                 }, {
                     categoryId: this.artifact.categoryId,
                     options: {
@@ -36901,7 +36901,7 @@ const Ese = t=>{
         }
     }
 })
-  , bS = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/C_hL_aF6.png"
+  , bS = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/C_hL_aF6.png"
   , Coe = {
     class: "drawful3"
 }
@@ -37729,20 +37729,20 @@ function lue(t, e, r, n, s, a) {
     }, null, 8, oue)) : qe("", !0)], 8, rue)], 32))])
 }
 const uue = ft(Jle, [["render", lue], ["__scopeId", "data-v-96d5696f"]])
-  , fue = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/BhG3_jnX.png"
-  , cue = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/CMa-uL6L.png"
-  , hue = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/bHZRQGV5.png"
-  , pue = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/D9s7vt5t.png"
-  , Eue = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/BZEjfNIn.png"
-  , _ue = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/CPTrVQ1U.png"
-  , due = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/jwpGq9D2.png"
-  , gue = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/DeYr38WE.png"
-  , mue = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/C_JkudAQ.png"
-  , Tue = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/CNmSJ7bN.png"
-  , Rue = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/CNmSJ7bN.png"
-  , xue = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/CbTCsTAf.png"
-  , vue = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/C_JkudAQ.png"
-  , bue = "https://bundles.jackbox.tv/main/ppad-drawful3/assets/CNdesv-Z.png"
+  , fue = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/BhG3_jnX.png"
+  , cue = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/CMa-uL6L.png"
+  , hue = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/bHZRQGV5.png"
+  , pue = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/D9s7vt5t.png"
+  , Eue = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/BZEjfNIn.png"
+  , _ue = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/CPTrVQ1U.png"
+  , due = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/jwpGq9D2.png"
+  , gue = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/DeYr38WE.png"
+  , mue = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/C_JkudAQ.png"
+  , Tue = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/CNmSJ7bN.png"
+  , Rue = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/CNmSJ7bN.png"
+  , xue = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/CbTCsTAf.png"
+  , vue = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/C_JkudAQ.png"
+  , bue = "https://bundles.nedojack.ru/main/ppad-drawful3/assets/CNdesv-Z.png"
   , yue = Et({
     props: {
         player: Object,
@@ -37756,19 +37756,19 @@ const uue = ft(Jle, [["render", lue], ["__scopeId", "data-v-96d5696f"]])
             emoteImages: {
                 CONFUSED: {
                     alt: this.$t("ALT.EMOTES.CONFUSED"),
-                    src: new URL("https://bundles.jackbox.tv/main/ppad-drawful3/assets/DLYQjDGy.png",import.meta.url).href
+                    src: new URL("https://bundles.nedojack.ru/main/ppad-drawful3/assets/DLYQjDGy.png",import.meta.url).href
                 },
                 DEAD: {
                     alt: this.$t("ALT.EMOTES.DEAD"),
-                    src: new URL("https://bundles.jackbox.tv/main/ppad-drawful3/assets/CYo51vcF.png",import.meta.url).href
+                    src: new URL("https://bundles.nedojack.ru/main/ppad-drawful3/assets/CYo51vcF.png",import.meta.url).href
                 },
                 HOT: {
                     alt: this.$t("ALT.EMOTES.HOT"),
-                    src: new URL("https://bundles.jackbox.tv/main/ppad-drawful3/assets/CmtponFg.png",import.meta.url).href
+                    src: new URL("https://bundles.nedojack.ru/main/ppad-drawful3/assets/CmtponFg.png",import.meta.url).href
                 },
                 LAUGH: {
                     alt: this.$t("ALT.EMOTES.LAUGH"),
-                    src: new URL("https://bundles.jackbox.tv/main/ppad-drawful3/assets/k5e1RK8R.png",import.meta.url).href
+                    src: new URL("https://bundles.nedojack.ru/main/ppad-drawful3/assets/k5e1RK8R.png",import.meta.url).href
                 },
                 NICE: {
                     alt: this.$t("ALT.EMOTES.NICE"),
@@ -37796,11 +37796,11 @@ const uue = ft(Jle, [["render", lue], ["__scopeId", "data-v-96d5696f"]])
                 },
                 SHOCKED: {
                     alt: this.$t("ALT.EMOTES.SHOCKED"),
-                    src: new URL("https://bundles.jackbox.tv/main/ppad-drawful3/assets/BVNyD0Nd.png",import.meta.url).href
+                    src: new URL("https://bundles.nedojack.ru/main/ppad-drawful3/assets/BVNyD0Nd.png",import.meta.url).href
                 },
                 VOMIT: {
                     alt: this.$t("ALT.EMOTES.VOMIT"),
-                    src: new URL("https://bundles.jackbox.tv/main/ppad-drawful3/assets/l4F_Tur8.png",import.meta.url).href
+                    src: new URL("https://bundles.nedojack.ru/main/ppad-drawful3/assets/l4F_Tur8.png",import.meta.url).href
                 }
             },
             isSubmitting: !1
