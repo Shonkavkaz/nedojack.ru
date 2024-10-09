@@ -1722,7 +1722,7 @@ class Zn {
     static pageView(e) {
         this.ga("page_view", {
             page_title: e,
-            page_location: `https://nedojack.ru/${e}`
+            page_location: `https://jackbox.tv/${e}`
         })
     }
     static gameStarted(e, r) {
@@ -3225,10 +3225,10 @@ const bt = class bt {
         return !e || e === "live" ? "ecast.jackboxgames.com" : e === "local" ? "https://localhost" : e.includes("localhost") ? e : `${e}.jackboxgames.com`
     }
     static isDevelopment() {
-        return window.location.hostname === "dev.nedojack.ru" || window.location.hostname === "localhost"
+        return window.location.hostname === "dev.jackbox.tv" || window.location.hostname === "localhost"
     }
     static isProduction() {
-        return window.location.hostname === "nedojack.ru"
+        return window.location.hostname === "jackbox.tv"
     }
     static get isCanvasSupported() {
         const e = document.createElement("canvas");
