@@ -2269,7 +2269,7 @@ const Fu = [{
         name: "Dirty Drawful",
         tag: "drawful3",
         wrapper: "vue",
-        isPublic: !0,
+        isPublic: !1,
         directory: "ppad/drawful3",
         categoryId: "Drawful3Game",
         features: ["moderation", "kicking"]
@@ -5746,20 +5746,6 @@ const bt = class bt {
             features: ["moderation", "kicking"],
             categoryId: "StrangersGame",
             galleryId: "hypnotorious"
-        }, {
-            name: "Fakin' It After Dark",
-            tag: "fakinit2",
-            wrapper: "vue",
-            isPublic: !1,
-            directory: "ppad/fakinit2",
-            features: ["moderation", "kicking"]
-        }, {
-            name: "Drawful After Dark",
-            tag: "drawful3",
-            wrapper: "vue",
-            isPublic: !1,
-            directory: "ppad/drawful3",
-            features: ["moderation", "kicking"]
         }],
         fi = t => Pa.find(e => e.tag === t || e.galleryId === t || e.categoryId === t);
 
