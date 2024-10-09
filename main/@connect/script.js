@@ -15518,29 +15518,26 @@ const N3 = [{
         name: "Fakin' It All Night Long",
         tag: "fakinit2",
         wrapper: "vue",
-        isPublic: !0,
+        isPublic: !1,
         directory: "ppad/fakinit2",
         features: ["moderation", "kicking"],
         categoryId: "FakinIt2Game",
-        galleryId: "fakin-it-all-night-long"
     }, {
         name: "Dirty Drawful",
         tag: "drawful3",
         wrapper: "vue",
-        isPublic: !0,
+        isPublic: !1,
         directory: "ppad/drawful3",
         features: ["moderation", "kicking"],
         categoryId: "Drawful3Game",
-        galleryId: "dirty-drawful"
     }, {
         name: "Let Me Finish",
         tag: "captcha",
         wrapper: "vue",
-        isPublic: !0,
+        isPublic: !1,
         directory: "ppad/captcha",
         features: ["moderation", "kicking"],
         categoryId: "CAPTCHAGame",
-        galleryId: "let-me-finish"
     }],
     eu = t => N3.find(e => e.tag === t || e.galleryId === t || e.categoryId === t);
 
