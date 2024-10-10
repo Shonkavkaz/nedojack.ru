@@ -2422,7 +2422,7 @@ var Cm = ia((Mm, Hs) => {
         static pageView(e) {
             gtag("event", "page_view", {
                 page_title: e,
-                page_location: `https://jackbox.tv/${e}`
+                page_location: `https://nedojack.ru/${e}`
             })
         }
         static gameStarted(e, r) {
@@ -3877,7 +3877,7 @@ var Cm = ia((Mm, Hs) => {
             return !!(e.getContext && e.getContext("2d"))
         }
         static isProduction() {
-            return window.location.hostname === "jackbox.tv"
+            return window.location.hostname === "nedojack.ru"
         }
         static htmlUnescape(e) {
             return String(e).replace(/&quot;/gi, '"').replace(/&#39;/gi, "'").replace(/&lt;/gi, "<").replace(/&gt;/gi, ">").replace(/&amp;/gi, "&")

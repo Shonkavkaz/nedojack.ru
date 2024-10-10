@@ -6601,7 +6601,7 @@ class Fs {
     static pageView(e) {
         this.ga("page_view", {
             page_title: e,
-            page_location: `https://jackbox.tv/${e}`
+            page_location: `https://nedojack.ru/${e}`
         })
     }
     static gameStarted(e, r) {
@@ -8128,10 +8128,10 @@ const La = class La {
         return !e || e === "live" ? "ecast.jackboxgames.com" : e === "local" ? "https://localhost" : e.includes("localhost") ? e : `${e}.jackboxgames.com`
     }
     static isDevelopment() {
-        return window.location.hostname === "dev.jackbox.tv" || window.location.hostname === "localhost"
+        return window.location.hostname === "dev.nedojack.ru" || window.location.hostname === "localhost"
     }
     static isProduction() {
-        return window.location.hostname === "jackbox.tv"
+        return window.location.hostname === "nedojack.ru"
     }
     static get isCanvasSupported() {
         const e = document.createElement("canvas");
@@ -8324,7 +8324,7 @@ class Fo {
         return this.artifacts.some(e => !e.isViewed)
     }
     getUrl(e, r) {
-        return r.galleryId ? `/gallery/${r.galleryId}/${e.artifactId}` : e.isTest ? `http://games-test.jackbox.tv/artifact/${e.categoryId}/${e.artifactId}/` : `https://games.jackbox.tv/artifact/${e.categoryId}/${e.artifactId}/`
+        return r.galleryId ? `/gallery/${r.galleryId}/${e.artifactId}` : e.isTest ? `http://games-test.nedojack.ru/artifact/${e.categoryId}/${e.artifactId}/` : `https://games.nedojack.ru/artifact/${e.categoryId}/${e.artifactId}/`
     }
     getLocalArtifact(e) {
         const r = new Intl.DateTimeFormat($a.locale, {
@@ -12118,7 +12118,7 @@ class oG {
                 o = i[i.length - 2];
             return {
                 json: n.body.url,
-                dev: `https://dev.jackbox.tv/debug/cloud/${o}/${s}/`,
+                dev: `https://dev.nedojack.ru/debug/cloud/${o}/${s}/`,
                 local: `http://localhost:9090/debug/cloud/${o}/${s}/`
             }
         } catch (r) {
@@ -12183,7 +12183,7 @@ ${r}`
                             url: e.dev,
                             text: {
                                 type: "plain_text",
-                                text: "dev.jackbox.tv",
+                                text: "dev.nedojack.ru",
                                 emoji: !0
                             }
                         }]
@@ -16610,7 +16610,7 @@ const yG = {
         PLAY_AGAIN: "Play again?",
         THANKS_FOR_PLAYING: "Thanks for playing!",
         BUTTON_GO_TO_GAME: "Go to game",
-        BUTTON_GO_TO_JACKBOX: "Back to jackbox.tv",
+        BUTTON_GO_TO_JACKBOX: "Back to nedojack.ru",
         BUTTON_SAME_PLAYERS: "Same players",
         BUTTON_NEW_PLAYERS: "New players"
     },
@@ -16764,7 +16764,7 @@ const yG = {
         PLAY_AGAIN: "Rejouer ?",
         THANKS_FOR_PLAYING: "Merci d'avoir joué !",
         BUTTON_GO_TO_GAME: "Aller au jeu",
-        BUTTON_GO_TO_JACKBOX: "Retour à jackbox.tv",
+        BUTTON_GO_TO_JACKBOX: "Retour à nedojack.ru",
         BUTTON_SAME_PLAYERS: "Mêmes joueurs",
         BUTTON_NEW_PLAYERS: "Nouveaux joueurs"
     },
@@ -16918,7 +16918,7 @@ const yG = {
         PLAY_AGAIN: "Vuoi giocare di nuovo?",
         THANKS_FOR_PLAYING: "Grazie per aver scelto di giocare con noi!",
         BUTTON_GO_TO_GAME: "Vai al gioco",
-        BUTTON_GO_TO_JACKBOX: "Torna a jackbox.tv",
+        BUTTON_GO_TO_JACKBOX: "Torna a nedojack.ru",
         BUTTON_SAME_PLAYERS: "Stessi giocatori",
         BUTTON_NEW_PLAYERS: "Nuovi giocatori"
     },
@@ -17072,7 +17072,7 @@ const yG = {
         PLAY_AGAIN: "Erneut spielen?",
         THANKS_FOR_PLAYING: "Danke fürs Spielen!",
         BUTTON_GO_TO_GAME: "Zum Spiel",
-        BUTTON_GO_TO_JACKBOX: "Zurück zu jackbox.tv",
+        BUTTON_GO_TO_JACKBOX: "Zurück zu nedojack.ru",
         BUTTON_SAME_PLAYERS: "Selbe Spieler",
         BUTTON_NEW_PLAYERS: "Neue Spieler"
     },
@@ -17226,7 +17226,7 @@ const yG = {
         PLAY_AGAIN: "¿Jugar otra vez?",
         THANKS_FOR_PLAYING: "¡Gracias por jugar!",
         BUTTON_GO_TO_GAME: "Ir a al juego",
-        BUTTON_GO_TO_JACKBOX: "Volver a jackbox.tv",
+        BUTTON_GO_TO_JACKBOX: "Volver a nedojack.ru",
         BUTTON_SAME_PLAYERS: "Los mismos jugadores",
         BUTTON_NEW_PLAYERS: "Nuevos jugadores"
     },
@@ -17380,7 +17380,7 @@ const yG = {
         PLAY_AGAIN: "¿Jugar otra vez?",
         THANKS_FOR_PLAYING: "¡Gracias por jugar!",
         BUTTON_GO_TO_GAME: "Ir a la partida",
-        BUTTON_GO_TO_JACKBOX: "Volver a jackbox.tv",
+        BUTTON_GO_TO_JACKBOX: "Volver a nedojack.ru",
         BUTTON_SAME_PLAYERS: "Los mismos jugadores",
         BUTTON_NEW_PLAYERS: "Nuevos jugadores"
     },
@@ -17534,7 +17534,7 @@ const yG = {
         PLAY_AGAIN: "Jogar de novo?",
         THANKS_FOR_PLAYING: "Obrigado por jogar!",
         BUTTON_GO_TO_GAME: "Ir para o jogo",
-        BUTTON_GO_TO_JACKBOX: "Voltar para jackbox.tv",
+        BUTTON_GO_TO_JACKBOX: "Voltar para nedojack.ru",
         BUTTON_SAME_PLAYERS: "Mesmos jogadores",
         BUTTON_NEW_PLAYERS: "Outros jogadores"
     },
@@ -24809,10 +24809,10 @@ const gJ = He(hJ, [
             this.fetchArtifact(), this.fetchCart();
             const t = tl(this.categoryId ?? "");
             t && this.$setMeta({
-                title: `Jackbox.TV | ${t.name} Past Game`,
-                "og:title": `Jackbox.TV | ${t.name} Past Game`,
-                description: `See what happened in this crazy game of ${t.name}. Jackbox Games are available on a wide variety of digital platforms. We make irreverent party games including Quiplash, Fibbage, and Drawful.`,
-                "og:description": `See what happened in this crazy game of ${t.name}. Jackbox Games are available on a wide variety of digital platforms. We make irreverent party games including Quiplash, Fibbage, and Drawful.`
+                title: `Nedojack.RU | Галерея игры \"${t.name}\"`,
+                "og:title": `Nedojack.RU | Галерея игры \"${t.name}\"`,
+                description: `Узнай, что произошло в этой сумасшедшей игре ${t.name}. Игры Jackbox доступны на самых разных цифровых платформах. Мы создаем забавные игры для вечеринок, включая Quiplash, Fibbage и Drawful.`,
+                "og:description": `Узнай, что произошло в этой сумасшедшей игре ${t.name}. Игры Jackbox доступны на самых разных цифровых платформах. Мы создаем забавные игры для вечеринок, включая Quiplash, Fibbage и Drawful.`
             })
         },
         beforeUnmount() {
@@ -33485,7 +33485,7 @@ const Wue = t => {
                 if (t.renderData) try {
                     await Ep.share(t.renderData.file, {
                         title: this.$t("SHARE_TEXT"),
-                        url: `https://jackbox.tv/gallery/hypnotorious/${this.artifactId}/${t.index}`
+                        url: `https://nedojack.ru/gallery/hypnotorious/${this.artifactId}/${t.index}`
                     }, {
                         categoryId: this.artifact.categoryId,
                         options: {
