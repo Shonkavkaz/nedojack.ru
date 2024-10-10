@@ -13385,7 +13385,7 @@ ${r.message}`,
         }
         static html(t) {
             if (String(t).match(/<fart>/g)) {
-                const n = new Audio(new URL("main/pp10/risky-text/assets/4af6cbea.wav", self.location).href);
+                const n = new Audio(new URL("/main/pp10/risky-text/assets/4af6cbea.wav", self.location).href);
                 n.volume = .1, n.play()
             }
             const r = /<(?:"[^"]*"['"]*|'[^']*'['"]*|[^'">])+>/g;
@@ -21833,7 +21833,7 @@ function print() { __p += __j.call(arguments, '') }
             computed: {
                 src() {
                     var e, t;
-                    return (e = this.renderData) != null && e.dataURL ? this.renderData.dataURL : (t = this.localRenderData) != null && t.dataURL ? this.localRenderData.dataURL : this.isLoading ? new URL("main/pp10/risky-text/assets/01ee7753.png", self.location).href : new URL("main/pp10/risky-text/assets/8662ed51.png", self.location).href
+                    return (e = this.renderData) != null && e.dataURL ? this.renderData.dataURL : (t = this.localRenderData) != null && t.dataURL ? this.localRenderData.dataURL : this.isLoading ? new URL("/main/pp10/risky-text/assets/01ee7753.png", self.location).href : new URL("/main/pp10/risky-text/assets/8662ed51.png", self.location).href
                 }
             },
             mounted() {
@@ -22717,11 +22717,11 @@ function print() { __p += __j.call(arguments, '') }
                 }
             }
         }),
-        Zb = "main/pp10/risky-text/assets/ad9172fc.png",
-        zb = "main/pp10/risky-text/assets/dc131b16.png",
-        Xie = "main/pp10/risky-text/assets/38715b18.png",
-        Qie = "main/pp10/risky-text/assets/b0d7c822.png",
-        Jie = "main/pp10/risky-text/assets/06150f24.png",
+        Zb = "/main/pp10/risky-text/assets/ad9172fc.png",
+        zb = "/main/pp10/risky-text/assets/dc131b16.png",
+        Xie = "/main/pp10/risky-text/assets/38715b18.png",
+        Qie = "/main/pp10/risky-text/assets/b0d7c822.png",
+        Jie = "/main/pp10/risky-text/assets/06150f24.png",
         bi = e => (Ms("data-v-2c53389f"), e = e(), Ds(), e),
         ese = {
             class: "jbg"
@@ -26028,9 +26028,9 @@ ${t}`
                 dismissText: String
             }
         }),
-        Mce = "main/pp10/risky-text/assets/928ef0da.png",
-        Dce = "main/pp10/risky-text/assets/0bb76a2d.png",
-        Uce = "main/pp10/risky-text/assets/ed4469b3.png",
+        Mce = "/main/pp10/risky-text/assets/928ef0da.png",
+        Dce = "/main/pp10/risky-text/assets/0bb76a2d.png",
+        Uce = "/main/pp10/risky-text/assets/ed4469b3.png",
         Bce = {
             key: 0,
             class: "image",
@@ -29163,7 +29163,7 @@ ${t}`
                 }
             }
         }),
-        $1e = "main/pp10/risky-text/assets/c8afd972.svg",
+        $1e = "/main/pp10/risky-text/assets/c8afd972.svg",
         j1e = {
             class: "constrain"
         },
@@ -29989,9 +29989,9 @@ ${t}`
                 }
             }
         }),
-        WE = "main/pp10/risky-text/assets/cc860b32.svg",
-        KE = "main/pp10/risky-text/assets/fb6353b5.svg",
-        ZE = "main/pp10/risky-text/assets/e8e30b03.svg",
+        WE = "/main/pp10/risky-text/assets/cc860b32.svg",
+        KE = "/main/pp10/risky-text/assets/fb6353b5.svg",
+        ZE = "/main/pp10/risky-text/assets/e8e30b03.svg",
         zE = e => (Ms("data-v-01610530"), e = e(), Ds(), e),
         che = {
             class: "risky"
@@ -30054,7 +30054,7 @@ ${t}`
                 }
             }
         }),
-        _he = "main/pp10/risky-text/assets/9b2dfd47.svg",
+        _he = "/main/pp10/risky-text/assets/9b2dfd47.svg",
         bhe = {
             class: "message"
         },
@@ -30105,7 +30105,7 @@ ${t}`
                 }
             }
         }),
-        Ohe = "main/pp10/risky-text/assets/c7bd8c58.svg",
+        Ohe = "/main/pp10/risky-text/assets/c7bd8c58.svg",
         khe = {
             class: "waiting"
         },
@@ -45267,7 +45267,7 @@ ${t}`
                                         _ = document.createTextNode("aa"),
                                         E = document.createTextNode("aa"),
                                         m = document.createElement("img");
-                                    m.setAttribute("src", "main/pp10/risky-text/assets/3b7b8a4b.gif");
+                                    m.setAttribute("src", "/main/pp10/risky-text/assets/3b7b8a4b.gif");
                                     var S = document.createRange();
                                     if (d = {}, A.appendChild(_), A.appendChild(y), y.appendChild(m), y.appendChild(E), document.body.appendChild(A), S.setStart(_, 1), S.setEnd(y, 0), d.getClientRects = d.getBoundingClientRect = S.getClientRects().length > 1, d.getClientRects || (S.setEnd(E, 1), d.getClientRects = d.getBoundingClientRect = S.getClientRects().length === 2), !d.getBoundingClientRect) {
                                         S.setEnd(S.startContainer, S.startOffset);
@@ -47231,7 +47231,7 @@ ${t}`
                 }
             }
         }),
-        Gm = "main/pp10/risky-text/assets/30b1af61.svg",
+        Gm = "/main/pp10/risky-text/assets/30b1af61.svg",
         h8e = {
             class: "typing"
         },
@@ -48616,31 +48616,31 @@ table {
             }), n) : t
         }
     }
-    const xme = "main/pp10/risky-text/assets/a171fd82.png",
-        Mme = "main/pp10/risky-text/assets/d9cee1c0.png",
-        Dme = "main/pp10/risky-text/assets/7eb4dab2.png",
-        Ume = "main/pp10/risky-text/assets/9bb6a230.png",
-        Bme = "main/pp10/risky-text/assets/ac65fc96.png",
-        Fme = "main/pp10/risky-text/assets/42ef7ce9.png",
-        $me = "main/pp10/risky-text/assets/3896729f.png",
-        jme = "main/pp10/risky-text/assets/76bb1e59.png",
-        Gme = "main/pp10/risky-text/assets/2cad6005.png",
-        qme = "main/pp10/risky-text/assets/bcbc2be9.png",
-        Hme = "main/pp10/risky-text/assets/f43fc6df.png",
-        Vme = "main/pp10/risky-text/assets/566c573d.png",
-        Wme = "main/pp10/risky-text/assets/b656bdd0.png",
-        Kme = "main/pp10/risky-text/assets/7628ddc0.png",
-        Zme = "main/pp10/risky-text/assets/18f03bd8.png",
-        zme = "main/pp10/risky-text/assets/401931d7.png",
-        Yme = "main/pp10/risky-text/assets/c3bb594b.png",
-        Xme = "main/pp10/risky-text/assets/b8bf0acf.png",
-        Qme = "main/pp10/risky-text/assets/10dec8fd.png",
-        Jme = "main/pp10/risky-text/assets/21965a3d.png",
-        eye = "main/pp10/risky-text/assets/665043d8.png",
-        tye = "main/pp10/risky-text/assets/2f7deb93.png",
-        rye = "main/pp10/risky-text/assets/9c2580e1.png",
-        nye = "main/pp10/risky-text/assets/ac66ddb7.png",
-        iye = "main/pp10/risky-text/assets/e5d14aaf.png",
+    const xme = "/main/pp10/risky-text/assets/a171fd82.png",
+        Mme = "/main/pp10/risky-text/assets/d9cee1c0.png",
+        Dme = "/main/pp10/risky-text/assets/7eb4dab2.png",
+        Ume = "/main/pp10/risky-text/assets/9bb6a230.png",
+        Bme = "/main/pp10/risky-text/assets/ac65fc96.png",
+        Fme = "/main/pp10/risky-text/assets/42ef7ce9.png",
+        $me = "/main/pp10/risky-text/assets/3896729f.png",
+        jme = "/main/pp10/risky-text/assets/76bb1e59.png",
+        Gme = "/main/pp10/risky-text/assets/2cad6005.png",
+        qme = "/main/pp10/risky-text/assets/bcbc2be9.png",
+        Hme = "/main/pp10/risky-text/assets/f43fc6df.png",
+        Vme = "/main/pp10/risky-text/assets/566c573d.png",
+        Wme = "/main/pp10/risky-text/assets/b656bdd0.png",
+        Kme = "/main/pp10/risky-text/assets/7628ddc0.png",
+        Zme = "/main/pp10/risky-text/assets/18f03bd8.png",
+        zme = "/main/pp10/risky-text/assets/401931d7.png",
+        Yme = "/main/pp10/risky-text/assets/c3bb594b.png",
+        Xme = "/main/pp10/risky-text/assets/b8bf0acf.png",
+        Qme = "/main/pp10/risky-text/assets/10dec8fd.png",
+        Jme = "/main/pp10/risky-text/assets/21965a3d.png",
+        eye = "/main/pp10/risky-text/assets/665043d8.png",
+        tye = "/main/pp10/risky-text/assets/2f7deb93.png",
+        rye = "/main/pp10/risky-text/assets/9c2580e1.png",
+        nye = "/main/pp10/risky-text/assets/ac66ddb7.png",
+        iye = "/main/pp10/risky-text/assets/e5d14aaf.png",
         sye = ft({
             components: {
                 AvatarSVG: QE
@@ -48738,19 +48738,19 @@ table {
             De(this, "players", []);
             De(this, "fonts", [{
                 family: "Antikor Mono",
-                sources: new URL("main/pp10/risky-text/assets/5c93b6d0.woff", self.location).href,
+                sources: new URL("/main/pp10/risky-text/assets/5c93b6d0.woff", self.location).href,
                 descriptors: {
                     weight: "700"
                 }
             }, {
                 family: "Antikor Mono",
-                sources: new URL("main/pp10/risky-text/assets/f2b8e57d.woff", self.location).href,
+                sources: new URL("/main/pp10/risky-text/assets/f2b8e57d.woff", self.location).href,
                 descriptors: {
                     weight: "500"
                 }
             }, {
                 family: "Antikor Mono",
-                sources: new URL("main/pp10/risky-text/assets/12431e8e.woff", self.location).href,
+                sources: new URL("/main/pp10/risky-text/assets/12431e8e.woff", self.location).href,
                 descriptors: {
                     weight: "300"
                 }
@@ -48778,7 +48778,7 @@ table {
             const r = document.createElement("canvas"),
                 n = r.getContext("2d");
             r.width = 1080, r.height = 1080;
-            const i = new URL("main/pp10/risky-text/assets/6cd6f235.png", self.location).href;
+            const i = new URL("/main/pp10/risky-text/assets/6cd6f235.png", self.location).href;
             await this.drawAsyncImage(n, i, 0, 0, 1080, 1080);
             const s = document.createElement("canvas"),
                 o = s.getContext("2d");
