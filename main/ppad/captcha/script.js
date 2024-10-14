@@ -26947,7 +26947,7 @@ var w0 = n1.exports
   , j7 = Cr
   , W7 = 0
   , q7 = Math.random()
-  , Y7 = j7(1.toString)
+  , Y7 = j7((1).toString)
   , s1 = function(t) {
     return "Symbol(" + (t === void 0 ? "" : t) + ")_" + Y7(++W7 + q7, 36)
 }
