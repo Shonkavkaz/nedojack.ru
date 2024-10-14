@@ -13863,19 +13863,19 @@ Url: ${Cr(t)}`), !0)
                         version: "5.348.128"
 					},
 			        captcha: {
-                        file: "BpcZfAEi.js",
-                        css: ["assets/Dx9822UD.css"],
+                        file: "script.js",
+                        css: ["assets/style-0.css"],
                         base: "/main/ppad/captcha",
                         version: "5.591.289"
                     },
                     drawful3: {
-                        file: "Ls7WO3NW.js",
-                        css: ["assets/DI0HFLl5.css"],
+                        file: "script.js",
+                        css: ["assets/style-0.css"],
                         base: "/main/ppad/drawful3",
                         version: "5.591.289"
                     },
                     fakinit2: {
-                        file: "BpcZfAEi.js",
+                        file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "/main/ppad/fakinit2",
                         version: "5.592.289"
