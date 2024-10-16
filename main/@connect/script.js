@@ -40284,13 +40284,13 @@ const Xre = {
         CONFIRM: "Вы уверены?",
         DESCRIPTION: `Это позволит навсегда удалить эту игру
         из списка прошлых игр.`,
-        MANAGE: "Remove Game?",
-        TITLE: "Are You Sure?"
+        MANAGE: "Удалить игру?",
+        TITLE: "Вы уверены?"
     }
 }
   , Zre = {
     EMPTY: "Пока нет прошлых игр",
-    MANAGE: "РУКОВОДСТВО",
+    MANAGE: "ИЗМЕНИТЬ",
     TITLE: "ВАШИ ПРОШЛЫЕ ИГРЫ"
 }
   , ene = {
@@ -40306,11 +40306,11 @@ const Xre = {
     ROOM_NOT_FOUND: "Комната не найдена"
 }
   , rne = {
-    GAME_FULL: "GAME IS FULL",
-    GAME_STARTED: "GAME HAS STARTED",
-    JOIN_AUDIENCE: "JOIN AUDIENCE",
-    RECONNECT: "RECONNECT",
-    TWITCH_LOGIN: "LOGIN WITH TWITCH"
+    GAME_FULL: "ИГРА ЗАПОЛНЕНА",
+    GAME_STARTED: "ИГРА УЖЕ НАЧАЛАСЬ",
+    JOIN_AUDIENCE: "ПРИСОЕДИНИТЬСЯ К ЗРИТЕЛЯМ",
+    RECONNECT: "ПЕРЕПОДКЛЮЧИТЬСЯ",
+    TWITCH_LOGIN: "ВОЙТИ С ПОМОЩЬЮ TWITCH"
 }
   , nne = {
     CAMERA: "[b]HEADS UP:[/b] Мы не можем обнаружить камеру, но вы можете играть в игру и без фотографии. Если это кажется неправильным, попробуйте подключиться с помощью другого браузера.",
