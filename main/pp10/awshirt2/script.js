@@ -5304,7 +5304,7 @@ var Pge = PA((Tme, t7) => {
     }
 
     function au(t) {
-        return t === void 0 && (t = ""), t.replace(/-[a-z]/g, e => e.toUpperCase().replace("-", ""))
+        return t === void 0 && (t = ""), t.replace(/-[a-z-а-я]/g, e => e.toUpperCase().replace("-", ""))
     }
 
     function x$(t) {
@@ -5458,7 +5458,7 @@ var Pge = PA((Tme, t7) => {
             if (this.rendered) return;
             this.calcSlideSlots();
             let e = this.cssStyles();
-            this.slideSlots > 0 && (e = e.replace(/::slotted\(([a-z-0-9.]*)\)/g, "$1")), e.length && L4(this.shadowRoot, e), this.cssLinks().forEach(n => {
+            this.slideSlots > 0 && (e = e.replace(/::slotted\(([a-z-а-я-0-9.]*)\)/g, "$1")), e.length && L4(this.shadowRoot, e), this.cssLinks().forEach(n => {
                 if (this.shadowRoot.querySelector(`link[href="${n}"]`)) return;
                 const s = document.createElement("link");
                 s.rel = "stylesheet", s.href = n, this.shadowRoot.appendChild(s)
@@ -5547,7 +5547,7 @@ var Pge = PA((Tme, t7) => {
             this.initialized && (r === "true" && n === null && (n = !1), this.updateSwiperOnPropChange(e, n))
         }
         static get observedAttributes() {
-            return Qu.filter(r => r.includes("_")).map(r => r.replace(/[A-Z]/g, n => `-${n}`).replace("_", "").toLowerCase())
+            return Qu.filter(r => r.includes("_")).map(r => r.replace(/[A-Z-А-Я]/g, n => `-${n}`).replace("_", "").toLowerCase())
         }
     }
     Qu.forEach(t => {
@@ -5598,7 +5598,7 @@ var Pge = PA((Tme, t7) => {
         Ca = [],
         kn = () => {},
         D$ = () => !1,
-        M$ = /^on[^a-z]/,
+        M$ = /^on[^a-z-а-я]/,
         ef = t => M$.test(t),
         Nh = t => t.startsWith("onUpdate:"),
         rr = Object.assign,
@@ -5629,7 +5629,7 @@ var Pge = PA((Tme, t7) => {
         },
         G$ = /-(\w)/g,
         Qn = rf(t => t.replace(G$, (e, r) => r ? r.toUpperCase() : "")),
-        F$ = /\B([A-Z])/g,
+        F$ = /\B([A-ZА-Я])/g,
         Js = rf(t => t.replace(F$, "-$1").toLowerCase()),
         nf = rf(t => t.charAt(0).toUpperCase() + t.slice(1)),
         hp = rf(t => t ? `on${nf(t)}` : ""),
@@ -8818,7 +8818,7 @@ var Pge = PA((Tme, t7) => {
             }, e.map(n => i => !i._stopped && n && n(i))
         } else return e
     }
-    const K0 = /^on[a-z]/,
+    const K0 = /^on[a-zа-я]/,
         ZR = (t, e, r, n, i = !1, s, o, c, u) => {
             e === "class" ? GR(t, n, i) : e === "style" ? FR(t, r, n) : ef(e) ? Nh(e) || WR(t, e, r, n, o) : (e[0] === "." ? (e = e.slice(1), !0) : e[0] === "^" ? (e = e.slice(1), !1) : QR(t, e, n, i)) ? HR(t, e, n, s, o, c, u) : (e === "true-value" ? t._trueValue = n : e === "false-value" && (t._falseValue = n), jR(t, e, n, i))
         };
@@ -10430,8 +10430,8 @@ var Pge = PA((Tme, t7) => {
             var e = Math.random().toString(36).substring(2, 10) + Math.random().toString(36).substring(2, 10);
             return t ? e.substring(0, t) : e
         },
-        CL = /[a-z0-9][a-z0-9-]*\.[a-z]+$/i,
-        $L = /[a-z0-9][a-z0-9-]+\.[a-z.]{2,6}$/i,
+        CL = /[a-zа-я0-9][a-zа-я0-9-]*\.[a-zа-я]+$/i,
+        $L = /[a-zа-я0-9][a-zа-я0-9-]+\.[a-zа-я.]{2,6}$/i,
         u3 = function(t) {
             var e = $L,
                 r = t.split("."),
@@ -13598,10 +13598,10 @@ var Pge = PA((Tme, t7) => {
             return this.htmlEscape(r).trim()
         }
         static sanitizeName(e) {
-            return e.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
+            return e.replace(/[^A-ZА-Я0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026\u0401-\u0451!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
         }
         static sanitizeInput(e) {
-            return e = e.replace("…", "..."), e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
+            return e = e.replace("…", "..."), e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF\u0401-\u0451’]/gi, "")
         }
         static sanitizeEmoji(e) {
             return e.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
@@ -13951,7 +13951,7 @@ var Pge = PA((Tme, t7) => {
                     };
 
                 function g(R) {
-                    if (typeof R != "string" && (R = String(R)), /[^a-z0-9\-#$%&'*+.^_`|~!]/i.test(R) || R === "") throw new TypeError('Invalid character in header field name: "' + R + '"');
+                    if (typeof R != "string" && (R = String(R)), /[^a-zа-я0-9\-#$%&'*+.^_`|~!]/i.test(R) || R === "") throw new TypeError('Invalid character in header field name: "' + R + '"');
                     return R.toLowerCase()
                 }
 
@@ -17755,8 +17755,8 @@ ${r}`
                     stringify: h,
                     parse: g
                 },
-                y = /^[A-Za-z][A-Za-z0-9+-.]*:\/\//,
-                _ = /^([a-z][a-z0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
+                y = /^[A-Za-zА-Яа-я][A-Za-zА-Яа-я0-9+-.]*:\/\//,
+                _ = /^([a-zа-я][a-zа-я0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
                 E = "[\\x09\\x0A\\x0B\\x0C\\x0D\\x20\\xA0\\u1680\\u180E\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200A\\u202F\\u205F\\u3000\\u2028\\u2029\\uFEFF]",
                 b = new RegExp("^" + E + "+");
 
@@ -18995,10 +18995,10 @@ ${r.message}`,
             return String(e).replace(r, "")
         }
         static input(e) {
-            return e.replace("…", "...").replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF\u2019]/gi, "")
+            return e.replace("…", "...").replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF\u2019\u0401-\u0451]/gi, "")
         }
         static username(e) {
-            return e.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
+            return e.replace(/[^A-ZА-Я0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026\u0401-\u0451!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
         }
         static emoji(e) {
             return e.replace(/(\u00A9|\u00AE|[\u2000-\u2017]|[\u2020-\u3300]|\uD83C[\uD000-\uDFFF]|\uD83D[\uD000-\uDFFF]|\uD83E[\uD000-\uDFFF])/, "")
@@ -20244,12 +20244,12 @@ ${r.message}`,
                 A7 = "\\u20d0-\\u20ff",
                 Gg = O7 + I7 + A7,
                 Fg = "\\u2700-\\u27bf",
-                qg = "a-z\\xdf-\\xf6\\xf8-\\xff",
+                qg = "a-zа-я\\xdf-\\xf6\\xf8-\\xff",
                 C7 = "\\xac\\xb1\\xd7\\xf7",
                 $7 = "\\x00-\\x2f\\x3a-\\x40\\x5b-\\x60\\x7b-\\xbf",
                 x7 = "\\u2000-\\u206f",
                 R7 = " \\t\\x0b\\f\\xa0\\ufeff\\n\\r\\u2028\\u2029\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u202f\\u205f\\u3000",
-                jg = "A-Z\\xc0-\\xd6\\xd8-\\xde",
+                jg = "A-ZА-Я\\xc0-\\xd6\\xd8-\\xde",
                 Hg = "\\ufe0e\\ufe0f",
                 zg = C7 + $7 + x7 + R7,
                 Zf = "['’]",
@@ -20274,8 +20274,8 @@ ${r.message}`,
                 tm = P7 + "?",
                 rm = "[" + Hg + "]?",
                 D7 = "(?:" + Jg + "(?:" + [Xg, ed, td].join("|") + ")" + rm + tm + ")*",
-                M7 = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z_])",
-                U7 = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])",
+                M7 = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-ZА-Я_])",
+                U7 = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-zа-я_])",
                 nm = rm + tm + D7,
                 B7 = "(?:" + [N7, ed, td].join("|") + ")" + nm,
                 G7 = "(?:" + [Xg + Hl + "?", Hl, ed, td, L7].join("|") + ")",
@@ -20284,7 +20284,7 @@ ${r.message}`,
                 rd = RegExp(Qf + "(?=" + Qf + ")|" + G7 + nm, "g"),
                 j7 = RegExp([ta + "?" + Yg + "+" + Qg + "(?=" + [Wg, ta, "$"].join("|") + ")", k7 + "+" + em + "(?=" + [Wg, ta + Zg, "$"].join("|") + ")", ta + "?" + Zg + "+" + Qg, ta + "+" + em, U7, M7, Vg, B7].join("|"), "g"),
                 H7 = RegExp("[" + Jg + jl + Gg + Hg + "]"),
-                z7 = /[a-z][A-Z]|[A-Z]{2}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/,
+                z7 = /[a-z][а-я][A-Z][А-Я]|[A-Z][А-Я]{2}[a-z][а-я]|[0-9][a-zA-Z][А-Яа-я]|[a-zA-Z][А-Яа-я][0-9]|[^a-zA-ZА-Яа-я0-9 ]/,
                 W7 = ["Array", "Buffer", "DataView", "Date", "Error", "Float32Array", "Float64Array", "Function", "Int8Array", "Int16Array", "Int32Array", "Map", "Math", "Object", "Promise", "RegExp", "Set", "String", "Symbol", "TypeError", "Uint8Array", "Uint8ClampedArray", "Uint16Array", "Uint32Array", "WeakMap", "_", "clearTimeout", "isFinite", "parseInt", "setTimeout"],
                 V7 = -1,
                 Nt = {};
@@ -27044,7 +27044,7 @@ function print() { __p += __j.call(arguments, '') }
                     return new Bi.Token(Bi.Token.Type.startTag, r, n, e[0])
                 }
                 return new Bi.Token(Bi.Token.Type.endTag, e[1].substr(1, e[1].length - 1))
-            }, t.nameChars = "[a-zA-Z0-9\\.\\-_:;/]", t.valueChars = "[a-zA-Z0-9\\.\\-_:;#/\\s]", t
+            }, t.nameChars = "[a-zA-ZА-Яа-я0-9\\.\\-_:;/]", t.valueChars = "[a-zA-ZА-Яа-я0-9\\.\\-_:;#/\\s]", t
         }();
     Uf.Tokenizer = uQ;
     (function(t) {
@@ -34660,69 +34660,69 @@ ${e}`
                 handwritten: "Use cursive font"
             }
         },
-        bue = "Suggestions",
+        bue = "Предложить",
         Eue = {
-            TITLE: "Game Tip",
-            CONTENT: ["The “Quick Draw” setting requires only 2 drawings in Round One.", "Want to make big changes to a drawing? Use the eraser in the drawing interface.", "The highlighter makes big sections of color. The pen creates thinner lines that are always visible over the highlighter.", "Tiebreaks are often given to a specific garment. Keep switching it up with t-shirts, hoodies and tank tops!", "Take a moment to find the perfect font. A slogan that’s “meh” in bold could be a knockout in script!", "Make sure to choose the perfect canvas color to showcase your drawing! (Hint: it’s always pink.)", "Want to play as the dragon? You can’t. But wouldn’t that be cool?", "Fingers need a break during the Final Round? Press and hold your choice to keep sending a high number of votes.", "Have regrets about a drawing from Round One? Go back and change it in Round Two!", "“Drawing Text Descriptions” in Settings asks players to add descriptive text to their own drawings."]
+            TITLE: "Игровые советы",
+            CONTENT: ["Настройка “Быстрый рисунок” позволяет нарисовать два рисунка вместо трёх в первом раунде.", "Хотите внести существенные изменения в рисунок? Воспользуйтесь ластиком в интерфейсе рисунка.", "Маркер создаёт большие участки цвета. Ручка создаёт более тонкие линии, которые всегда видны поверх маркера.", "Ничьи часто отдаются конкретной одежде. Продолжай менять её, используя футболки, худи и майки!", "Удели время поиску идеального шрифта. Слоган, который будет смотреться убого в жирном шрифте, может сыграть немаловажную роль в том кто станет победителем!", "Не забудь выбрать цвет холста, который идеально подойдёт для демонстрации твоего рисунка! (Скажу по секрету: розовый цвет всегда лучше других).", "Хочешь играть за дракона? Не получится. Но разве это не круто?", "Хочешь отдохнуть во время финального раунда? Нажми и удерживай свой выбор, чтобы продолжить отправлять голоса.", "Не успел нарисовать рисунок в первом раунде? Ты сможешь дорисовать и улучшить его во втором!", "Настройка “Описание к рисунку” предлагает игрокам добавить описание к своим рисункам."]
         },
         wue = {
             INSTRUCTION: {
-                AVATAR: "Choose your avatar",
-                CRY: "Write your Battle Cry"
+                AVATAR: "Выбери свой аватар",
+                CRY: "Напиши свой боевой клич"
             },
-            PLACEHOLDER: "Something I would yell when victorious!"
+            PLACEHOLDER: "Что-нибудь, что можно прокричать при победе!"
         },
         Tue = {
-            INSTRUCTION: "Craft your shirt!"
+            INSTRUCTION: "Создай свою футболку!"
         },
         Sue = {
             COUNTER: {
-                TYPE: "Drawing",
-                COUNT: "{current} of {total}"
+                TYPE: "Рисунок",
+                COUNT: "{current} из {total}"
             }
         },
         Oue = {
-            INSTRUCTION: "Tap to make it happen"
+            INSTRUCTION: "Нажимай, чтобы что-нибудь произошло"
         },
         Iue = {
             ADD_TO_CART: {
-                ACTION: "Add to cart",
-                APPAREL_TYPE: "Apparel Type:",
-                COLOR: "Color:",
-                QUANTITY: "Quantity:",
-                SIZE: "Size:",
-                SIZING_CHART: "Sizing Chart",
-                TITLE: "Add item to cart?"
+                ACTION: "Добавить в корзину",
+                APPAREL_TYPE: "Тип одежды:",
+                COLOR: "Цвет:",
+                QUANTITY: "Количество:",
+                SIZE: "Размер:",
+                SIZING_CHART: "Таблица размеров",
+                TITLE: "Добавить товар в корзину?"
             },
             DESCRIBE: {
-                GUIDANCE: "(Keep it short and literal!)",
-                INSTRUCTION: "Add A Description",
-                PLACEHOLDER: "describe your drawing"
+                GUIDANCE: "(Будьте кратки и понятны!)",
+                INSTRUCTION: "Добавить описание",
+                PLACEHOLDER: "опиши свой рисунок"
             }
         },
         Aue = {
             ACTION: {
-                CHANGE_DRAWING: "Change this drawing",
-                NEW_DRAWING: "New drawing"
+                CHANGE_DRAWING: "Изменить рисунок",
+                NEW_DRAWING: "Новый рисунок"
             },
-            INSTRUCTION: "Change an existing drawing, or start a new drawing"
+            INSTRUCTION: "Изменить существующий рисунок или начать рисовать новый"
         },
         Cue = {
-            MASH: "Keep tapping your favorite!",
-            INSTRUCTION: "Pick your favorite!",
-            THANKS: "Your choice"
+            MASH: "Продолжай нажимать на своего любимца!",
+            INSTRUCTION: "Выбери своего любимца!",
+            THANKS: "Твой выбор"
         },
         $ue = {
-            INSTRUCTION: "Write something funny, or clever, or anything"
+            INSTRUCTION: "Напиши что-нибудь смешное, или умное, всё что взбредёт в голову."
         },
         xue = {
-            ALL_DESIGNS: "All Game Designs",
-            BUY: "BUY",
-            INFO_0: "Design position in preview image may differ slightly from game. Purchased item will more closely reflect in-game garment.",
-            INFO_1: "Offensive material will NOT be printed and the order will be canceled and refunded.",
-            INFO_2: "Please review our [link]REFUND POLICY[/link]. You are responsible for inputting the correct shipping information. Items shipped to an incorrect address cannot be refunded.",
-            RUNNER_UP: "Runner Up",
-            WINNER: "Winner"
+            ALL_DESIGNS: "Все игровые дизайны",
+            BUY: "КУПИТЬ",
+            INFO_0: "Дизайн, представленный на предварительном изображении, может незначительно отличаться от игрового. Приобретённый товар будет более точно соответствовать игровой одежде.",
+            INFO_1: "Оскорбительные материалы НЕ будут напечатаны, а заказ будет отменён и деньги будут возвращены.",
+            INFO_2: "Пожалуйста, ознакомься с нашей [link]ПОЛИТИКОЙ ВОЗВРАТА[/link]. Ты несёшь ответственность за ввод правильной информации о доставке. Товары, отправленные по неправильному адресу, возврату не подлежат.",
+            RUNNER_UP: "Финалист",
+            WINNER: "Победитель"
         },
         Rue = {
             ALT: yue,
@@ -38321,9 +38321,9 @@ ${e}`
     }
 
     function N5e(t, e) {
-        if (t.match(/^[a-z]+:\/\//i)) return t;
+        if (t.match(/^[a-zа-я]+:\/\//i)) return t;
         if (t.match(/^\/\//)) return window.location.protocol + t;
-        if (t.match(/^[a-z]+:/i)) return t;
+        if (t.match(/^[a-zа-я]+:/i)) return t;
         const r = document.implementation.createHTMLDocument(),
             n = r.createElement("base"),
             i = r.createElement("a");
