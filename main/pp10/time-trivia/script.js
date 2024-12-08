@@ -7658,7 +7658,7 @@ var fde = J$((Xde, yI) => {
     const ca = class ca {
         static get serverUrl() {
             const t = this.getQueryParam("server") ?? this.getQueryParam("s");
-            return !t || t === "live" ? "ecast-qa.jackboxgames.com" : t === "local" ? "https://localhost" : t.includes("localhost") ? t : `${t}.jackboxgames.com`
+            return !t || t === "live" ? "ecast.jackboxgames.com" : t === "local" ? "https://localhost" : t.includes("localhost") ? t : `${t}.jackboxgames.com`
         }
         static isDevelopment() {
             return window.location.hostname === "dev.nedojack.ru" || window.location.hostname === "localhost"
@@ -11638,7 +11638,7 @@ var fde = J$((Xde, yI) => {
         async sendToEcast() {
             const t = this.getSendData();
             try {
-                const n = await (await fetch("https://ecast-qa.jackboxgames.com/api/v2/controller/state", {
+                const n = await (await fetch("https://ecast.jackboxgames.com/api/v2/controller/state", {
                     method: "POST",
                     body: JSON.stringify(t)
                 })).json();
@@ -12637,7 +12637,7 @@ ${r}`
             }
         }
         static async sendToEcast(t) {
-            return (await (await fetch("https://ecast-qa.jackboxgames.com/api/v2/controller/state", {
+            return (await (await fetch("https://ecast.jackboxgames.com/api/v2/controller/state", {
                 method: "POST",
                 body: JSON.stringify(t)
             })).json()).body.url
