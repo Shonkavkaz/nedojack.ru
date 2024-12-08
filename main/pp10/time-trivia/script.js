@@ -12719,83 +12719,83 @@ ${r.message}`,
         }
     }
     const Z6 = {
-            BACK: "Back",
-            CANCEL: "Cancel",
-            CLOSE: "Close",
-            CONFIRM: "Confirm",
-            CREATE: "Create",
-            DELETE: "Delete",
-            DONE: "Done",
-            EDIT: "Edit",
+            BACK: "Назад",
+            CANCEL: "Отмена",
+            CLOSE: "Закрыть",
+            CONFIRM: "Подтвердить",
+            CREATE: "Создать",
+            DELETE: "Удалить",
+            DONE: "Готово",
+            EDIT: "Редактировать",
             OK: "OK",
-            NEXT: "Next",
-            NO: "No",
-            PLAY: "Play",
-            PUBLISH: "Publish",
-            REMOVE: "Remove",
-            RESET: "Reset",
-            SUBMIT: "Submit",
-            TRY_AGAIN: "Try Again",
-            UNDO: "Undo",
-            YES: "Yes"
+            NEXT: "Далее",
+            NO: "Нет",
+            PLAY: "Играть",
+            PUBLISH: "Опубликовать",
+            REMOVE: "Удалить",
+            RESET: "Сбросить",
+            SUBMIT: "Отправить",
+            TRY_AGAIN: "Повторить попытку",
+            UNDO: "Отменить",
+            YES: "Да"
         },
         K6 = {
             UGC: {
-                VISIBILITY_CONTROLLER_OFF: "prompts hidden on players’ devices",
-                VISIBILITY_CONTROLLER_ON: "prompts shown on players’ devices",
-                VISIBILITY_SCREEN_OFF: "prompts hidden on game screen",
-                VISIBILITY_SCREEN_ON: "prompts shown on game screen"
+                VISIBILITY_CONTROLLER_OFF: "подсказки, скрытые на устройствах игроков",
+                VISIBILITY_CONTROLLER_ON: "подсказки, отображаемые на устройствах игроков",
+                VISIBILITY_SCREEN_OFF: "подсказки, скрытые на главном экране",
+                VISIBILITY_SCREEN_ON: "подсказки, отображаемые на главном экране"
             }
         },
         q6 = {
-            DISCONNECTED: "You have been disconnected.",
-            DRAWING_NOTHING: "You have to draw something!",
-            PLAYER_KICKED: "You have been kicked from the game by a moderator.",
-            ROOM_DESTROYED: "Thanks for playing!",
-            ROOM_DISCONNECTED: "Disconnected",
-            TEXT_NAUGHTY: "I’m afraid you can’t write that. Please be respectful of other players.",
-            TEXT_NOTHING: "You can’t enter nothing!",
-            TITLE: "Error"
+            DISCONNECTED: "Ты был отключён.",
+            DRAWING_NOTHING: "Ты должен что-нибудь нарисовать!",
+            PLAYER_KICKED: "Ты был удалён из игры модератором.",
+            ROOM_DESTROYED: "Спасибо за игру!",
+            ROOM_DISCONNECTED: "Отключено",
+            TEXT_NAUGHTY: "Боюсь, что ты не можешь этого написать. Пожалуйста, будь уважителен к другим игрокам.",
+            TEXT_NOTHING: "Ты не можешь ничего ввести!",
+            TITLE: "Ошибка"
         },
-        J6 = "LOADING",
+        J6 = "ЗАГРУЗКА",
         X6 = {
-            JOINED_COUNT: "{count} of {maxPlayers} players joined",
-            PLAYERS_NEEDED: "1 player needed to start | {count} players needed to start",
-            WAITING_FOR_VIP: "Waiting for {name} to start the game",
-            WAITING_FOR_GAMEPAD: "Waiting for the game to start",
-            WAITING_FOR_NEW_GAME: "Waiting for a new game to start",
-            GAME_STARTING: "Game is starting",
-            BUTTON_START: "Press to Start",
-            BUTTON_CANCEL: "Press to Cancel"
+            JOINED_COUNT: "В игре {count} из {maxPlayers} игроков",
+            PLAYERS_NEEDED: "Нужен ещё 1 игрок | Нужно ещё {count} игрока",
+            WAITING_FOR_VIP: "Ждём, когда {name} начнёт игру",
+            WAITING_FOR_GAMEPAD: "Ждём начала игры",
+            WAITING_FOR_NEW_GAME: "Ждём начала новой игры",
+            GAME_STARTING: "Игра уже началась",
+            BUTTON_START: "Нажми, чтобы начать",
+            BUTTON_CANCEL: "Нажми, чтобы отменить"
         },
         Q6 = {
-            GALLERY_LINK: "Visit the Gallery",
-            NEW_GAME_STARTED: "A new game has started",
-            PLAY_AGAIN: "Play again?",
-            THANKS_FOR_PLAYING: "Thanks for playing!",
-            BUTTON_GO_TO_GAME: "Go to game",
-            BUTTON_GO_TO_JACKBOX: "Back to nedojack.ru",
-            BUTTON_SAME_PLAYERS: "Same players",
-            BUTTON_NEW_PLAYERS: "New players"
+            GALLERY_LINK: "Посетить галерею",
+            NEW_GAME_STARTED: "Началась новая игра",
+            PLAY_AGAIN: "Сыграть снова?",
+            THANKS_FOR_PLAYING: "Спасибо за игру!",
+            BUTTON_GO_TO_GAME: "Присоединиться к игре",
+            BUTTON_GO_TO_JACKBOX: "Назад на nedojack.ru",
+            BUTTON_SAME_PLAYERS: "Те же игроки",
+            BUTTON_NEW_PLAYERS: "Новые игроки"
         },
         eY = {
-            AND: "AND",
-            OR: "OR"
+            AND: "И",
+            OR: "ИЛИ"
         },
         tY = {
-            BUTTON_SKIP: "Skip",
-            BUTTON_NEXT: "Next",
-            BUTTON_DONE: "Let’s Go!"
+            BUTTON_SKIP: "Пропустить",
+            BUTTON_NEXT: "Далее",
+            BUTTON_DONE: "Принять!"
         },
         rY = {
-            NAME: "AUDIENCE"
+            NAME: "ЗРИТЕЛИ"
         },
         nY = {
             CART: {
-                CHECK_OUT: "Check out",
-                EMPTY: "Your cart is empty",
-                TITLE: "Shopping Cart",
-                TOTAL: "Total"
+                CHECK_OUT: "Проверить",
+                EMPTY: "Корзина пуста",
+                TITLE: "Корзина",
+                TOTAL: "Итого"
             }
         },
         iY = {
@@ -12830,32 +12830,32 @@ ${r.message}`,
         },
         sY = {
             BROADCASTER: {
-                SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
-                WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
+                SUBTEXT: "Ты успешно подключил свою учетную запись Twitch.",
+                WARNING: "В ЭТОЙ КОМНАТЕ НЕ ВКЛЮЧЕНА НАСТРОЙКА ЗРИТЕЛИ"
             },
             RECONNECTED: {
-                TEXT: "RECONNECTED",
-                SUBTEXT: "Have fun!"
+                TEXT: "ПЕРЕПОДКЛЮЧЕНИЕ",
+                SUBTEXT: "Веселись!"
             },
             RECONNECTING: {
                 CONTROLLER: {
-                    TEXT: "CONNECTION INTERRUPTED",
-                    SUBTEXT: "Attempting to reconnect ({attempt} of 5)"
+                    TEXT: "СОЕДИНЕНИЕ ПРЕРВАНО",
+                    SUBTEXT: "Попытка повторного подключения ({attempt} из 5)"
                 },
                 GAME: {
-                    TEXT: "GAME CONNECTION INTERRUPTED",
-                    SUBTEXT: "Please wait while we attempt to reconnect"
+                    TEXT: "ПРЕРВАНО СОЕДИНЕНИЕ С ИГРОЙ",
+                    SUBTEXT: "Пожалуйста, подожди, пока мы пытаемся восстановить соединение"
                 }
             },
             PAUSED: {
-                TEXT: "THE GAME IS PAUSED",
-                SUBTEXT: "Anything you submit will still be sent to the game."
+                TEXT: "ИГРА ПРИОСТАНОВЛЕНА",
+                SUBTEXT: "Всё, что ты отправишь, всё равно будет отправлено в игру."
             }
         },
         aY = {
-            SHARE: "Share",
-            COPY_TO_CLIPBOARD: "Copy to clipboard",
-            COPIED: "Copied"
+            SHARE: "Поделиться",
+            COPY_TO_CLIPBOARD: "Скопировать в буфер обмена",
+            COPIED: "Скопировано"
         },
         oY = {
             ACTION: Z6,
@@ -28165,31 +28165,31 @@ ${t}`
             YEAR_ENTRY: "year entry box"
         },
         Eae = {
-            CONFIRMATION: "You chose",
-            FIX_TEXT: "FIX IT!",
-            LOADING: "LOADING...",
-            LOOP_LAST_PICK: "Last Pick"
+            CONFIRMATION: "Твой выбор",
+            FIX_TEXT: "ОТЛАДЬ ЭТО!",
+            LOADING: "ЗАГРУЗКА...",
+            LOOP_LAST_PICK: "Последний выбор"
         },
         Tae = {
-            CONFIRMATION: "You're traveling to the year",
-            SETUP: "Travel to the year...",
-            SUBMIT: "GO"
+            CONFIRMATION: "Ты отправляешься в",
+            SETUP: "Отправляемся в год, когда...",
+            SUBMIT: "ВПЕРЁД"
         },
         Aae = {
-            CHOOSE_AVATAR: "Choose your avatar"
+            CHOOSE_AVATAR: "Выбери свой аватар"
         },
         Oae = {
-            RANK: "RANK",
-            SCORE: "SCORE",
-            TEXT: "Look how I did in #TimeJinx from #PartyPack10"
+            RANK: "РАНГ",
+            SCORE: "СЧЁТ",
+            TEXT: "Посмотри, как я сыграл в #TimeJinx из #PartyPack10"
         },
         Sae = {
-            IMPOSTOR_HEADER: "Spot the Impostor"
+            IMPOSTOR_HEADER: "Найди самозванца"
         },
         Iae = {
-            CHOOSING_CONFIRMATION: "You chose",
-            GUESSING_CONFIRMATION: "You're traveling to the year",
-            SKIP: "Skip Intro"
+            CHOOSING_CONFIRMATION: "Ты выбрал",
+            GUESSING_CONFIRMATION: "Ты отправляешься в год",
+            SKIP: "Пропустить"
         },
         wae = {
             ALT: vae,
