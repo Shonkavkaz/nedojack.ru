@@ -3053,6 +3053,15 @@ var ST = Vf((mT, Af) => {
             directory: "ppad/captcha",
             categoryId: "CaptchaGame",
             features: ["moderation", "kicking"]
+        }, {
+            name: "The Jackbox Survey Scramble",
+            tag: "bigsurvey",
+            wrapper: "vue",
+            isPublic: true,
+            directory: "standalone/bigsurvey",
+            features: ["moderation", "kicking", "dropInDropOut"],
+            categoryId: "BigSurveyGame",
+            galleryId: "survey-scramble"
         }],
         Ki = t => cu.find(e => e.tag === t || e.galleryId === t || e.categoryId === t);
 
@@ -13879,6 +13888,12 @@ Url: ${Cr(t)}`), !0)
                         css: ["assets/style-0.css"],
                         base: "/main/ppad/fakinit2",
                         version: "5.592.289"
+                    },
+                    bigsurvey: {
+                        file: "script.js",
+                        css: ["assets/style-0.css"],
+                        base: "/main/standalone/bigsurvey",
+                        version: "5.640.297"
             }
                 }
             }

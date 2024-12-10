@@ -17952,15 +17952,6 @@ const H2 = [{
     isPublic: !0,
     directory: "standalone/acquisitions-inc"
 }, {
-    name: "The Jackbox Survey Scramble",
-    tag: "bigsurvey",
-    wrapper: "vue",
-    isPublic: !0,
-    directory: "standalone/bigsurvey",
-    features: ["moderation", "kicking", "dropInDropOut"],
-    categoryId: "BigSurveyGame",
-    galleryId: "survey-scramble"
-}, {
     name: "You Don't Know Jack 2015",
     tag: "ydkj2015",
     wrapper: "marionette",
@@ -18351,7 +18342,7 @@ const H2 = [{
     categoryId: "StrangersGame",
     galleryId: "hypnotorious"
 }, {
-    name: "Обхитри Меня! Всю ночь напролёт",
+    name: "Обхитри меня! Всю ночь напролёт",
     tag: "fakinit2",
     wrapper: "vue",
     isPublic: !0,
@@ -18360,7 +18351,7 @@ const H2 = [{
     categoryId: "FakinIt2Game",
     galleryId: "fakin-it-all-night-long"
 }, {
-    name: "Секси Рисовка",
+    name: "Секси рисовка",
     tag: "drawful3",
     wrapper: "vue",
     isPublic: !0,
@@ -18369,7 +18360,7 @@ const H2 = [{
     categoryId: "Drawful3Game",
     galleryId: "dirty-drawful"
 }, {
-    name: "Дай Мне Кончить",
+    name: "Дай мне кончить",
     tag: "captcha",
     wrapper: "vue",
     isPublic: !0,
@@ -18377,6 +18368,15 @@ const H2 = [{
     features: ["moderation", "kicking"],
     categoryId: "CAPTCHAGame",
     galleryId: "let-me-finish"
+}, {
+    name: "The Jackbox Survey Scramble",
+    tag: "bigsurvey",
+    wrapper: "vue",
+    isPublic: true,
+    directory: "standalone/bigsurvey",
+    features: ["moderation", "kicking", "dropInDropOut"],
+    categoryId: "BigSurveyGame",
+    galleryId: "survey-scramble"
 }];
 let W2 = [];
 const X2 = [...H2, ...W2]
