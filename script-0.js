@@ -19397,7 +19397,7 @@ let NL = class {
         throw new Error("[loader] Could not resolve a branch name and main is not available")
     }
     getS3Url(e, r) {
-        return `https://bundles.nedojack.ru/${r}/${e}`
+        return `https://nedojack.ru/${r}/${e}`
     }
     async loadHMRBundle(e) {
         const r = e.file;
