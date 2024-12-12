@@ -30444,7 +30444,7 @@ class rE {
     }
     static html(e) {
         if (String(e).match(/<fart>/g)) {
-            const n = new Audio(new URL("https://bundles.nedojack.ru/main/@connect/assets/BhWysX6c.wav",import.meta.url).href);
+            const n = new Audio(new URL("https://nedojack.ru/main/@connect/assets/BhWysX6c.wav",import.meta.url).href);
             n.volume = .1,
             n.play()
         }
@@ -40767,9 +40767,9 @@ const Sre = {
         dismissText: String
     }
 })
-  , Are = "https://bundles.nedojack.ru/main/@connect/assets/Bwlnl62i.png"
-  , Lre = "https://bundles.nedojack.ru/main/@connect/assets/DN8YV_ih.png"
-  , Cre = "https://bundles.nedojack.ru/main/@connect/assets/Dv-2T4fF.png"
+  , Are = "https://nedojack.ru/main/@connect/assets/Bwlnl62i.png"
+  , Lre = "https://nedojack.ru/main/@connect/assets/DN8YV_ih.png"
+  , Cre = "https://nedojack.ru/main/@connect/assets/Dv-2T4fF.png"
   , wre = {
     key: 0,
     class: "image",
@@ -41821,7 +41821,7 @@ const Hie = lr({
         }
     }
 })
-  , Wie = "https://bundles.nedojack.ru/main/@connect/assets/BP6xhM9y.png"
+  , Wie = "https://nedojack.ru/main/@connect/assets/BP6xhM9y.png"
   , Xie = {
     class: "jbg password"
 }
