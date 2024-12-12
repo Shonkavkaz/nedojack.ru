@@ -18547,7 +18547,7 @@ class aa {
     static pageView(e) {
         this.ga("page_view", {
             page_title: e,
-            page_location: `https://jackbox.tv/${e}`
+            page_location: `https://nedojack.ru/${e}`
         })
     }
     static gameStarted(e, r) {
@@ -20096,10 +20096,10 @@ const Wa = class Wa {
         return !e || e === "live" ? "ecast-qa.jackboxgames.com" : e === "local" ? "https://localhost" : e.includes("localhost") ? e : `${e}.jackboxgames.com`
     }
     static isDevelopment() {
-        return window.location.hostname === "dev.jackbox.tv" || window.location.hostname === "localhost"
+        return window.location.hostname === "dev.nedojack.ru" || window.location.hostname === "localhost"
     }
     static isProduction() {
-        return window.location.hostname === "jackbox.tv"
+        return window.location.hostname === "nedojack.ru"
     }
     static get isCanvasSupported() {
         const e = document.createElement("canvas");
@@ -20351,7 +20351,7 @@ class Za {
         return this.artifacts.some(e => !e.isViewed)
     }
     getUrl(e, r) {
-        return r.galleryId ? `/gallery/${r.galleryId}/${e.artifactId}` : e.isTest ? `http://games-test.jackbox.tv/artifact/${e.categoryId}/${e.artifactId}/` : `https://games.jackbox.tv/artifact/${e.categoryId}/${e.artifactId}/`
+        return r.galleryId ? `/gallery/${r.galleryId}/${e.artifactId}` : e.isTest ? `http://games-test.nedojack.ru/artifact/${e.categoryId}/${e.artifactId}/` : `https://games.nedojack.ru/artifact/${e.categoryId}/${e.artifactId}/`
     }
     getLocalArtifact(e) {
         const r = new Intl.DateTimeFormat(js.locale,{
@@ -30444,7 +30444,7 @@ class rE {
     }
     static html(e) {
         if (String(e).match(/<fart>/g)) {
-            const n = new Audio(new URL("https://jackbox.tv/main/@connect/assets/BhWysX6c.wav",import.meta.url).href);
+            const n = new Audio(new URL("https://nedojack.ru/main/@connect/assets/BhWysX6c.wav",import.meta.url).href);
             n.volume = .1,
             n.play()
         }
@@ -40767,9 +40767,9 @@ const Sre = {
         dismissText: String
     }
 })
-  , Are = "https://bundles.jackbox.tv/main/@connect/assets/Bwlnl62i.png"
-  , Lre = "https://bundles.jackbox.tv/main/@connect/assets/DN8YV_ih.png"
-  , Cre = "https://bundles.jackbox.tv/main/@connect/assets/Dv-2T4fF.png"
+  , Are = "https://nedojack.ru/main/@connect/assets/Bwlnl62i.png"
+  , Lre = "https://nedojack.ru/main/@connect/assets/DN8YV_ih.png"
+  , Cre = "https://nedojack.ru/main/@connect/assets/Dv-2T4fF.png"
   , wre = {
     key: 0,
     class: "image",
@@ -41821,7 +41821,7 @@ const Hie = lr({
         }
     }
 })
-  , Wie = "https://bundles.jackbox.tv/main/@connect/assets/BP6xhM9y.png"
+  , Wie = "https://nedojack.ru/main/@connect/assets/BP6xhM9y.png"
   , Xie = {
     class: "jbg password"
 }

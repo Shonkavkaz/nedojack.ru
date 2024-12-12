@@ -3346,7 +3346,7 @@ class $i {
     static pageView(e) {
         this.ga("page_view", {
             page_title: e,
-            page_location: `https://jackbox.tv/${e}`
+            page_location: `https://nedojack.ru/${e}`
         })
     }
     static gameStarted(e, r) {
@@ -4869,10 +4869,10 @@ const Nt = class Nt {
         return !e || e === "live" ? "ecast.jackboxgames.com" : e === "local" ? "https://localhost" : e.includes("localhost") ? e : `${e}.jackboxgames.com`
     }
     static isDevelopment() {
-        return window.location.hostname === "dev.jackbox.tv" || window.location.hostname === "localhost"
+        return window.location.hostname === "dev.nedojack.ru" || window.location.hostname === "localhost"
     }
     static isProduction() {
-        return window.location.hostname === "jackbox.tv"
+        return window.location.hostname === "nedojack.ru"
     }
     static get isCanvasSupported() {
         const e = document.createElement("canvas");
@@ -19397,7 +19397,7 @@ let NL = class {
         throw new Error("[loader] Could not resolve a branch name and main is not available")
     }
     getS3Url(e, r) {
-        return `https://jackbox.tv/${r}/${e}`
+        return `https://nedojack.ru/${r}/${e}`
     }
     async loadHMRBundle(e) {
         const r = e.file;
