@@ -18547,7 +18547,7 @@ class aa {
     static pageView(e) {
         this.ga("page_view", {
             page_title: e,
-            page_location: `https://jackbox.tv/${e}`
+            page_location: `https://nedojack.ru/${e}`
         })
     }
     static gameStarted(e, r) {
@@ -20096,10 +20096,10 @@ const Wa = class Wa {
         return !e || e === "live" ? "ecast.jackboxgames.com" : e === "local" ? "https://localhost" : e.includes("localhost") ? e : `${e}.jackboxgames.com`
     }
     static isDevelopment() {
-        return window.location.hostname === "dev.jackbox.tv" || window.location.hostname === "localhost"
+        return window.location.hostname === "dev.nedojack.ru" || window.location.hostname === "localhost"
     }
     static isProduction() {
-        return window.location.hostname === "jackbox.tv"
+        return window.location.hostname === "nedojack.ru"
     }
     static get isCanvasSupported() {
         const e = document.createElement("canvas");
@@ -20351,7 +20351,7 @@ class Za {
         return this.artifacts.some(e => !e.isViewed)
     }
     getUrl(e, r) {
-        return r.galleryId ? `/gallery/${r.galleryId}/${e.artifactId}` : e.isTest ? `http://games-test.jackbox.tv/artifact/${e.categoryId}/${e.artifactId}/` : `https://games.jackbox.tv/artifact/${e.categoryId}/${e.artifactId}/`
+        return r.galleryId ? `/gallery/${r.galleryId}/${e.artifactId}` : e.isTest ? `http://games-test.nedojack.ru/artifact/${e.categoryId}/${e.artifactId}/` : `https://games.nedojack.ru/artifact/${e.categoryId}/${e.artifactId}/`
     }
     getLocalArtifact(e) {
         const r = new Intl.DateTimeFormat(js.locale,{
@@ -30444,7 +30444,7 @@ class rE {
     }
     static html(e) {
         if (String(e).match(/<fart>/g)) {
-            const n = new Audio(new URL("https://bundles.jackbox.tv/main/@connect/assets/BhWysX6c.wav",import.meta.url).href);
+            const n = new Audio(new URL("https://bundles.nedojack.ru/main/@connect/assets/BhWysX6c.wav",import.meta.url).href);
             n.volume = .1,
             n.play()
         }
@@ -30647,7 +30647,7 @@ const KW = {
     WHICH_PLAYERS: "Which players?",
     THANKS_FOR_PLAYING: "Thanks for playing!",
     BUTTON_GO_TO_GAME: "Go to game",
-    BUTTON_GO_TO_JACKBOX: "Back to jackbox.tv",
+    BUTTON_GO_TO_JACKBOX: "Back to nedojack.ru",
     BUTTON_PLAY_AGAIN: "Play again",
     BUTTON_SAME_PLAYERS: "Same players",
     BUTTON_NEW_PLAYERS: "New players",
@@ -30806,7 +30806,7 @@ const KW = {
     WHICH_PLAYERS: "Avec quels joueurs ?",
     THANKS_FOR_PLAYING: "Merci d'avoir joué !",
     BUTTON_GO_TO_GAME: "Aller au jeu",
-    BUTTON_GO_TO_JACKBOX: "Retour à jackbox.tv",
+    BUTTON_GO_TO_JACKBOX: "Retour à nedojack.ru",
     BUTTON_PLAY_AGAIN: "Rejouer",
     BUTTON_SAME_PLAYERS: "Mêmes joueurs",
     BUTTON_NEW_PLAYERS: "Nouveaux joueurs",
@@ -30965,7 +30965,7 @@ const KW = {
     WHICH_PLAYERS: "Quali giocatori?",
     THANKS_FOR_PLAYING: "Grazie per aver scelto di giocare con noi!",
     BUTTON_GO_TO_GAME: "Vai al gioco",
-    BUTTON_GO_TO_JACKBOX: "Torna a jackbox.tv",
+    BUTTON_GO_TO_JACKBOX: "Torna a nedojack.ru",
     BUTTON_PLAY_AGAIN: "Gioca di nuovo",
     BUTTON_SAME_PLAYERS: "Stessi giocatori",
     BUTTON_NEW_PLAYERS: "Nuovi giocatori",
@@ -31124,7 +31124,7 @@ const KW = {
     WHICH_PLAYERS: "Welche Spieler?",
     THANKS_FOR_PLAYING: "Danke fürs Spielen!",
     BUTTON_GO_TO_GAME: "Zum Spiel",
-    BUTTON_GO_TO_JACKBOX: "Zurück zu jackbox.tv",
+    BUTTON_GO_TO_JACKBOX: "Zurück zu nedojack.ru",
     BUTTON_PLAY_AGAIN: "Erneut spielen",
     BUTTON_SAME_PLAYERS: "Selbe Spieler",
     BUTTON_NEW_PLAYERS: "Neue Spieler",
@@ -31283,7 +31283,7 @@ const KW = {
     WHICH_PLAYERS: "¿Qué jugadores?",
     THANKS_FOR_PLAYING: "¡Gracias por jugar!",
     BUTTON_GO_TO_GAME: "Ir a al juego",
-    BUTTON_GO_TO_JACKBOX: "Volver a jackbox.tv",
+    BUTTON_GO_TO_JACKBOX: "Volver a nedojack.ru",
     BUTTON_PLAY_AGAIN: "Jugar de nuevo",
     BUTTON_SAME_PLAYERS: "Los mismos jugadores",
     BUTTON_NEW_PLAYERS: "Nuevos jugadores",
@@ -31442,7 +31442,7 @@ const KW = {
     WHICH_PLAYERS: "¿Cuáles jugadores?",
     THANKS_FOR_PLAYING: "¡Gracias por jugar!",
     BUTTON_GO_TO_GAME: "Ir a la partida",
-    BUTTON_GO_TO_JACKBOX: "Volver a jackbox.tv",
+    BUTTON_GO_TO_JACKBOX: "Volver a nedojack.ru",
     BUTTON_PLAY_AGAIN: "Jugar de nuevo",
     BUTTON_SAME_PLAYERS: "Los mismos jugadores",
     BUTTON_NEW_PLAYERS: "Nuevos jugadores",
@@ -31601,7 +31601,7 @@ const KW = {
     WHICH_PLAYERS: "Quais jogadores?",
     THANKS_FOR_PLAYING: "Obrigado por jogar!",
     BUTTON_GO_TO_GAME: "Ir para o jogo",
-    BUTTON_GO_TO_JACKBOX: "Voltar para jackbox.tv",
+    BUTTON_GO_TO_JACKBOX: "Voltar para nedojack.ru",
     BUTTON_PLAY_AGAIN: "Jogar de novo",
     BUTTON_SAME_PLAYERS: "Mesmos jogadores",
     BUTTON_NEW_PLAYERS: "Outros jogadores",
@@ -40767,9 +40767,9 @@ const Sre = {
         dismissText: String
     }
 })
-  , Are = "https://bundles.jackbox.tv/main/@connect/assets/Bwlnl62i.png"
-  , Lre = "https://bundles.jackbox.tv/main/@connect/assets/DN8YV_ih.png"
-  , Cre = "https://bundles.jackbox.tv/main/@connect/assets/Dv-2T4fF.png"
+  , Are = "https://bundles.nedojack.ru/main/@connect/assets/Bwlnl62i.png"
+  , Lre = "https://bundles.nedojack.ru/main/@connect/assets/DN8YV_ih.png"
+  , Cre = "https://bundles.nedojack.ru/main/@connect/assets/Dv-2T4fF.png"
   , wre = {
     key: 0,
     class: "image",
@@ -41821,7 +41821,7 @@ const Hie = lr({
         }
     }
 })
-  , Wie = "https://bundles.jackbox.tv/main/@connect/assets/BP6xhM9y.png"
+  , Wie = "https://bundles.nedojack.ru/main/@connect/assets/BP6xhM9y.png"
   , Xie = {
     class: "jbg password"
 }
