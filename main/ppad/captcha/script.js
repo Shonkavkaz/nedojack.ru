@@ -8299,7 +8299,7 @@ class Ia {
     static pageView(e) {
         this.ga("page_view", {
             page_title: e,
-            page_location: `https://jackbox.tv/${e}`
+            page_location: `https://nedojack.ru/${e}`
         })
     }
     static gameStarted(e, r) {
@@ -9847,10 +9847,10 @@ const Ea = class Ea {
         return !e || e === "live" ? "ecast.jackboxgames.com" : e === "local" ? "https://localhost" : e.includes("localhost") ? e : `${e}.jackboxgames.com`
     }
     static isDevelopment() {
-        return window.location.hostname === "dev.jackbox.tv" || window.location.hostname === "localhost"
+        return window.location.hostname === "dev.nedojack.ru" || window.location.hostname === "localhost"
     }
     static isProduction() {
-        return window.location.hostname === "jackbox.tv"
+        return window.location.hostname === "nedojack.ru"
     }
     static get isCanvasSupported() {
         const e = document.createElement("canvas");
@@ -10093,7 +10093,7 @@ class Oo {
         return this.artifacts.some(e => !e.isViewed)
     }
     getUrl(e, r) {
-        return r.galleryId ? `/gallery/${r.galleryId}/${e.artifactId}` : e.isTest ? `http://games-test.jackbox.tv/artifact/${e.categoryId}/${e.artifactId}/` : `https://games.jackbox.tv/artifact/${e.categoryId}/${e.artifactId}/`
+        return r.galleryId ? `/gallery/${r.galleryId}/${e.artifactId}` : e.isTest ? `http://games-test.nedojack.ru/artifact/${e.categoryId}/${e.artifactId}/` : `https://games.nedojack.ru/artifact/${e.categoryId}/${e.artifactId}/`
     }
     getLocalArtifact(e) {
         const r = new Intl.DateTimeFormat(ya.locale,{
@@ -14603,7 +14603,7 @@ class UV {
               , u = s[s.length - 2];
             return {
                 json: n.body.url,
-                dev: `https://dev.jackbox.tv/debug/cloud/${u}/${a}/`,
+                dev: `https://dev.nedojack.ru/debug/cloud/${u}/${a}/`,
                 local: `http://localhost:9090/debug/cloud/${u}/${a}/`
             }
         } catch (r) {
@@ -14670,7 +14670,7 @@ ${r}`
                         url: e.dev,
                         text: {
                             type: "plain_text",
-                            text: "dev.jackbox.tv",
+                            text: "dev.nedojack.ru",
                             emoji: !0
                         }
                     }]
@@ -21000,7 +21000,7 @@ class XV {
     }
     static html(e) {
         if (String(e).match(/<fart>/g)) {
-            const n = new Audio(new URL("https://bundles.jackbox.tv/main/ppad-captcha/assets/BhWysX6c.wav",import.meta.url).href);
+            const n = new Audio(new URL("https://nedojack.ru/main/ppad-captcha/assets/BhWysX6c.wav",import.meta.url).href);
             n.volume = .1,
             n.play()
         }
@@ -21125,7 +21125,7 @@ const HV = {
     WHICH_PLAYERS: "Which players?",
     THANKS_FOR_PLAYING: "Thanks for playing!",
     BUTTON_GO_TO_GAME: "Go to game",
-    BUTTON_GO_TO_JACKBOX: "Back to jackbox.tv",
+    BUTTON_GO_TO_JACKBOX: "Back to nedojack.ru",
     BUTTON_PLAY_AGAIN: "Play again",
     BUTTON_SAME_PLAYERS: "Same players",
     BUTTON_NEW_PLAYERS: "New players",
@@ -27343,7 +27343,7 @@ var w0 = o1.exports
   , V7 = wr
   , G7 = 0
   , F7 = Math.random()
-  , X7 = V7(1.toString)
+  , X7 = V7((1).toString)
   , u1 = function(t) {
     return "Symbol(" + (t === void 0 ? "" : t) + ")_" + X7(++G7 + F7, 36)
 }
@@ -30702,11 +30702,11 @@ const Y1 = Ti(PQ)
         }
     }
 })
-  , Nv = "https://bundles.jackbox.tv/main/ppad-captcha/assets/DLGomgNm.png"
-  , wv = "https://bundles.jackbox.tv/main/ppad-captcha/assets/B8C13_5i.png"
-  , $Q = "https://bundles.jackbox.tv/main/ppad-captcha/assets/DaAsZ-1o.png"
-  , DQ = "https://bundles.jackbox.tv/main/ppad-captcha/assets/C0nA0hrp.png"
-  , KQ = "https://bundles.jackbox.tv/main/ppad-captcha/assets/_LZDgMYc.png"
+  , Nv = "https://nedojack.ru/main/ppad-captcha/assets/DLGomgNm.png"
+  , wv = "https://nedojack.ru/main/ppad-captcha/assets/B8C13_5i.png"
+  , $Q = "https://nedojack.ru/main/ppad-captcha/assets/DaAsZ-1o.png"
+  , DQ = "https://nedojack.ru/main/ppad-captcha/assets/C0nA0hrp.png"
+  , KQ = "https://nedojack.ru/main/ppad-captcha/assets/_LZDgMYc.png"
   , kQ = {
     class: "jbg"
 }
@@ -32298,9 +32298,9 @@ const Ute = {
         dismissText: String
     }
 })
-  , Bte = "https://bundles.jackbox.tv/main/ppad-captcha/assets/Bwlnl62i.png"
-  , $te = "https://bundles.jackbox.tv/main/ppad-captcha/assets/DN8YV_ih.png"
-  , Dte = "https://bundles.jackbox.tv/main/ppad-captcha/assets/Dv-2T4fF.png"
+  , Bte = "https://nedojack.ru/main/ppad-captcha/assets/Bwlnl62i.png"
+  , $te = "https://nedojack.ru/main/ppad-captcha/assets/DN8YV_ih.png"
+  , Dte = "https://nedojack.ru/main/ppad-captcha/assets/Dv-2T4fF.png"
   , Kte = {
     key: 0,
     class: "image",
@@ -37306,27 +37306,27 @@ const Cie = t => {
     "es-XL": dae,
     "pt-BR": Nae
 }
-  , Uae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/B0BTidLj.png"
-  , Pae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/B-oS51Vr.png"
-  , Bae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/DaG5ADfE.png"
-  , $ae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/CgpunSKd.png"
-  , Dae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/BWi_-0hR.png"
-  , Kae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/8-0wbYsu.png"
-  , kae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/BwDAt_gD.png"
-  , Mae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/ChfcB5Qb.png"
-  , Vae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/Bb7nzTlz.png"
-  , Gae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/YtgJxV3H.png"
-  , Fae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/Cdngkr_0.png"
-  , Xae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/CWEqmyKg.png"
-  , Hae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/CqBjrAdh.png"
-  , jae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/DnPF4ypL.png"
-  , Wae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/s2K55As7.png"
-  , qae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/B55FHUeQ.png"
-  , Yae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/CWDs6O5H.png"
-  , zae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/05BP1siz.png"
-  , Jae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/BH_AvKbJ.png"
-  , Qae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/B_A_55Qo.png"
-  , Zae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/DO-L6WsX.png"
+  , Uae = "https://nedojack.ru/main/ppad-captcha/assets/B0BTidLj.png"
+  , Pae = "https://nedojack.ru/main/ppad-captcha/assets/B-oS51Vr.png"
+  , Bae = "https://nedojack.ru/main/ppad-captcha/assets/DaG5ADfE.png"
+  , $ae = "https://nedojack.ru/main/ppad-captcha/assets/CgpunSKd.png"
+  , Dae = "https://nedojack.ru/main/ppad-captcha/assets/BWi_-0hR.png"
+  , Kae = "https://nedojack.ru/main/ppad-captcha/assets/8-0wbYsu.png"
+  , kae = "https://nedojack.ru/main/ppad-captcha/assets/BwDAt_gD.png"
+  , Mae = "https://nedojack.ru/main/ppad-captcha/assets/ChfcB5Qb.png"
+  , Vae = "https://nedojack.ru/main/ppad-captcha/assets/Bb7nzTlz.png"
+  , Gae = "https://nedojack.ru/main/ppad-captcha/assets/YtgJxV3H.png"
+  , Fae = "https://nedojack.ru/main/ppad-captcha/assets/Cdngkr_0.png"
+  , Xae = "https://nedojack.ru/main/ppad-captcha/assets/CWEqmyKg.png"
+  , Hae = "https://nedojack.ru/main/ppad-captcha/assets/CqBjrAdh.png"
+  , jae = "https://nedojack.ru/main/ppad-captcha/assets/DnPF4ypL.png"
+  , Wae = "https://nedojack.ru/main/ppad-captcha/assets/s2K55As7.png"
+  , qae = "https://nedojack.ru/main/ppad-captcha/assets/B55FHUeQ.png"
+  , Yae = "https://nedojack.ru/main/ppad-captcha/assets/CWDs6O5H.png"
+  , zae = "https://nedojack.ru/main/ppad-captcha/assets/05BP1siz.png"
+  , Jae = "https://nedojack.ru/main/ppad-captcha/assets/BH_AvKbJ.png"
+  , Qae = "https://nedojack.ru/main/ppad-captcha/assets/B_A_55Qo.png"
+  , Zae = "https://nedojack.ru/main/ppad-captcha/assets/DO-L6WsX.png"
   , eoe = ut({
     props: {
         artifactId: {
@@ -37454,16 +37454,16 @@ function aoe(t, e, r, n, s, a) {
     ee("div", soe)) : Ie("", !0)])
 }
 const NS = st(eoe, [["render", aoe], ["__scopeId", "data-v-a3db0189"]])
-  , ooe = "https://bundles.jackbox.tv/main/ppad-captcha/assets/DembzJX4.png"
-  , loe = "https://bundles.jackbox.tv/main/ppad-captcha/assets/Py_Os4nC.png"
-  , uoe = "https://bundles.jackbox.tv/main/ppad-captcha/assets/BgRVPHTW.png"
-  , foe = "https://bundles.jackbox.tv/main/ppad-captcha/assets/DDj4l_Bh.png"
-  , coe = "https://bundles.jackbox.tv/main/ppad-captcha/assets/BvnHs8Vn.png"
-  , hoe = "https://bundles.jackbox.tv/main/ppad-captcha/assets/euUDaTPS.png"
-  , poe = "https://bundles.jackbox.tv/main/ppad-captcha/assets/DALnX83A.png"
-  , Eoe = "https://bundles.jackbox.tv/main/ppad-captcha/assets/BtfBB2-Q.png"
+  , ooe = "https://nedojack.ru/main/ppad-captcha/assets/DembzJX4.png"
+  , loe = "https://nedojack.ru/main/ppad-captcha/assets/Py_Os4nC.png"
+  , uoe = "https://nedojack.ru/main/ppad-captcha/assets/BgRVPHTW.png"
+  , foe = "https://nedojack.ru/main/ppad-captcha/assets/DDj4l_Bh.png"
+  , coe = "https://nedojack.ru/main/ppad-captcha/assets/BvnHs8Vn.png"
+  , hoe = "https://nedojack.ru/main/ppad-captcha/assets/euUDaTPS.png"
+  , poe = "https://nedojack.ru/main/ppad-captcha/assets/DALnX83A.png"
+  , Eoe = "https://nedojack.ru/main/ppad-captcha/assets/BtfBB2-Q.png"
   , doe = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAMAAABrrFhUAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEHRSTlMAf7/vDz8vz58fX99Pr49vSgUV8gAAC+5JREFUeNrs2FtuxCAMBVBj8wgQkrv/1TZpP6pKHUGYTIY2PguIlCtjG0gppZRSSimllFJKKaWUUkoppQa3SkmWbswGQJY7R7AnAEl0XzZgM9F92enuCZDBhu/cCBI24c4JzHL3BPzwCThnFuaMb4F5MsbF/59ATKYIHhI2yZ+QwKB9wM4TGmR+eqOdB5yGcS1ol9dIz1gHS8AmxlFh9dRvqI0oFfQJq6VePEoC0WQ8YZqpTxRsVnozX/CsbCz1cNgleifHOEXx1GHBRhw1G/X3d2G2dJTN2Eik90gBp8rHG6LD+xYil3G+ydMxBbtCLYYt/h84dUyCy0eBZ7xOToefRyCeHvtbv380AivYBbqMndBO+NuLNoOET4YukgRNQjHO/vJKENBGzLESgKcrREYDNo4eiks+9yAYXHcIjKBGlvo0t40bRHDUwOKqQ+DDee0rzpOgbrJt9+JLFsIVNTwf+2BAlcxt6+Drb8aRq7UfO96QBDVsqSbji6PXmaVW+5a6JEaF+Nba5A9ezSxHbhgGopK1bzbvf9ogQBYEmXSVaCrv24ORq8niIrtj3GiSc3pyRQp0FEhyOARa+Rykyb2jIQlu95lyNgRywLXqpATY3/zREOjygZGsoqy+UCALCIFT6R8ey0Sr+iwI8oPmjInr06GA85uOmR3sRc60g7F88L7mzJlD/klmmrThTMmDbtHOjxshgmbQfkmeA2zS7WlL/gI7nPxk/Zf3H9Nh7FcOCXfDItH4/XnzO+88g3BB6cffP0x3nCp/gD3em+dAHPI1KzqamLr36/pN9T0phi/sg1N+cbj+PY4jpX+u/8rdozIAK+wFRebJGBzZ6Npk3JlRgA8BINIuXr2ccK0vdukZoQK8CxRglSbzT7X+VORuuwoEUAZsFuQt6NI/1yCb1AaWfexI4PE5eYqq+s1LNDxxKxIXLgPL0AD4zVwqoiSkraM0WAbEvSOB97e/Ly0NBiMOcNAy88Sw/f7xFh04vTI9El1geUJTt99/BnlL6HwSRLi5Ku4F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"
-  , _oe = "https://bundles.jackbox.tv/main/ppad-captcha/assets/CJ8LUb3Y.png"
+  , _oe = "https://nedojack.ru/main/ppad-captcha/assets/CJ8LUb3Y.png"
   , goe = ut({
     props: {
         color: {
@@ -37937,7 +37937,7 @@ const ile = st(Yoe, [["render", nle]])
         }
     }
 })
-  , ale = "https://bundles.jackbox.tv/main/ppad-captcha/assets/D21S9xYH.png"
+  , ale = "https://nedojack.ru/main/ppad-captcha/assets/D21S9xYH.png"
   , ole = {
     class: "lobby"
 }
@@ -38178,8 +38178,8 @@ const Cle = st(vle, [["render", Ale], ["__scopeId", "data-v-2a07dea3"]])
         }
     }
 })
-  , Ole = "https://bundles.jackbox.tv/main/ppad-captcha/assets/fOQEQ-3k.png"
-  , Ile = "https://bundles.jackbox.tv/main/ppad-captcha/assets/Djd4E2b5.png"
+  , Ole = "https://nedojack.ru/main/ppad-captcha/assets/fOQEQ-3k.png"
+  , Ile = "https://nedojack.ru/main/ppad-captcha/assets/Djd4E2b5.png"
   , Nle = {
     class: "jumping"
 }
@@ -38793,7 +38793,7 @@ const wue = st(bue, [["render", Nue]])
         }
     }
 })
-  , Pue = "https://bundles.jackbox.tv/main/ppad-captcha/assets/CuONZUsC.png"
+  , Pue = "https://nedojack.ru/main/ppad-captcha/assets/CuONZUsC.png"
   , Bue = {
     class: "waiting"
 }
