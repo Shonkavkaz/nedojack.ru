@@ -36771,7 +36771,7 @@ var q0 = a1.exports
   , Iz = Fr
   , Nz = 0
   , Pz = Math.random()
-  , Uz = Iz(1.toString)
+  , Uz = Iz((1).toString)
   , l1 = function(t) {
     return "Symbol(" + (t === void 0 ? "" : t) + ")_" + Uz(++Nz + Pz, 36)
 }
