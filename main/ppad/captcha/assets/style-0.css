@@ -3559,7 +3559,7 @@ html.disable--interaction.show--consent,html.disable--interaction.show--consent 
     display: block;
     width: 100%;
     padding-top: 37.7778%;
-    background-image: url(https://nedojack.ru/main/ppad-captcha/assets/CMUb-qOV.png);
+    background-image: url(https://nedojack.ru/main/ppad/captcha/assets/CMUb-qOV.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center
@@ -4899,14 +4899,14 @@ html,body {
 
 @font-face {
     font-family: Outer Sans;
-    src: url(https://nedojack.ru/main/ppad-captcha/assets/CSzwVOop.woff2);
+    src: url(https://nedojack.ru/main/ppad/captcha/assets/CSzwVOop.woff2);
     font-style: normal;
     font-weight: 400
 }
 
 @font-face {
     font-family: Outer Sans;
-    src: url(https://nedojack.ru/main/ppad-captcha/assets/BpxRXMOw.woff2);
+    src: url(https://nedojack.ru/main/ppad/captcha/assets/BpxRXMOw.woff2);
     font-style: normal;
     font-weight: 700
 }
@@ -4990,7 +4990,7 @@ html,body {
     width: calc(var(--bgWidth) * 3);
     height: 100vh;
     margin: 0;
-    background-image: url(https://nedojack.ru/main/ppad-captcha/assets/DtuR18Jy.jpg);
+    background-image: url(https://nedojack.ru/main/ppad/captcha/assets/DtuR18Jy.jpg);
     background-repeat: repeat-x;
     background-size: contain;
     animation: slide-a3db0189 45s cubic-bezier(.1,0,.9,1) infinite alternate;
@@ -5505,14 +5505,14 @@ html,body {
 
 @font-face {
     font-family: Outer Sans;
-    src: url(https://nedojack.ru/main/ppad-captcha/assets/CSzwVOop.woff2);
+    src: url(https://nedojack.ru/main/ppad/captcha/assets/CSzwVOop.woff2);
     font-style: normal;
     font-weight: 400
 }
 
 @font-face {
     font-family: Outer Sans;
-    src: url(https://nedojack.ru/main/ppad-captcha/assets/BpxRXMOw.woff2);
+    src: url(https://nedojack.ru/main/ppad/captcha/assets/BpxRXMOw.woff2);
     font-style: normal;
     font-weight: 700
 }
@@ -5803,11 +5803,11 @@ html,body {
 }
 
 .waiting .mode.debate[data-v-fdafd3f9]:after {
-    background-image: url(https://nedojack.ru/main/ppad-captcha/assets/BinB0D4V.png)
+    background-image: url(https://nedojack.ru/main/ppad/captcha/assets/BinB0D4V.png)
 }
 
 .waiting .mode.quick[data-v-fdafd3f9]:after {
-    background-image: url(https://nedojack.ru/main/ppad-captcha/assets/C5i6C6oZ.png)
+    background-image: url(https://nedojack.ru/main/ppad/captcha/assets/C5i6C6oZ.png)
 }
 
 .waiting .mode[data-v-fdafd3f9]:after {
@@ -5854,14 +5854,14 @@ html,body {
 
 @font-face {
     font-family: Outer Sans;
-    src: url(https://nedojack.ru/main/ppad-captcha/assets/CSzwVOop.woff2);
+    src: url(https://nedojack.ru/main/ppad/captcha/assets/CSzwVOop.woff2);
     font-style: normal;
     font-weight: 400
 }
 
 @font-face {
     font-family: Outer Sans;
-    src: url(https://nedojack.ru/main/ppad-captcha/assets/BpxRXMOw.woff2);
+    src: url(https://nedojack.ru/main/ppad/captcha/assets/BpxRXMOw.woff2);
     font-style: normal;
     font-weight: 700
 }
@@ -5945,7 +5945,7 @@ html,body {
     width: calc(var(--bgWidth) * 3);
     height: 100vh;
     margin: 0;
-    background-image: url(https://nedojack.ru/main/ppad-captcha/assets/DtuR18Jy.jpg);
+    background-image: url(https://nedojack.ru/main/ppad/captcha/assets/DtuR18Jy.jpg);
     background-repeat: repeat-x;
     background-size: contain;
     animation: slide 45s cubic-bezier(.1,0,.9,1) infinite alternate;
