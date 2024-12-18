@@ -38793,7 +38793,7 @@ const wue = st(bue, [["render", Nue]])
         }
     }
 })
-  , Pue = "https://nedojack.ru/main/ppad-captcha/assets/CuONZUsC.png"
+  , Pue = "https://nedojack.ru/main/ppad/captcha/assets/CuONZUsC.png"
   , Bue = {
     class: "waiting"
 }
