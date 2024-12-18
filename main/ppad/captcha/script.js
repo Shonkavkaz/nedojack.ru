@@ -8299,7 +8299,7 @@ class Ia {
     static pageView(e) {
         this.ga("page_view", {
             page_title: e,
-            page_location: `https://nedojack.ru/${e}`
+            page_location: `https://jackbox.tv/${e}`
         })
     }
     static gameStarted(e, r) {
@@ -9847,10 +9847,10 @@ const Ea = class Ea {
         return !e || e === "live" ? "ecast.jackboxgames.com" : e === "local" ? "https://localhost" : e.includes("localhost") ? e : `${e}.jackboxgames.com`
     }
     static isDevelopment() {
-        return window.location.hostname === "dev.nedojack.ru" || window.location.hostname === "localhost"
+        return window.location.hostname === "dev.jackbox.tv" || window.location.hostname === "localhost"
     }
     static isProduction() {
-        return window.location.hostname === "nedojack.ru"
+        return window.location.hostname === "jackbox.tv"
     }
     static get isCanvasSupported() {
         const e = document.createElement("canvas");
@@ -10093,7 +10093,7 @@ class Oo {
         return this.artifacts.some(e => !e.isViewed)
     }
     getUrl(e, r) {
-        return r.galleryId ? `/gallery/${r.galleryId}/${e.artifactId}` : e.isTest ? `http://games-test.nedojack.ru/artifact/${e.categoryId}/${e.artifactId}/` : `https://games.nedojack.ru/artifact/${e.categoryId}/${e.artifactId}/`
+        return r.galleryId ? `/gallery/${r.galleryId}/${e.artifactId}` : e.isTest ? `http://games-test.jackbox.tv/artifact/${e.categoryId}/${e.artifactId}/` : `https://games.jackbox.tv/artifact/${e.categoryId}/${e.artifactId}/`
     }
     getLocalArtifact(e) {
         const r = new Intl.DateTimeFormat(ya.locale,{
@@ -14603,7 +14603,7 @@ class UV {
               , u = s[s.length - 2];
             return {
                 json: n.body.url,
-                dev: `https://dev.nedojack.ru/debug/cloud/${u}/${a}/`,
+                dev: `https://dev.jackbox.tv/debug/cloud/${u}/${a}/`,
                 local: `http://localhost:9090/debug/cloud/${u}/${a}/`
             }
         } catch (r) {
@@ -14670,7 +14670,7 @@ ${r}`
                         url: e.dev,
                         text: {
                             type: "plain_text",
-                            text: "dev.nedojack.ru",
+                            text: "dev.jackbox.tv",
                             emoji: !0
                         }
                     }]
@@ -21000,7 +21000,7 @@ class XV {
     }
     static html(e) {
         if (String(e).match(/<fart>/g)) {
-            const n = new Audio(new URL("https://nedojack.ru/main/ppad/captcha/assets/BhWysX6c.wav",import.meta.url).href);
+            const n = new Audio(new URL("https://bundles.jackbox.tv/main/ppad-captcha/assets/BhWysX6c.wav",import.meta.url).href);
             n.volume = .1,
             n.play()
         }
@@ -21125,7 +21125,7 @@ const HV = {
     WHICH_PLAYERS: "Which players?",
     THANKS_FOR_PLAYING: "Thanks for playing!",
     BUTTON_GO_TO_GAME: "Go to game",
-    BUTTON_GO_TO_JACKBOX: "Back to nedojack.ru",
+    BUTTON_GO_TO_JACKBOX: "Back to jackbox.tv",
     BUTTON_PLAY_AGAIN: "Play again",
     BUTTON_SAME_PLAYERS: "Same players",
     BUTTON_NEW_PLAYERS: "New players",
@@ -30702,11 +30702,11 @@ const Y1 = Ti(PQ)
         }
     }
 })
-  , Nv = "https://nedojack.ru/main/ppad/captcha/assets/DLGomgNm.png"
-  , wv = "https://nedojack.ru/main/ppad/captcha/assets/B8C13_5i.png"
-  , $Q = "https://nedojack.ru/main/ppad/captcha/assets/DaAsZ-1o.png"
-  , DQ = "https://nedojack.ru/main/ppad/captcha/assets/C0nA0hrp.png"
-  , KQ = "https://nedojack.ru/main/ppad/captcha/assets/_LZDgMYc.png"
+  , Nv = "https://bundles.jackbox.tv/main/ppad-captcha/assets/DLGomgNm.png"
+  , wv = "https://bundles.jackbox.tv/main/ppad-captcha/assets/B8C13_5i.png"
+  , $Q = "https://bundles.jackbox.tv/main/ppad-captcha/assets/DaAsZ-1o.png"
+  , DQ = "https://bundles.jackbox.tv/main/ppad-captcha/assets/C0nA0hrp.png"
+  , KQ = "https://bundles.jackbox.tv/main/ppad-captcha/assets/_LZDgMYc.png"
   , kQ = {
     class: "jbg"
 }
@@ -32298,9 +32298,9 @@ const Ute = {
         dismissText: String
     }
 })
-  , Bte = "https://nedojack.ru/main/ppad/captcha/assets/Bwlnl62i.png"
-  , $te = "https://nedojack.ru/main/ppad/captcha/assets/DN8YV_ih.png"
-  , Dte = "https://nedojack.ru/main/ppad/captcha/assets/Dv-2T4fF.png"
+  , Bte = "https://bundles.jackbox.tv/main/ppad-captcha/assets/Bwlnl62i.png"
+  , $te = "https://bundles.jackbox.tv/main/ppad-captcha/assets/DN8YV_ih.png"
+  , Dte = "https://bundles.jackbox.tv/main/ppad-captcha/assets/Dv-2T4fF.png"
   , Kte = {
     key: 0,
     class: "image",
@@ -37306,27 +37306,27 @@ const Cie = t => {
     "es-XL": dae,
     "pt-BR": Nae
 }
-  , Uae = "https://nedojack.ru/main/ppad/captcha/assets/B0BTidLj.png"
-  , Pae = "https://nedojack.ru/main/ppad/captcha/assets/B-oS51Vr.png"
-  , Bae = "https://nedojack.ru/main/ppad/captcha/assets/DaG5ADfE.png"
+  , Uae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/B0BTidLj.png"
+  , Pae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/B-oS51Vr.png"
+  , Bae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/DaG5ADfE.png"
   , $ae = "https://nedojack.ru/main/ppad/captcha/assets/CgpunSKd.png"
   , Dae = "https://nedojack.ru/main/ppad/captcha/assets/BWi_-0hR.png"
   , Kae = "https://nedojack.ru/main/ppad/captcha/assets/8-0wbYsu.png"
-  , kae = "https://nedojack.ru/main/ppad/captcha/assets/BwDAt_gD.png"
-  , Mae = "https://nedojack.ru/main/ppad/captcha/assets/ChfcB5Qb.png"
-  , Vae = "https://nedojack.ru/main/ppad/captcha/assets/Bb7nzTlz.png"
-  , Gae = "https://nedojack.ru/main/ppad/captcha/assets/YtgJxV3H.png"
-  , Fae = "https://nedojack.ru/main/ppad/captcha/assets/Cdngkr_0.png"
-  , Xae = "https://nedojack.ru/main/ppad/captcha/assets/CWEqmyKg.png"
-  , Hae = "https://nedojack.ru/main/ppad/captcha/assets/CqBjrAdh.png"
-  , jae = "https://nedojack.ru/main/ppad/captcha/assets/DnPF4ypL.png"
-  , Wae = "https://nedojack.ru/main/ppad/captcha/assets/s2K55As7.png"
-  , qae = "https://nedojack.ru/main/ppad/captcha/assets/B55FHUeQ.png"
-  , Yae = "https://nedojack.ru/main/ppad/captcha/assets/CWDs6O5H.png"
-  , zae = "https://nedojack.ru/main/ppad/captcha/assets/05BP1siz.png"
-  , Jae = "https://nedojack.ru/main/ppad/captcha/assets/BH_AvKbJ.png"
-  , Qae = "https://nedojack.ru/main/ppad/captcha/assets/B_A_55Qo.png"
-  , Zae = "https://nedojack.ru/main/ppad/captcha/assets/DO-L6WsX.png"
+  , kae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/BwDAt_gD.png"
+  , Mae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/ChfcB5Qb.png"
+  , Vae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/Bb7nzTlz.png"
+  , Gae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/YtgJxV3H.png"
+  , Fae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/Cdngkr_0.png"
+  , Xae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/CWEqmyKg.png"
+  , Hae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/CqBjrAdh.png"
+  , jae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/DnPF4ypL.png"
+  , Wae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/s2K55As7.png"
+  , qae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/B55FHUeQ.png"
+  , Yae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/CWDs6O5H.png"
+  , zae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/05BP1siz.png"
+  , Jae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/BH_AvKbJ.png"
+  , Qae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/B_A_55Qo.png"
+  , Zae = "https://bundles.jackbox.tv/main/ppad-captcha/assets/DO-L6WsX.png"
   , eoe = ut({
     props: {
         artifactId: {
@@ -37454,16 +37454,16 @@ function aoe(t, e, r, n, s, a) {
     ee("div", soe)) : Ie("", !0)])
 }
 const NS = st(eoe, [["render", aoe], ["__scopeId", "data-v-a3db0189"]])
-  , ooe = "https://nedojack.ru/main/ppad/captcha/assets/DembzJX4.png"
-  , loe = "https://nedojack.ru/main/ppad/captcha/assets/Py_Os4nC.png"
-  , uoe = "https://nedojack.ru/main/ppad/captcha/assets/BgRVPHTW.png"
-  , foe = "https://nedojack.ru/main/ppad/captcha/assets/DDj4l_Bh.png"
-  , coe = "https://nedojack.ru/main/ppad/captcha/assets/BvnHs8Vn.png"
-  , hoe = "https://nedojack.ru/main/ppad/captcha/assets/euUDaTPS.png"
-  , poe = "https://nedojack.ru/main/ppad/captcha/assets/DALnX83A.png"
-  , Eoe = "https://nedojack.ru/main/ppad/captcha/assets/BtfBB2-Q.png"
-  , doe = "https://nedojack.ru/main/ppad/captcha/assets/209320ca.png"
-  , _oe = "https://nedojack.ru/main/ppad/captcha/assets/CJ8LUb3Y.png"
+  , ooe = "https://bundles.jackbox.tv/main/ppad-captcha/assets/DembzJX4.png"
+  , loe = "https://bundles.jackbox.tv/main/ppad-captcha/assets/Py_Os4nC.png"
+  , uoe = "https://bundles.jackbox.tv/main/ppad-captcha/assets/BgRVPHTW.png"
+  , foe = "https://bundles.jackbox.tv/main/ppad-captcha/assets/DDj4l_Bh.png"
+  , coe = "https://bundles.jackbox.tv/main/ppad-captcha/assets/BvnHs8Vn.png"
+  , hoe = "https://bundles.jackbox.tv/main/ppad-captcha/assets/euUDaTPS.png"
+  , poe = "https://bundles.jackbox.tv/main/ppad-captcha/assets/DALnX83A.png"
+  , Eoe = "https://bundles.jackbox.tv/main/ppad-captcha/assets/BtfBB2-Q.png"
+  , doe = "https://bundles.jackbox.tv/main/ppad-captcha/assets/209320ca.png"
+  , _oe = "https://bundles.jackbox.tv/main/ppad-captcha/assets/CJ8LUb3Y.png"
   , goe = ut({
     props: {
         color: {
@@ -37937,7 +37937,7 @@ const ile = st(Yoe, [["render", nle]])
         }
     }
 })
-  , ale = "https://nedojack.ru/main/ppad/captcha/assets/D21S9xYH.png"
+  , ale = "https://bundles.jackbox.tv/main/ppad-captcha/assets/D21S9xYH.png"
   , ole = {
     class: "lobby"
 }
@@ -38178,8 +38178,8 @@ const Cle = st(vle, [["render", Ale], ["__scopeId", "data-v-2a07dea3"]])
         }
     }
 })
-  , Ole = "https://nedojack.ru/main/ppad/captcha/assets/fOQEQ-3k.png"
-  , Ile = "https://nedojack.ru/main/ppad/captcha/assets/Djd4E2b5.png"
+  , Ole = "https://bundles.jackbox.tv/main/ppad-captcha/assets/fOQEQ-3k.png"
+  , Ile = "https://bundles.jackbox.tv/main/ppad-captcha/assets/Djd4E2b5.png"
   , Nle = {
     class: "jumping"
 }
@@ -38793,7 +38793,7 @@ const wue = st(bue, [["render", Nue]])
         }
     }
 })
-  , Pue = "https://nedojack.ru/main/ppad/captcha/assets/CuONZUsC.png"
+  , Pue = "https://nedojack.ru/main/ppad-captcha/assets/CuONZUsC.png"
   , Bue = {
     class: "waiting"
 }
