@@ -40989,7 +40989,7 @@ const qre = {
     MODERATOR: "МОДЕРАТОР"
 }
   , tne = {
-    EMAIL_INPUT_PLACEHOLDER: "Почта",
+    EMAIL_INPUT_PLACEHOLDER: "Введи свою почту",
     JOIN: "Подпишись на нашу рассылку",
     SUBSCRIBED: "Спасибо, что подписались на наш список рассылки!"
 }
