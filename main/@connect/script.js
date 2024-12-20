@@ -19056,7 +19056,7 @@ const Z2 = [{
     features: ["kicking", "previews"],
     categoryId: "LineupGame"
 }, {
-    name: "Tee K.O. 2",
+    name: "Футбол К.О. 2",
     tag: "awshirt2",
     wrapper: "vue",
     isPublic: !0,
@@ -19066,7 +19066,7 @@ const Z2 = [{
     categoryId: "TeeKO2Game",
     galleryId: "teeko2"
 }, {
-    name: "Dodo Re Mi",
+    name: "Додо ре ми",
     tag: "nopus-opus",
     wrapper: "vue",
     isPublic: !0,
@@ -19075,7 +19075,7 @@ const Z2 = [{
     categoryId: "NopusOpusGame",
     galleryId: "dodo-re-mi"
 }, {
-    name: "FixyText",
+    name: "ЧиниТекст",
     tag: "risky-text",
     wrapper: "vue",
     isPublic: !0,
@@ -19084,7 +19084,7 @@ const Z2 = [{
     categoryId: "FixyTextGame",
     galleryId: "fixytext"
 }, {
-    name: "Timejinx",
+    name: "Хронолом",
     tag: "time-trivia",
     wrapper: "vue",
     isPublic: !0,
@@ -19093,7 +19093,7 @@ const Z2 = [{
     categoryId: "TimeTriviaGame",
     galleryId: "timejinx"
 }, {
-    name: "Hypnotorious",
+    name: "Гипнотизиум",
     tag: "us-them",
     wrapper: "vue",
     isPublic: !0,
@@ -19102,7 +19102,7 @@ const Z2 = [{
     categoryId: "StrangersGame",
     galleryId: "hypnotorious"
 }, {
-    name: "Fakin' It All Night Long",
+    name: "Обхитри меня! Всю ночь напролёт",
     tag: "fakinit2",
     wrapper: "vue",
     isPublic: !0,
@@ -19111,7 +19111,7 @@ const Z2 = [{
     categoryId: "FakinIt2Game",
     galleryId: "fakin-it-all-night-long"
 }, {
-    name: "Dirty Drawful",
+    name: "Секси рисовка",
     tag: "drawful3",
     wrapper: "vue",
     isPublic: !0,
@@ -19120,7 +19120,7 @@ const Z2 = [{
     categoryId: "Drawful3Game",
     galleryId: "dirty-drawful"
 }, {
-    name: "Let Me Finish",
+    name: "Дай мне кончить",
     tag: "captcha",
     wrapper: "vue",
     isPublic: !0,
@@ -30590,25 +30590,25 @@ class $W {
     }
 }
 const KW = {
-    BACK: "Back",
-    CANCEL: "Cancel",
-    CLOSE: "Close",
-    CONFIRM: "Confirm",
-    CREATE: "Create",
-    DELETE: "Delete",
-    DONE: "Done",
-    EDIT: "Edit",
+    BACK: "Назад",
+    CANCEL: "Отмена",
+    CLOSE: "Закрыть",
+    CONFIRM: "Подтвердить",
+    CREATE: "Создать",
+    DELETE: "Удалить",
+    DONE: "Готово",
+    EDIT: "Редактировать",
     OK: "OK",
-    NEXT: "Next",
-    NO: "No",
-    PLAY: "Play",
-    PUBLISH: "Publish",
-    REMOVE: "Remove",
-    RESET: "Reset",
-    SUBMIT: "Submit",
-    TRY_AGAIN: "Try Again",
-    UNDO: "Undo",
-    YES: "Yes"
+    NEXT: "Далее",
+    NO: "Нет",
+    PLAY: "Играть",
+    PUBLISH: "Опубликовать",
+    REMOVE: "Удалить",
+    RESET: "Сбросить",
+    SUBMIT: "Отправить",
+    TRY_AGAIN: "Повторить попытку",
+    UNDO: "Отменить",
+    YES: "Да"
 }
   , kW = {
     UGC: {
@@ -30619,59 +30619,59 @@ const KW = {
     }
 }
   , GW = {
-    DISCONNECTED: "You have been disconnected.",
-    DRAWING_NOTHING: "You have to draw something!",
-    PLAYER_KICKED: "You have been kicked from the game by a moderator.",
-    ROOM_DESTROYED: "Thanks for playing!",
-    ROOM_DISCONNECTED: "Disconnected",
-    TEXT_NAUGHTY: "I’m afraid you can’t write that. Please be respectful of other players.",
-    TEXT_NOTHING: "You can’t enter nothing!",
-    TITLE: "Error"
+    DISCONNECTED: "Ты был отключён.",
+    DRAWING_NOTHING: "Ты должен что-нибудь нарисовать!",
+    PLAYER_KICKED: "Ты был удалён из игры модератором.",
+    ROOM_DESTROYED: "Спасибо за игру!",
+    ROOM_DISCONNECTED: "Отключено",
+    TEXT_NAUGHTY: "Боюсь, что ты не можешь этого написать. Пожалуйста, будь уважителен к другим игрокам.",
+    TEXT_NOTHING: "Ты не можешь ничего ввести!",
+    TITLE: "Ошибка"
 }
-  , VW = "LOADING"
+  , VW = "ЗАГРУЗКА"
   , FW = {
-    JOINED_COUNT: "{count} of {maxPlayers} players joined",
-    PLAYERS_NEEDED: "1 player needed to start | {count} players needed to start",
-    WAITING_FOR_VIP: "Waiting for {name} to start the game",
-    WAITING_FOR_GAMEPAD: "Waiting for the game to start",
-    WAITING_FOR_NEW_GAME: "Waiting for a new game to start",
-    GAME_STARTING: "Game is starting",
-    BUTTON_START: "Press to Start",
-    BUTTON_CANCEL: "Press to Cancel"
+    JOINED_COUNT: "В игре {count} из {maxPlayers} игроков",
+    PLAYERS_NEEDED: "Нужен ещё 1 игрок | Нужно ещё {count} игрока",
+    WAITING_FOR_VIP: "Ждём, когда {name} начнёт игру",
+    WAITING_FOR_GAMEPAD: "Ждём начала игры",
+    WAITING_FOR_NEW_GAME: "Ждём начала новой игры",
+    GAME_STARTING: "Игра уже началась",
+    BUTTON_START: "Нажми, чтобы начать",
+    BUTTON_CANCEL: "Нажми, чтобы отменить"
 }
   , HW = {
-    GALLERY_LINK: "Visit the Gallery",
-    NEW_GAME_STARTED: "A new game has started",
-    PLAY_AGAIN: "Play again?",
-    WHICH_GAME: "Which game?",
-    WHICH_PLAYERS: "Which players?",
-    THANKS_FOR_PLAYING: "Thanks for playing!",
-    BUTTON_GO_TO_GAME: "Go to game",
-    BUTTON_GO_TO_JACKBOX: "Back to nedojack.ru",
-    BUTTON_PLAY_AGAIN: "Play again",
-    BUTTON_SAME_PLAYERS: "Same players",
-    BUTTON_NEW_PLAYERS: "New players",
-    BUTTON_CHANGE_GAME: "Change game",
-    BUTTON_NEXT_GAME: "Play {gameName}"
+    GALLERY_LINK: "Посетить галерею",
+    NEW_GAME_STARTED: "Началась новая игра",
+    PLAY_AGAIN: "Сыграть снова?",
+    WHICH_GAME: "В какую игру?",
+    WHICH_PLAYERS: "С какими игроками?",
+    THANKS_FOR_PLAYING: "Спасибо за игру!",
+    BUTTON_GO_TO_GAME: "Зайти в игру",
+    BUTTON_GO_TO_JACKBOX: "Назад на nedojack.ru",
+    BUTTON_PLAY_AGAIN: "Сыграть снова",
+    BUTTON_SAME_PLAYERS: "Те же игроки",
+    BUTTON_NEW_PLAYERS: "Новые игроки",
+    BUTTON_CHANGE_GAME: "Выбрать игру",
+    BUTTON_NEXT_GAME: "Играть в игру {gameName}"
 }
   , WW = {
-    AND: "AND",
-    OR: "OR"
+    AND: "И",
+    OR: "ИЛИ"
 }
   , XW = {
-    BUTTON_SKIP: "Skip",
-    BUTTON_NEXT: "Next",
-    BUTTON_DONE: "Let’s Go!"
+    BUTTON_SKIP: "Пропустить",
+    BUTTON_NEXT: "Далее",
+    BUTTON_DONE: "Вперёд!"
 }
   , jW = {
-    NAME: "AUDIENCE"
+    NAME: "ЗРИТЕЛИ"
 }
   , zW = {
     CART: {
-        CHECK_OUT: "Check out",
-        EMPTY: "Your cart is empty",
-        TITLE: "Shopping Cart",
-        TOTAL: "Total"
+        CHECK_OUT: "Проверить",
+        EMPTY: "Корзина пуста",
+        TITLE: "Корзина",
+        TOTAL: "Итого"
     }
 }
   , qW = {
@@ -30706,32 +30706,32 @@ const KW = {
 }
   , YW = {
     BROADCASTER: {
-        SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
-        WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
+        SUBTEXT: "Ты успешно подключил свою учетную запись к Twitch.",
+        WARNING: "В ЭТОЙ КОМНАТЕ НЕ ВКЛЮЧЕНА НАСТРОЙКА \"ЗРИТЕЛИ\""
     },
     RECONNECTED: {
-        TEXT: "RECONNECTED",
-        SUBTEXT: "Have fun!"
+        TEXT: "ПЕРЕПОДКЛЮЧИТЬСЯ",
+        SUBTEXT: "Веселись!"
     },
     RECONNECTING: {
         CONTROLLER: {
-            TEXT: "CONNECTION INTERRUPTED",
-            SUBTEXT: "Attempting to reconnect ({attempt} of 5)"
+            TEXT: "СОЕДИНЕНИЕ ПРЕРВАНО",
+            SUBTEXT: "Попытка повторного подключения ({attempt} из 5)"
         },
         GAME: {
-            TEXT: "GAME CONNECTION INTERRUPTED",
-            SUBTEXT: "Please wait while we attempt to reconnect"
+            TEXT: "ПРЕРВАНО СОЕДИНЕНИЕ С ИГРОЙ",
+            SUBTEXT: "Пожалуйста, подожди, пока мы попытаемся восстановить соединение"
         }
     },
     PAUSED: {
-        TEXT: "THE GAME IS PAUSED",
-        SUBTEXT: "Anything you submit will still be sent to the game."
+        TEXT: "ИГРА ПРИОСТАНОВЛЕНА",
+        SUBTEXT: "Всё, что ты отправишь, всё равно будет отправлено в игру."
     }
 }
   , JW = {
-    SHARE: "Share",
-    COPY_TO_CLIPBOARD: "Copy to clipboard",
-    COPIED: "Copied"
+    SHARE: "Поделиться",
+    COPY_TO_CLIPBOARD: "Скопировать в буфер обмена",
+    COPIED: "Скопировано"
 }
   , QW = {
     ACTION: KW,
@@ -40943,99 +40943,99 @@ const qre = {
     WAITING: "Waiting for Room"
 }
   , Yre = {
-    ACCEPT_ALL: "Got it!",
+    ACCEPT_ALL: "Принять!",
     CONSENT_MODAL: {
-        ARIA: "Cookie consent form"
+        ARIA: "Форма согласия на использование Cookie"
     },
-    DESCRIPTION: "We use cookies to improve your game experience and analyze website traffic. Find out more in our [pp]Privacy Policy[/pp].",
-    REJECT_ALL: "Opt out"
+    DESCRIPTION: "Мы используем файлы cookie для улучшения твоих игровых возможностей и анализа посещаемости сайта. Подробнее об этом можно узнать в [pp]Политике конфиденциальности[/pp].",
+    REJECT_ALL: "Отказаться"
 }
   , Jre = {
-    UNSUPPORTED_BROWSER: "This game is not supported on this browser. View '?' or HELP to see a list of compatible browsers.",
-    ROOM_IS_FULL: "The game is full",
-    ROOM_NOT_FOUND: "Room not found",
-    AUDIENCE_IS_FULL: "The audience is full",
-    UNABLE_TO_CONNECT: "Unable to connect to the Jackbox Games server. This is commonly caused by adblockers or privacy extensions.",
-    UNABLE_TO_PRELOAD: "Unable to preload this game bundle",
-    KICKED: "You cannot join because you have been kicked by a moderator",
-    REQUIRES_TWITCH_LOGIN: "Game requires Twitch login",
-    ROOM_IS_LOCKED: "Game is locked",
-    INCORRECT_PASSWORD: "Incorrect password",
-    GENERIC: "Error joining this game",
-    FILTER_NAME: "This game has profanity filters enabled. Please pick a different name."
+    UNSUPPORTED_BROWSER: "Эта игра не поддерживается в данном браузере. Посмотри '?' или ПОМОЩЬ, чтобы увидеть список совместимых браузеров.",
+    ROOM_IS_FULL: "Комната заполнена",
+    ROOM_NOT_FOUND: "Комната не найдена",
+    AUDIENCE_IS_FULL: "Зрители заполнены",
+    UNABLE_TO_CONNECT: "Невозможно подключиться к серверу. Обычно это происходит из-за блокировщиков рекламы или расширений конфиденциальности.",
+    UNABLE_TO_PRELOAD: "Невозможно выполнить предварительную загрузку этого бандла",
+    KICKED: "Ты не можешь зайти, потому что ты был удалён модератором",
+    REQUIRES_TWITCH_LOGIN: "Для игры требуется Twitch",
+    ROOM_IS_LOCKED: "Игра закрыта",
+    INCORRECT_PASSWORD: "Неправильный пароль",
+    GENERIC: "Ошибка при заходе в игру",
+    FILTER_NAME: "В этой игре включён фильтр ненормативной лексики. Пожалуйста, выбери другое имя."
 }
   , Qre = {
-    NAME: "NAME",
-    NAME_PLACEHOLDER: "ENTER YOUR NAME",
-    PASSWORD_PLACEHOLDER: "ENTER 5-DIGIT PASSWORD",
-    PASSWORD_REQUIRED_TITLE: "Password required",
-    PASSWORD_REQUIRED_BODY: "Please enter the password or join as an audience member",
-    PASSWORD_JOIN_AS_PLAYER: "Join as Player",
-    PASSWORD_JOIN_AS_AUDIENCE: "Join Audience",
-    ROOM_CODE: "ROOM CODE",
-    ROOM_CODE_PLACEHOLDER: "ENTER 4-LETTER CODE"
+    NAME: "ИМЯ",
+    NAME_PLACEHOLDER: "КТО ТЫ ВОИН?",
+    PASSWORD_PLACEHOLDER: "5-ЗНАЧНЫЙ ПАРОЛЬ",
+    PASSWORD_REQUIRED_TITLE: "Требуется пароль",
+    PASSWORD_REQUIRED_BODY: "Пожалуйста, введи пароль или заходи к зрителям",
+    PASSWORD_JOIN_AS_PLAYER: "Зайти как игрок",
+    PASSWORD_JOIN_AS_AUDIENCE: "Зайти как зритель",
+    ROOM_CODE: "КОД КОМНАТЫ",
+    ROOM_CODE_PLACEHOLDER: "4-ЗНАЧНЫЙ КОД"
 }
-  , Zre = "Link to Jackbox Games Homepage"
+  , Zre = "Ссылка на страницу Jackbox Games"
   , ene = {
-    APPEARANCE: "APPEARANCE",
-    DARK: "dark",
-    HELP: "HELP",
+    APPEARANCE: "ВНЕШНИЙ ВИД",
+    DARK: "тёмный",
+    HELP: "ПОМОЩЬ",
     TWITCH: "TWITCH",
-    LIGHT: "light",
-    LOGOUT: "LOGOUT",
-    MERCH: "MERCH",
-    PAST_GAMES: "PAST GAMES",
-    MAILING_LIST: "MAILING LIST",
-    MODERATOR: "MODERATOR"
+    LIGHT: "светлый",
+    LOGOUT: "ВЫЙТИ",
+    MERCH: "МЕРЧ",
+    PAST_GAMES: "ПРОШЛЫЕ ИГРЫ",
+    MAILING_LIST: "СПИСОК РАССЫЛКИ",
+    MODERATOR: "МОДЕРАТОР"
 }
   , tne = {
-    EMAIL_INPUT_PLACEHOLDER: "Email address",
-    JOIN: "Join our Newsletter",
-    SUBSCRIBED: "Thanks for signing up to our email list!"
+    EMAIL_INPUT_PLACEHOLDER: "Email адрес",
+    JOIN: "Подпишись на нашу рассылку",
+    SUBSCRIBED: "Спасибо, что подписались на наш список рассылки!"
 }
   , rne = {
     CALL_TO_ACTION: {
-        SHOP: "VIEW GAME & SHOP",
-        VIEW: "VIEW THIS GAME"
+        SHOP: "ПРОСМОТР ИГРЫ И МАГАЗИНА",
+        VIEW: "ПОСМОТРЕТЬ ИГРУ"
     },
-    NEW: "NEW",
-    PLAYED_ON: "PLAYED ON",
+    NEW: "НОВОЕ",
+    PLAYED_ON: "СЫГРАНО",
     REMOVE: {
-        CONFIRM: "Are you sure?",
-        DESCRIPTION: `This will permanently remove this game
-from your past games list.`,
-        MANAGE: "Remove Game?",
-        TITLE: "Are You Sure?"
+        CONFIRM: "Ты уверен?",
+        DESCRIPTION: `Это позволит навсегда удалить эту игру
+        из списка прошлых игр.`,
+        MANAGE: "Удалить игру?",
+        TITLE: "Ты уверен?"
     }
 }
   , nne = {
-    EMPTY: "No Past Games Yet",
-    MANAGE: "MANAGE",
-    TITLE: "YOUR PAST GAMES"
+    EMPTY: "Пока нет прошлых игр",
+    MANAGE: "ИЗМЕНИТЬ",
+    TITLE: "ТВОИ ПРОШЛЫЕ ИГРЫ"
 }
   , ine = {
-    TITLE: "RECENT GAMES",
+    TITLE: "ПОСЛЕДНИЕ ИГРЫ",
     VIEW_ALL: {
-        BUTTON: "VIEW ALL",
-        LINK: "VIEW ALL PAST GAMES"
+        BUTTON: "ПОСМОТРЕТЬ ВСЁ",
+        LINK: "ПРОСМОТРЕТЬ ВСЕ ПОСЛЕДНИЕ ИГРЫ"
     }
 }
   , sne = {
-    GAME_FULL: "Game is full",
-    GAME_STARTED: "Game has started",
-    ROOM_NOT_FOUND: "Room not found"
+    GAME_FULL: "Игра заполнена",
+    GAME_STARTED: "Игра уже началась",
+    ROOM_NOT_FOUND: "Комната не найдена"
 }
   , ane = {
-    GAME_FULL: "GAME IS FULL",
-    GAME_STARTED: "GAME HAS STARTED",
-    JOIN_AUDIENCE: "JOIN AUDIENCE",
-    RECONNECT: "RECONNECT",
-    TWITCH_LOGIN: "LOGIN WITH TWITCH"
+    GAME_FULL: "ИГРА ЗАПОЛНЕНА",
+    GAME_STARTED: "ИГРА УЖЕ НАЧАЛАСЬ",
+    JOIN_AUDIENCE: "ЗАЙТИ К ЗРИТЕЛЯМ",
+    RECONNECT: "ПЕРЕПОДКЛЮЧИТЬСЯ",
+    TWITCH_LOGIN: "ВОЙТИ С ПОМОЩЬЮ TWITCH"
 }
   , one = {
-    CAMERA: "[b]HEADS UP:[/b] We’re not detecting a camera, but you can still play the game without a photo. If this seems wrong, try joining with a different browser.",
-    STYLE: "[b]HEADS UP:[/b] Your browser seems a bit outdated, and will have some issues displaying this game.",
-    TOS: "By clicking {submit}, you agree to our [tos]Terms of Service[/tos]"
+    CAMERA: "[b]HEADS UP:[/b] Мы не можем обнаружить камеру, но ты можешь играть в игру и без фотографии. Если это кажется неправильным, попробуй подключиться с помощью другого браузера.",
+    STYLE: "[b]HEADS UP:[/b] Твой браузер, по-видимому, немного устарел и будет иметь некоторые проблемы с отображением этой игры.",
+    TOS: "Нажимая {submit}, ты принимаешь [tos]Условия пользования (англ.)[/tos]."
 }
   , lne = {
     BRANCH: qre,
