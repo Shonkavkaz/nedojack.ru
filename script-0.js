@@ -3883,7 +3883,7 @@ const El = [{
     categoryId: "FixyTextGame",
     galleryId: "fixytext"
 }, {
-    name: "Timejinx",
+    name: "Timejinx!",
     tag: "time-trivia",
     wrapper: "vue",
     isPublic: !0,
