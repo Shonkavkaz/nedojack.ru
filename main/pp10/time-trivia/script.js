@@ -28187,7 +28187,7 @@ ${t}`
             IMPOSTOR_HEADER: "Найди самозванца"
         },
         Iae = {
-            CHOOSING_CONFIRMATION: "Ты выбрал",
+            CHOOSING_CONFIRMATION: "Ты выбрал:",
             GUESSING_CONFIRMATION: "Ты отправляешься в год",
             SKIP: "Пропустить"
         },
