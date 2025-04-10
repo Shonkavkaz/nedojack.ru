@@ -28188,7 +28188,7 @@ ${t}`
         },
         Iae = {
             CHOOSING_CONFIRMATION: "Ты выбрал:",
-            GUESSING_CONFIRMATION: "Ты отправляешься в год",
+            GUESSING_CONFIRMATION: "Ты отправляешься в",
             SKIP: "Пропустить"
         },
         wae = {
@@ -28793,13 +28793,13 @@ ${t}`
                 getCategory() {
                     switch (this.player.category) {
                         case "isHopping":
-                            return this.isHopping = !0, "Time Hop";
+                            return this.isHopping = !0, "Хроноскок";
                         case "isLooping":
-                            return this.isLooping = !0, "Time Loop";
+                            return this.isLooping = !0, "Хроноцикл";
                         case "isGeoMesser":
                             return this.isGeoMesser = !0, "Geomesser";
                         case "isFixing":
-                            return this.isFixing = !0, "Time Fix";
+                            return this.isFixing = !0, "Хронолад";
                         default:
                             return "unknown"
                     }
