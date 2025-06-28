@@ -4866,7 +4866,7 @@ Yx(function(t, e, r) {
 const Nt = class Nt {
     static get serverUrl() {
         const e = this.getQueryParam("server") ?? this.getQueryParam("s");
-        return !e || e === "live" ? "ecast.jackboxgames.com, rujackbox-v2.vercel.app" : e === "local" ? "https://localhost" : e.includes("localhost") ? e : `${e}.jackboxgames.com`
+        return !e || e === "live" ? "ecast.jackboxgames.com" : e === "local" ? "https://localhost" : e.includes("localhost") ? e : `${e}.jackboxgames.com`
     }
     static isDevelopment() {
         return window.location.hostname === "dev.nedojack.ru" || window.location.hostname === "localhost"
