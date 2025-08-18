@@ -22475,7 +22475,6 @@ let uH = class {
     async getRoom(e) {
         const altUrls = [
 			"ecast.jackboxgames.com",
-            "jb-ecast.klucva.ru",
 			"rujackbox-v2.vercel.app"
         ]
 
