@@ -22438,7 +22438,7 @@ let uH = class {
     }
 	alturl(e, r, url) {
         if (r) {
-            let n = M6.stringify(r);
+            let n = aH.stringify(r);
             return `${this.scheme}://${url}/api/v2${e}?${n}`
         }
         return `${this.scheme}://${url}/api/v2${e}`
@@ -22465,7 +22465,7 @@ let uH = class {
 	async linkCheck(link, e){
         return new Promise(async (a, b) => {
             let r = this.alturl(`/rooms/${e.code}`, null, link),
-            i = await (await kx(r)).json();
+            i = await (await Ob(r)).json();
             if(i.ok){
                 return a(i);
             }
@@ -22475,7 +22475,6 @@ let uH = class {
     async getRoom(e) {
         const altUrls = [
 			"ecast.jackboxgames.com",
-            "jb-ecast.klucva.ru",
 			"rujackbox-v2.vercel.app"
         ]
 
