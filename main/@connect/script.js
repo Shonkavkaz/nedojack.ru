@@ -22436,6 +22436,13 @@ let uH = class {
         }
         return `${this.scheme}://${this.host}/api/v2${e}`
     }
+	alturl(e, r, url) {
+        if (r) {
+            let n = M6.stringify(r);
+            return `${this.scheme}://${url}/api/v2${e}?${n}`
+        }
+        return `${this.scheme}://${url}/api/v2${e}`
+    }
     async createRoom(e) {
         let r = {
             appTag: "test",
