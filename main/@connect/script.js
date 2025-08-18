@@ -22455,11 +22455,31 @@ let uH = class {
             host: o.host
         })
     }
+	async linkCheck(link, e){
+        return new Promise(async (a, b) => {
+            let r = this.alturl(`/rooms/${e.code}`, null, link),
+            i = await (await kx(r)).json();
+            if(i.ok){
+                return a(i);
+            }
+            return a(i)
+        })
+    }
     async getRoom(e) {
-        let r = this.url(`/rooms/${e.code}`)
-          , i = await (await Ob(r)).json();
-        if (!i.ok)
-            throw new Error(`unable to get room with options ${JSON.stringify(e)}: ${i.error}`);
+        const altUrls = [
+			"ecast.jackboxgames.com",
+            "jb-ecast.klucva.ru",
+			"rujackbox-v2.vercel.app"
+        ]
+
+        let i = null;
+        let isFound = false;
+        for (const link of altUrls){
+            if(!isFound){
+                i = await this.linkCheck(link, e);
+                if(i.ok) isFound = true
+            }
+        }
         let s = i.body;
         return new lH({
             appId: s.appId,
